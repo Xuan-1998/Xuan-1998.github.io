@@ -3,8 +3,8 @@ secondary_name: ""
 navbar_name: "Xuan Jiang"
 
 positions:
-- logo: /assets/images/badges/medialab.png  # Logo is optional
-  name: Research Affiliate at MIT Media Lab
+- logo: /assets/images/badges/mit.png  # Logo is optional
+  name: Research Affiliate at MIT
 - logo: /assets/images/badges/jhu.jpeg
   name: Master Student at Johns Hopkins University
 
