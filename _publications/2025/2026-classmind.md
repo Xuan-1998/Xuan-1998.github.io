@@ -1,6 +1,6 @@
 ---
 title:          "ClassMind: Scaling Classroom Observation and Instructional Feedback with Multimodal AI"
-date:           2025-01-01 00:00:00 +0800
+date:           2025-01-13 00:00:00 +0800
 selected:       true
 pub_pre:        "Under review with "
 pub:            "CHI 2026"
