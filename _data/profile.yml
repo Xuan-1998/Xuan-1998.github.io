@@ -23,9 +23,10 @@ linkedin: yibo-z-5a1166273
 short_bio_text_justify: false
 short_bio: >-
   <p>
+  
     I am a PhD graduated from the University of California, Berkeley who are interested in high performance computing and artificial intelligence. I was advised by 
     <a href="https://ce.berkeley.edu/people/faculty/sengupta" target="_blank" rel="noopener">Prof. Raja Sengupta</a> and 
-    <a href="https://people.eecs.berkeley.edu/~demmel/" target="_blank" rel="noopener">Prof. James Demmel</a>. 
+    <a href="https://people.eecs.berkeley.edu/~demmel/" target="_blank" rel="noopener">Prof. James Demmel</a>. My research interests ligns in the intersection of high performance computing and artificial intelligence.
   </p>
 
 portrait_url: /assets/images/photos/xuan_jiang_young.JPG
