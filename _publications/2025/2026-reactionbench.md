@@ -9,7 +9,7 @@ pub_date:       "2025"
 # abstract: >-
 #   Explores regime-aware mixture-of-experts reinforcement learning for large-scale ride-hailing optimization.
 authors:
-  - Yibo Zhao
+  - Yibo Zhao*
   - Ao Qu*
   - Xuan Jiang
   - Keane Ong

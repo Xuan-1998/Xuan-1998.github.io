@@ -12,7 +12,7 @@ authors:
   - Yuhan Tang*
   - Kangxin Cui*
   - Jung Ho Park*
-  - Yibo Zhao
+  - Yibo Zhao*
   - Xuan Jiang
   - Haoze He
   - Jiangbo Yu
