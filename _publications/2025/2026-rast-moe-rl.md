@@ -1,6 +1,6 @@
 ---
 title:          "RAST-MoE-RL: A Regime-Aware Spatio-Temporal MoE Framework for Deep Reinforcement Learning in Ride-Hailing"
-date:           2025-01-14 00:00:00 +0800
+date:           2025-12-24 00:00:00 +0800
 selected:       true
 pub_pre:        "Under review with "
 pub:            "ICLR 2026"
