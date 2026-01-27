@@ -2,12 +2,12 @@
     <div class="col">
         <div class="card border-0 shadow-sm bg-white">
             <div class="card-body p-4">
-                <div class="row" data-masonry='{"percentPosition": true }'>
+                <div class="row">
                     {% if site.data.profile.education %}
                     <div class="col-md-6">
-                        <div class="mx-2 my-1">
-                            <h6>Education</h6>
-                            <ul class="list-unstyled mb-1">
+                        <div class="mx-2 mb-3">
+                            <h6 class="mb-2">Education</h6>
+                            <ul class="list-unstyled mb-0">
                                 {% for item in site.data.profile.education %}
                                 <li class="media mb-1">
                                     <img src="{{ item.logo | relative_url }}" alt="{{ item.name }}" style="width: 18px;" class="mr-1 mt-1">
@@ -28,9 +28,9 @@
 
                     {% if site.data.profile.experience %}
                     <div class="col-md-6">
-                        <div class="mx-2 my-1">
-                            <h6>Experience</h6>
-                            <ul class="list-unstyled mb-1">
+                        <div class="mx-2 mb-3">
+                            <h6 class="mb-2">Experience</h6>
+                            <ul class="list-unstyled mb-0">
                                 {% for item in site.data.profile.experience %}
                                 <li class="media mb-1">
                                     <img src="{{ item.logo | relative_url }}" alt="{{ item.name }}" style="width: 18px;" class="mr-1 mt-1">
@@ -49,11 +49,35 @@
                     </div>
                     {% endif %}
 
+                    {% if site.data.profile.academic_services %}
+                    <div class="col-md-6">
+                        <div class="mx-2 mb-3">
+                            <h6 class="mb-2">Academic Services</h6>
+                            {% if site.data.profile.academic_services.journal_referees %}
+                            <div class="small mb-1">
+                                <strong>Journal Referees:</strong><br/>
+                                {% for journal in site.data.profile.academic_services.journal_referees %}
+                                {{ journal }}{% unless forloop.last %}, {% endunless %}
+                                {% endfor %}
+                            </div>
+                            {% endif %}
+                            {% if site.data.profile.academic_services.conference_referees %}
+                            <div class="small mb-0">
+                                <strong>Conference Referees:</strong><br/>
+                                {% for conf in site.data.profile.academic_services.conference_referees %}
+                                {{ conf }}{% unless forloop.last %}, {% endunless %}
+                                {% endfor %}
+                            </div>
+                            {% endif %}
+                        </div>
+                    </div>
+                    {% endif %}
+
                     {% if site.data.profile.awards %}
                     <div class="col-md-6">
-                        <div class="mx-2 my-1">
-                            <h6>Honors & Awards</h6>
-                            <ul class="list small pl-3 mb-1">
+                        <div class="mx-2 mb-3">
+                            <h6 class="mb-2">Selected Awards</h6>
+                            <ul class="list small pl-3 mb-0">
                                 {% for item in site.data.profile.awards %}
                                 <li>
                                     <div class="d-flex">
@@ -63,6 +87,19 @@
                                 </li>
                                 {% endfor %}
                             </ul>
+                        </div>
+                    </div>
+                    {% endif %}
+
+                    {% if site.data.profile.mentored %}
+                    <div class="col-md-6">
+                        <div class="mx-2 mb-3">
+                            <h6 class="mb-2">Mentored</h6>
+                            <div class="small mb-0">
+                                {% for item in site.data.profile.mentored %}
+                                {% if item.link %}<a href="{{ item.link }}" target="_blank" rel="noopener"><strong>{{ item.name }}</strong></a>{% else %}<strong>{{ item.name }}</strong>{% endif %} ({{ item.affiliation }}){% unless forloop.last %}, {% endunless %}
+                                {% endfor %}
+                            </div>
                         </div>
                     </div>
                     {% endif %}

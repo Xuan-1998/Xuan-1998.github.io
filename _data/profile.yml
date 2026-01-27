@@ -57,7 +57,7 @@ experience:
 - name: Lawrence Berkeley National Laboratory
   logo: /assets/images/badges/lbnl.png
   position: Graduate Student Researcher
-  date: Jun. 2021 - June. 2023
+  date: Jun. 2021 - Jun. 2023
 
 awards:
   - name: Google Software Engineering Evolution and Transformation (SWEETY) Award
@@ -70,10 +70,46 @@ awards:
     date: 2022
   - name: Joseph M. Sussman Best Paper Prize
     date: 2021
-  - name: Gold Award, 6th China International “Internet+” College Students’ Innovation and Entrepreneurship Competition
+  - name: Gold Award, 6th China International "Internet+" College Students' Innovation and Entrepreneurship Competition
     date: 2020
   - name: Outstanding Student Leader, Tongji University
     date: 2018
   - name: Shanghai Municipal Innovation and Entrepreneurship Project Award
     date: 2017
 
+academic_services:
+  journal_referees:
+    - IEEE Transactions on Intelligent Transportation Systems
+    - Frontiers in Psychology
+    - Scientific Reports
+  conference_referees:
+    - ICLR 2025
+    - AAAI 2025
+    - ITSC 2025
+    - NeurIPS 2025
+    - TRB Annual Meeting 2026
+    - ICML 2026
+    - CVPR 2026
+
+mentored:
+  - name: Yuhan Tang
+    affiliation: MIT PhD
+    link: https://scholar.google.com/citations?user=SrVt6pgAAAAJ&hl=en
+  - name: Yibo Zhao
+    affiliation: MIT Research Affiliate
+    link: https://yibozh.github.io/
+  - name: Junzhe Cao
+    affiliation: ESOP Scholar 2024 @ ETH Zürich
+    link: https://www.linkedin.com/in/junzhecao/
+  - name: Xinkai Zou
+    affiliation: UCSD CS Master
+    link: https://scholar.google.com/citations?user=cHQSO10AAAAJ&hl=en
+  - name: Jiaying Li
+    affiliation: CMU CS Master
+    link: https://www.linkedin.com/in/jiaying-li-537950233/
+  - name: Luze Sun
+    affiliation: UPenn CS Master
+    link: https://www.linkedin.com/in/luze-sun-45624a1b7/
+  - name: Jieying Zhang
+    affiliation: Duke University ECE Master
+    link: https://www.linkedin.com/in/jz560/
