@@ -13,6 +13,6 @@ authors:
   - Heather Miller
 links:
   Preprint: https://arxiv.org/abs/2405.15525
-  Citation: https://scholar.google.com/scholar?cites=12
+  Citation: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=YiUWYl0AAAAJ&citation_for_view=YiUWYl0AAAAJ:GnPB-g6toBAC
 cover: /assets/images/covers/smt.png
 ---

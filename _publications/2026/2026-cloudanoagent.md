@@ -16,6 +16,6 @@ authors:
   - Parv Kapoor
   - Jiahua Zhao
 links:
-  Preprint: https://arxiv.org/abs/2508.xxxxx
+  Preprint: https://ui.adsabs.harvard.edu/abs/2025arXiv250801844Z/abstract
 cover: /assets/images/covers/cloudanoagent.png
 ---
