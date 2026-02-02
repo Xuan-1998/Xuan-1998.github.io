@@ -3,9 +3,9 @@ title:          "RAST-MoE-RL: A Regime-Aware Spatio-Temporal MoE Framework for D
 date:           2025-12-24 00:00:00 +0800
 selected:       true
 pub_pre:        "Under review with "
-pub:            "ICLR 2026"
-pub_post:       "."
-pub_date:       "2025"
+pub:            "ICML 2026"
+# pub_post:       "."
+# pub_date:       "2025"
 # abstract: >-
 #   Explores regime-aware mixture-of-experts reinforcement learning for large-scale ride-hailing optimization.
 authors:

@@ -3,9 +3,9 @@ title:          "CloudAnoAgent: Anomaly Detection for Cloud Sites via LLM Agent 
 date:           2025-12-23 00:00:00 +0800
 selected:       true
 pub_pre:        "Under review with "
-pub:            "ICLR 2026"
-pub_post:       "."
-pub_date:       "2025"
+pub:            "ICLR 2026 Trustworthy AI"
+# pub_post:       "."
+# pub_date:       "2025"
 abstract: >-
   Proposes CloudAnoAgent, the first neuro-symbolic LLM-based agent for anomaly detection in cloud environments that jointly processes structured metrics and textual log data, leveraging symbolic verification to validate detection hypotheses and reduce false positive rates.
 authors:

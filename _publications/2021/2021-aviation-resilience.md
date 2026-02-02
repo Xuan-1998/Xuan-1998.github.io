@@ -1,7 +1,7 @@
 ---
 title:          "Quantifying the resilience of the US domestic aviation network during the COVID-19 pandemic"
 date:           2021-04-12 00:00:00 +0800
-selected:       true
+selected:       false
 pub:            "Frontiers in Built Environment"
 pub_date:       "2021"
 abstract: >-
