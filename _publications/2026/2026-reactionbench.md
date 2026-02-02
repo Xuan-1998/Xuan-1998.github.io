@@ -2,8 +2,8 @@
 title:          "ReactionBench: Evaluating Models on Fine-Grained Human Reaction Understanding from Video Stimuli"
 date:           2025-12-25 00:00:00 +0800
 selected:       true
-# pub_pre:        "Under review with "
-# pub:            "CVPR 2026"
+pub_pre:        "Under review with "
+pub:            "CVPR"
 # pub_post:       "."
 pub_date:       "2026"
 # abstract: >-
