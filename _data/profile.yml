@@ -24,7 +24,7 @@ short_bio_text_justify: false
 short_bio: >-
   <p>
   
-    I am a PhD graduated from the University of California, Berkeley who are interested in high performance computing and artificial intelligence. I was advised by <a href="https://people.eecs.berkeley.edu/~demmel/" target="_blank" rel="noopener">Prof. James Demmel</a>,
+    I am a Ph.D. graduated from the University of California, Berkeley who are interested in high performance computing and artificial intelligence. I was advised by <a href="https://people.eecs.berkeley.edu/~demmel/" target="_blank" rel="noopener">Prof. James Demmel</a>,
     <a href="https://ce.berkeley.edu/people/faculty/sengupta" target="_blank" rel="noopener">Prof. Raja Sengupta</a>, and <a href="https://www2.eecs.berkeley.edu/Faculty/Homepages/bayen.html" target="_blank" rel="noopener">Prof. Alexandre Bayen</a>. My research interests ligns in the intersection of high performance computing and artificial intelligence.
   </p>
 
@@ -34,7 +34,7 @@ education:
 - name: University of California, Berkeley
   logo: /assets/images/badges/ucb.png
   position: >-
-    PhD
+    Ph.D.
   date: 2020 - 2024
 - name: Tongji University
   logo: /assets/images/badges/tongji.png
