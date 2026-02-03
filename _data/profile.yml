@@ -82,13 +82,13 @@ academic_services:
     - Frontiers in Psychology
     - Scientific Reports
   conference_referees:
-    - ICLR 2025
-    - NeurIPS 2025
+    - ICLR 2026
     - ICML 2026
-    - AAAI 2025
     - CVPR 2026
+    - NeurIPS 2025
+    - AAAI 2025
     - ITSC 2025
-    - TRB Annual Meeting 2026
+    - TRB Annual Meeting 2025
 
 mentored:
   - name: Yuhan Tang
