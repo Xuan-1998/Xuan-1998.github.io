@@ -97,3 +97,16 @@ div.lazy {
     overflow-y: auto;
 }
 
+/* Increase font size for section headings and content */
+.card-body h6 {
+    font-size: 1.15rem; /* Larger section titles */
+}
+
+.card-body .small {
+    font-size: 0.95rem; /* Increase small text size */
+}
+
+.card-body .media-body > div:first-child {
+    font-size: 1.05rem; /* Larger institution/organization names */
+}
+
