@@ -5,8 +5,8 @@ navbar_name: "Xuan Jiang"
 positions:
 - logo: /assets/images/badges/mit.png  # Logo is optional
   name: Research Affiliate at MIT
-- logo: /assets/images/badges/google.png
-  name: Software Engineer at Google
+- logo: /assets/images/badges/aws.png
+  name: Sr. HPC/AI Engineer at AWS Annapurna Lab
 
 
 email: "xuanj@mit.edu"
@@ -47,10 +47,15 @@ experience:
   position: Research Affiliate at MIT
   date: May. 2023 - Present
 
+- name: AWS Annapurna Lab
+  logo: /assets/images/badges/aws.png
+  position: Sr. HPC/AI Engineer
+  date: Feb. 2026 - Present
+
 - name: Google
   logo: /assets/images/badges/google.png
   position: Software Engineer
-  date: May. 2024 - Present
+  date: May. 2024 - Feb. 2026
 
 
 - name: Lawrence Berkeley National Laboratory
