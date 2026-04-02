@@ -3,7 +3,7 @@ title:          "CloudAnoAgent: Anomaly Detection for Cloud Sites via LLM Agent 
 date:           2025-12-23 00:00:00 +0800
 selected:       true
 pub_pre:        "Under review with "
-pub:            "ICLR Trustworthy AI"
+pub:            "COLM"
 # pub_post:       "."
 pub_date:       "2026"
 abstract: >-
