@@ -24,7 +24,7 @@ zh:
   hero:
     h1_line1: 让大规模计算提速，
     h1_line2: 让智能体边做边学。
-    lede: 我是 xuanxuan（Xuan Jiang），加州大学伯克利分校博士、MIT Research Affiliate。我自 2019 年起从事 AI，研究混合专家模型（MoE）的微调、压缩及大规模运行所需的 GPU 通信，也和 <a href="https://github.com/Human-Agent-Society/reef" target="_blank" rel="noopener">reef</a> 团队一起开发自进化智能体，合著了 <a href="https://arxiv.org/abs/2604.01658" target="_blank" rel="noopener">CORAL</a>（COLM 2026）。
+    lede: 我是 xuanxuan（Xuan Jiang），加州大学伯克利分校博士、MIT Research Affiliate。我自 2019 年起从事 AI，研究混合专家模型（MoE）的微调、压缩及大规模运行所需的 GPU 通信，也和 <a href="https://github.com/Human-Agent-Society/reef" target="_blank" rel="noopener">reef</a> 团队一起开发了自进化智能体，合著了 <a href="https://arxiv.org/abs/2604.01658" target="_blank" rel="noopener">CORAL</a>。
     cta_work: 看看项目
     cta_scholar: Google Scholar
     follow_label: 其他平台
@@ -399,7 +399,7 @@ en:
   hero:
     h1_line1: Make compute fast.
     h1_line2: Let agents learn.
-    lede: I'm Xuan Jiang, a UC Berkeley Ph.D. and Research Affiliate at MIT. I've been in AI since 2019, working on mixture-of-experts models end to end, from fine-tuning and compression to the GPU communication they need at scale. I also build self-evolving agents with the <a href="https://github.com/Human-Agent-Society/reef" target="_blank" rel="noopener">reef</a> team and co-authored <a href="https://arxiv.org/abs/2604.01658" target="_blank" rel="noopener">CORAL</a> (COLM 2026).
+    lede: I'm Xuan Jiang, a UC Berkeley Ph.D. and Research Affiliate at MIT. I've been in AI since 2019, working on mixture-of-experts models end to end, from fine-tuning and compression to the GPU communication they need at scale. I also built self-evolving agents with the <a href="https://github.com/Human-Agent-Society/reef" target="_blank" rel="noopener">reef</a> team and co-authored <a href="https://arxiv.org/abs/2604.01658" target="_blank" rel="noopener">CORAL</a>.
     cta_work: Explore my work
     cta_scholar: Google Scholar
     follow_label: Elsewhere

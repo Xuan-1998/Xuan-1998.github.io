@@ -21,6 +21,16 @@
     }, { passive: true });
     window.addEventListener('resize', update);
     update();
+    const sub = hdr.querySelector('.brand small');
+    if (sub) {
+      const fit = () => {
+        hdr.classList.remove('sub-cut');
+        if (sub.scrollWidth > sub.clientWidth + 1) hdr.classList.add('sub-cut');
+      };
+      window.addEventListener('resize', fit);
+      if (d.fonts && d.fonts.ready) d.fonts.ready.then(fit);
+      fit();
+    }
   }
 
   // Mobile menu.
