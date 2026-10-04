@@ -19,7 +19,7 @@
     </nav>
     <div class="hdr-actions">
       <a class="lang-switch" href="{{ other_url }}" hreflang="{{ O.hreflang }}" lang="{{ O.html }}" aria-label="{{ t.nav.lang_switch | escape }}" data-lang-switch>{{ L.switch_label }}</a>
-      <a class="hdr-cta" href="mailto:{{ pf.email }}">{% include icon.html name='mail' %}<span>{{ t.nav.contact_cta }}</span></a>
+      <a class="hdr-cta" href="{{ pf.links.substack_subscribe }}" target="_blank" rel="noopener">{% include icon.html name='substack' %}<span>{{ t.nav.subscribe_cta }}</span></a>
       <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu" aria-label="{{ t.nav.menu_open | escape }}" data-label-open="{{ t.nav.menu_open | escape }}" data-label-close="{{ t.nav.menu_close | escape }}" data-menu-btn>{% include icon.html name='menu' %}</button>
     </div>
   </div>
@@ -28,7 +28,8 @@
       {{ nav_links }}
     </nav>
     <div class="menu-foot wrap">
-      <a class="btn btn-sea" href="mailto:{{ pf.email }}">{% include icon.html name='mail' %}{{ t.nav.contact_cta }}</a>
+      <a class="btn btn-sea" href="{{ pf.links.substack_subscribe }}" target="_blank" rel="noopener">{% include icon.html name='substack' %}{{ t.hero.cta_subscribe }}</a>
+      <a class="tlink-ink" href="mailto:{{ pf.email }}">{% include icon.html name='mail' %}{{ t.nav.contact_cta }}</a>
     </div>
   </div>
 </header>

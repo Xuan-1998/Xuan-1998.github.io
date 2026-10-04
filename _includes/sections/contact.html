@@ -8,8 +8,8 @@
     <div class="invite-body">
       <p>{{ C.body }}</p>
       <div class="invite-act">
-        <a class="btn btn-ivory" href="mailto:{{ pf.email }}">{% include icon.html name='mail' %}{{ C.email_btn }}</a>
-        <a class="tlink" href="{{ pf.links.scholar }}" target="_blank" rel="noopener">{% include icon.html name='scholar' %}{{ C.scholar_btn }}</a>
+        <a class="btn btn-ivory" href="{{ pf.links.substack_subscribe }}" target="_blank" rel="noopener">{% include icon.html name='substack' %}{{ C.subscribe_btn }}</a>
+        <a class="tlink" href="mailto:{{ pf.email }}">{% include icon.html name='mail' %}{{ C.email_btn }}</a>
         <a class="tlink" href="{{ pf.links.github }}" target="_blank" rel="noopener">{% include icon.html name='github' %}{{ C.github_btn }}</a>
       </div>
     </div>

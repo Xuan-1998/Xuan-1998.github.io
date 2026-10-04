@@ -263,7 +263,7 @@ h2, h3, .path-list span, .st-d, .meta { text-wrap: balance; }
   text-decoration: none;
 }
 .menu-nav a.is-current { color: var(--coral-text); }
-.menu-foot { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 26px; }
+.menu-foot { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px; margin-top: 26px; }
 
 body.menu-open { overflow: hidden; }
 .hdr.menu-open {
@@ -394,12 +394,13 @@ html:not(.js) .menu-btn { display: none !important; }
 .lede a:hover { text-decoration-color: var(--coral-2); }
 .kicker { margin: 0 0 24px; font-size: 14px; line-height: 1.6; color: var(--on-sea-2); }
 .kicker-dot { display: inline-block; width: 7px; height: 7px; margin-right: 10px; vertical-align: 1px; border-radius: 50%; background: var(--coral); box-shadow: 0 0 0 4px rgba(239, 127, 96, .18); }
-.kicker a { display: inline-flex; align-items: center; gap: 5px; margin-left: 10px; white-space: nowrap; color: var(--on-sea); font-weight: 600; text-decoration: underline; text-decoration-color: rgba(244, 239, 229, .45); text-decoration-thickness: 1px; text-underline-offset: 4px; transition: text-decoration-color .2s; }
+.kicker a { display: inline-flex; align-items: center; gap: 5px; margin-left: 6px; white-space: nowrap; color: var(--on-sea); font-weight: 600; text-decoration: underline; text-decoration-color: rgba(244, 239, 229, .45); text-decoration-thickness: 1px; text-underline-offset: 4px; transition: text-decoration-color .2s; }
 .kicker a:hover { text-decoration-color: var(--coral-2); }
 .kicker a .ico { width: 13px; height: 13px; }
 .hero .cta-row { margin-top: 34px; gap: 12px 22px; }
 
 .social { display: flex; align-items: center; gap: 4px; margin-top: 26px; }
+.social a[aria-label="Google Scholar"] .ico { width: 18px; height: 18px; }
 .social .lab { margin-right: 10px; font-size: 14px; color: var(--on-sea-2); }
 .social a {
   display: inline-grid;

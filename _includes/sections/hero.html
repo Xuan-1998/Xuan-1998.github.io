@@ -2,15 +2,16 @@
   <canvas class="hero-net" aria-hidden="true" data-net></canvas>
   <div class="wrap hero-grid">
     <div class="hero-copy">
-      <p class="kicker rise d1"><span class="kicker-dot" aria-hidden="true"></span><span>{{ t.hero.kicker }}</span><a href="{{ pf.links.substack }}" target="_blank" rel="noopener">{{ t.hero.kicker_link }}{% include icon.html name='external' %}</a></p>
+      <p class="kicker rise d1"><span class="kicker-dot" aria-hidden="true"></span><span>{{ t.hero.kicker }}</span> <a href="{{ pf.links.substack_subscribe }}" target="_blank" rel="noopener">{{ t.hero.kicker_link }}{% include icon.html name='external' %}</a></p>
       <h1 id="hero-title" class="rise d1"><span class="ln">{{ t.hero.h1_line1 }}</span><span class="ln">{{ t.hero.h1_line2 }}</span></h1>
       <p class="lede rise d2">{{ t.hero.lede }}</p>
       <div class="cta-row rise d3">
-        <a class="btn btn-ivory" href="#work">{{ t.hero.cta_work }}{% include icon.html name='arrow' %}</a>
-        <a class="tlink" href="{{ pf.links.scholar }}" target="_blank" rel="noopener">{% include icon.html name='scholar' %}{{ t.hero.cta_scholar }}</a>
+        <a class="btn btn-ivory" href="{{ pf.links.substack_subscribe }}" target="_blank" rel="noopener">{% include icon.html name='substack' %}{{ t.hero.cta_subscribe }}</a>
+        <a class="tlink" href="#work">{{ t.hero.cta_work }}{% include icon.html name='arrow' %}</a>
       </div>
       <div class="social rise d4">
         <span class="lab">{{ t.hero.follow_label }}</span>
+        <a href="{{ pf.links.scholar }}" target="_blank" rel="noopener" aria-label="Google Scholar" title="Google Scholar">{% include icon.html name='scholar' %}</a>
         <a href="{{ pf.links.github }}" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub">{% include icon.html name='github' %}</a>
         <a href="{{ pf.links.linkedin }}" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">{% include icon.html name='linkedin' %}</a>
         <a href="{{ pf.links.substack }}" target="_blank" rel="noopener" aria-label="Substack" title="Substack">{% include icon.html name='substack' %}</a>

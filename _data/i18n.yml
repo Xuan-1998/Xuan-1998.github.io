@@ -20,6 +20,7 @@ zh:
     label: 主导航
     email_label: 电子邮件
     comms: GPU 通信
+    subscribe_cta: 免费订阅
   hero:
     h1_line1: 让大规模计算提速，
     h1_line2: 让智能体边做边学。
@@ -28,8 +29,9 @@ zh:
     cta_scholar: Google Scholar
     follow_label: 其他平台
     portrait_alt: xuanxuan 的照片
-    kicker: 新开了 AI 周刊，聊有趣的想法和应用
+    kicker: 新开了免费 AI 周刊，想和同好交交朋友
     kicker_link: 去订阅
+    cta_subscribe: 免费订阅周刊
   hero_alts:
   - line1: 让大规模运算更快，
     line2: 让智能体随做随学。
@@ -301,13 +303,14 @@ zh:
     - ''
     reviewing_label: 审稿
   contact:
-    eyebrow: 联系我
-    h2_line1: 聊聊你的研究
-    h2_line2: 也聊聊代码。
-    body: 如果你也在研究 AI 基础设施、自进化智能体或大规模仿真，欢迎写信至 xuanj@mit.edu，交流研究问题或合作想法。
+    eyebrow: 常联系
+    h2_line1: 订阅我的周刊，
+    h2_line2: 也来交个朋友。
+    body: 我的周刊每周更新，免费订阅。如果你也在做 AI 基础设施、自进化智能体或大规模仿真，欢迎写信到 xuanj@mit.edu 打个招呼。
     email_btn: 给我写信
     scholar_btn: Google Scholar
     github_btn: GitHub
+    subscribe_btn: 免费订阅周刊
   footer:
     who: 'xuanxuan（Xuan Jiang），加州大学伯克利分校博士，MIT Research Affiliate。
 
@@ -367,7 +370,7 @@ zh:
     eyebrow: 每周来信
     h2_line1: 我准备每周写信，
     h2_line2: 聊 AI 里的有趣想法。
-    body: 我准备写 Substack 周刊，主要聊 AI 领域有趣的想法和应用，也聊研究。订阅后，每篇文章都会发到邮箱。
+    body: 我准备在 Substack 写免费周刊，主要聊 AI 领域有趣的想法和应用，也聊研究。订阅后，每篇文章都会发到邮箱。我也想和喜欢这些话题的读者交朋友。
     subscribe_btn: 在 Substack 订阅
     read_btn: 去 Substack 看看
     note: 免费订阅，文章会发到邮箱，可随时退订。
@@ -392,6 +395,7 @@ en:
     label: Main navigation
     email_label: Email
     comms: GPU comms
+    subscribe_cta: Subscribe
   hero:
     h1_line1: Make compute fast.
     h1_line2: Let agents learn.
@@ -400,8 +404,9 @@ en:
     cta_scholar: Google Scholar
     follow_label: Elsewhere
     portrait_alt: Photo of Xuan Jiang
-    kicker: 'New: my weekly newsletter on AI ideas and applications'
+    kicker: 'New: my free weekly AI newsletter, a way to make like-minded friends'
     kicker_link: Subscribe
+    cta_subscribe: Subscribe for free
   hero_alts:
   - line1: Faster computing.
     line2: Learn by doing.
@@ -673,13 +678,14 @@ en:
     - ''
     reviewing_label: Reviewing
   contact:
-    eyebrow: Contact
-    h2_line1: Tell me about
-    h2_line2: your research or code.
-    body: If you work on AI infrastructure, self‑evolving agents, or large-scale simulation, email me at xuanj@mit.edu to discuss research, code, or a possible collaboration.
+    eyebrow: Keep in touch
+    h2_line1: Subscribe, then
+    h2_line2: let's be friends.
+    body: My newsletter is free and comes out every week. If you work on AI infrastructure, self‑evolving agents or large-scale simulation, you can also email me at xuanj@mit.edu to say hi.
     email_btn: Email me
     scholar_btn: Google Scholar
     github_btn: GitHub
+    subscribe_btn: Subscribe for free
   footer:
     who: 'Xuan Jiang, UC Berkeley Ph.D., MIT Research Affiliate.
 
@@ -737,9 +743,9 @@ en:
     card_label: 'Bilibili channel: 同济子豪兄 (Tongji Zihao)'
   writing:
     eyebrow: Weekly
-    h2_line1: I'll write weekly
-    h2_line2: about interesting ideas in AI.
-    body: I'm starting a weekly newsletter on Substack, mainly about interesting ideas and applications in AI, plus research. Subscribers get each post by email.
+    h2_line1: I'll write weekly about
+    h2_line2: interesting ideas in AI.
+    body: I'm starting a free weekly newsletter on Substack, mostly about interesting AI ideas and applications, plus research. Subscribers get each post by email. I hope to make friends with readers who like the same things.
     subscribe_btn: Subscribe on Substack
     read_btn: Visit the newsletter
     note: Get posts by email for free. Unsubscribe any time.
