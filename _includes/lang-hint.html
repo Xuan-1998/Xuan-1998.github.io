@@ -1,0 +1,5 @@
+<aside class="lang-hint" lang="{{ O.html }}" aria-labelledby="lang-hint-text" hidden data-lang-hint="{{ other }}">
+  <span id="lang-hint-text">{{ ot.lang_hint.text }}</span>
+  <a href="{{ O.path | relative_url }}" hreflang="{{ O.hreflang }}">{{ ot.lang_hint.action }}</a>
+  <button type="button" aria-label="{{ ot.lang_hint.dismiss | escape }}" data-lang-hint-close>{% include icon.html name='close' %}</button>
+</aside>

@@ -1,0 +1,717 @@
+# Page text in both languages. Written for the site; edit freely.
+zh:
+  meta:
+    title: xuanxuan（Xuan Jiang）：计算与智能体
+    description: xuanxuan（Xuan Jiang），加州大学伯克利分校博士、MIT Research Affiliate，研究混合专家模型（MoE）微调、压缩与专家并行 GPU 通信，在 reef 团队开发自进化智能体，合著 CORAL。
+    og_alt: xuanxuan：让大规模计算提速，让智能体边做边学。
+    short: xuanxuan · Xuan Jiang
+  nav:
+    work: 开源
+    agents: 智能体
+    papers: 论文
+    research: 研究方向
+    honors: 学术经历
+    contact: 联系
+    contact_cta: 给我写信
+    lang_switch: Read in English
+    menu_open: 打开导航菜单
+    menu_close: 关闭导航菜单
+    skip: 跳转到正文
+    label: 主导航
+    email_label: 电子邮件
+    comms: GPU 通信
+  hero:
+    h1_line1: 让大规模计算提速，
+    h1_line2: 让智能体边做边学。
+    lede: 我是 xuanxuan（Xuan Jiang），加州大学伯克利分校博士、MIT Research Affiliate。我自 2019 年起从事 AI，研究混合专家模型（MoE）的微调、压缩及大规模运行所需的 GPU 通信，也在 reef 团队开发自进化智能体，合著了 CORAL（COLM 2026）。
+    cta_work: 看看项目
+    cta_scholar: Google Scholar
+    follow_label: 其他平台
+    portrait_alt: xuanxuan 的照片
+  hero_alts:
+  - line1: 让大规模运算更快，
+    line2: 让智能体随做随学。
+  - line1: 让海量计算跑得快，
+    line2: 让智能体做了再学。
+  path:
+    label: 时间线
+    note: 从 GPU 交通仿真到 AI 基础设施与智能体
+    items:
+    - org: 同济大学
+      role: 学士，2016 至 2020 年
+    - org: 上海会米策
+      role: AI 科学家，2019 至 2020 年
+    - org: 加州大学<wbr>伯克利分校
+      role: 硕士及博士，2020 至 2024 年
+    - org: 伯克利<wbr>国家实验室
+      role: 研究生研究员，2021 至 2023 年
+    - org: 麻省理工学院
+      role: Research Affiliate，2023 年至今
+    - org: reef 与 CORAL
+      role: reef 团队成员，CORAL 论文合著者，2026 年至今
+  stats:
+    items:
+    - label: 接触 AI 的年数
+    - label: Google Scholar 引用
+    - label: h-index
+    - label: 论文及预印本
+    - label: reef、CORAL 已合并 PR
+    source_note: Google Scholar、GitHub，2026 年 10 月；年限自 2019 年起。
+    venues_label: 发表期刊与会议
+  reel:
+    captions:
+    - CORAL 多连方填充，COLM 2026
+    - Less is MoE 关键维度，EMNLP 2026
+    - ExpertCondenser 专家缩放，COLM 2026
+    - RAST-MoE-RL 网约车强化学习，ICML 2026
+    - CloudAnoAgent 云系统异常检测，COLM 2026 Workshop on AI Measurement
+    - 城市空中交通需求与机队优化，IEEE T-ITS 2026
+    - 垂直起降场选址，Transportation Research Record 2025
+    - LPSim 多 GPU 交通仿真，Transportation Research Part C 2024
+    - Devastator 并行离散事件仿真，ACM SIGSIM PADS 2024
+    - TinT 城市级拥堵预测，Information Fusion 2023
+    pause: 暂停图片滚动
+    play: 继续图片滚动
+    alts:
+    - 网格上的单次尝试基线与 CORAL 多连方填充结果对比
+    - Qwen1.5-MoE 各层各专家中间维度的 Fisher 分数三维图，少数关键维度明显突出
+    - 小型稠密模型、小型 MoE 与推理缩减三种策略及准确率曲线
+    - Transformer 编码器、混合专家层、策略头与价值头
+    - 智能体图与一个示例展示快速检测、日志摘要和慢速检测流程
+    - 飞机跨三维空中 GPU 网格分区，边界有幽灵区，下方可见部分地面层
+    - 旧金山湾区地图上的彩色点标出候选垂直起降场位置
+    - Edge 1 的 a 至 d 车道划为网格，车辆在格间移动
+    - 曲线显示 128 至 32768 核的提交与执行事件数之比
+    - 交通参数张量按块、节点和时间切片生成 token
+    title: 论文插图
+    prev: 上一张图
+    next: 下一张图
+  works:
+    eyebrow: 开源
+    h2_line1: 精选研究
+    h2_line2: 与开源工作。
+    cards:
+      coral:
+        meta: 多智能体研究，COLM 2026
+        title: CORAL
+        desc: CORAL 让长期运行的智能体通过持久记忆共享经验，并异步探索、反思与协作。论文报告了 10 项任务上的新最优结果。
+        go: 阅读论文
+      lpsim:
+        meta: 仿真系统，Transportation Research Part C 2024
+        title: LPSim
+        desc: 我开发了多 GPU 交通仿真器 LPSim：图划分把路网分到多块 GPU，车辆跨分区时经幽灵区迁移；单块 GPU 几秒内就能处理超过 22.3 万个节点的路网。
+        go: 查看代码
+      smt:
+        meta: 模型微调，ICLR 2025
+        title: Sparse Matrix Tuning
+        desc: SMT 只更新梯度中最显著的子矩阵，在 LLaMA 系列模型的多项任务上优于 LoRA 和 DoRA，显存占用比全量微调减少 67%。
+        go: 阅读论文
+      rast:
+        meta: 强化学习，ICML 2026
+        title: RAST-MoE-RL
+        desc: 这个 1200 万参数的模型用状态感知（regime-aware）建模和自注意力混合专家编码器决定网约车订单与车辆批量匹配前等多久，在旧金山真实轨迹上将平均匹配延迟降低 10%，接驾延迟降低 15%。
+        go: 阅读论文
+      icrat:
+        meta: 空中交通，ICRAT 2024
+        title: Wind-Resilient AAM Networks
+        desc: 这套仿真优化框架将风况变化纳入先进空中交通（AAM），结合多座垂直起降场的非线性充电模型优化机队规模与调度。即使航程较短，风也会影响机队规模；航程越长，影响越大。
+        go: 阅读论文
+      lessmoe:
+        meta: MoE 压缩，EMNLP 2026
+        title: Less is MoE
+        desc: 模型能力集中在稀疏的 FFN 中间维度：Qwen1.5-MoE 去掉 135 万维中的 12 维，GSM8K 准确率便骤降。按 Fisher 重要性压缩 50% 后，模型基本保留能力，权重内存减少约 45%，推理吞吐提高 21%。
+        go: 阅读论文
+        alt: 一个专家 FFN 的连线按 Fisher 重要性着色，保留重要性最高的 50% 中间维度，其余删除
+      condenser:
+        meta: MoE 微调，COLM 2026
+        title: ExpertCondenser
+        desc: 该方法无需辅助损失，用偏置驱动稀疏化与始终激活的门控凝聚专家保留长尾专家知识，在数学推理与常识问答上比 DenseMixer 和 ESFT 平均提升超过 2.5%。
+        go: 阅读论文
+        alt: 路由器含可训练偏置，路由专家旁为始终激活的凝聚专家
+    coral_stat: 四个 CORAL 智能体协同进化，降低了 Anthropic 内核工程任务的已知最低周期数。
+    lpsim_alt: 旧金山湾区路网划分给多个 GPU，每个分区用不同颜色表示
+    award_badge: 最佳论文奖
+  agents:
+    eyebrow: 自进化智能体
+    h2_line1: 让智能体
+    h2_line2: 从自己的经验中学习。
+    intro: 我参与 reef、CORAL 两个开源自进化智能体系统的开发。reef 用交互记录和反馈更新模型权重或 harness（提示词、规则和技能）；CORAL 让长期运行的智能体通过共享持久记忆探索与协作。
+    loop_title: reef 的学习循环
+    loop_caption: 按 reef 文档中的流程整理。
+    stages:
+    - name: 服务（Serve）
+      desc: 响应请求并记录交互
+    - name: 观察（Observe）
+      desc: 将反馈匹配到交互记录
+    - name: 改进（Grow）
+      desc: 根据符合条件的记录生成更新
+    - name: 提交（Commit）
+      desc: 评估候选，将通过的更新写入版本历史
+    reef:
+      tag: 开源，团队成员
+      title: reef
+      what: reef 将智能体推理、反馈、学习和版本化发布连接起来。
+      role: 我是团队成员，提交了 25 个 PR，其中 18 个已合并。
+      body: 我为 reef 添加 Claude Code harness 适配器和 CORAL 测试时训练示例，修复训练栈多个问题。我将论文的价值模型预热与学习率用于 SAO 示例，按论文新增批量为 128 的运行，记录结果与局限。
+      repo: 查看代码仓库
+      prs: 查看我的 PR
+    coral:
+      tag: 开源，COLM 2026
+      title: CORAL
+      what: CORAL 是开源自主研究系统，让编程智能体通过共享记忆开展探索与协作。
+      role: 我是 CORAL 论文（COLM 2026）的合著者，提交了 14 个 PR，其中 12 个已合并。
+      body: 我在大语言模型网关的请求日志里记录完整的流式响应，并加了一个提供请求头的回调接口；我也修复了命令行和智能体运行时的问题，并补充了文档。
+      repo: 查看代码仓库
+      paper: 在 arXiv 阅读论文
+      prs: 查看我的 PR
+  papers:
+    eyebrow: 论文记录
+    h2_line1: 发表的论文
+    h2_line2: 与预印本。
+    intro: 论文按时间从新到旧排列，可按主题筛选，也可以只看精选条目。完整的论文与预印本记录请见 Google Scholar。
+    filters:
+      all: 全部
+      agents: 大语言模型与智能体
+      systems: 高性能计算与仿真
+      mobility: 城市与空中交通
+      moe: MoE
+    selected_only: 只看精选论文
+    show_all: 显示全部论文
+    show_less: 收起论文列表
+    labels:
+      paper: 论文
+      arxiv: arXiv
+      code: 代码
+      award: 最佳论文
+      first_author: 第一作者
+      sole_author: 独立作者
+      cites_tpl: 被引 %n 次
+      cite_one_tpl: 被引 %n 次
+    scholar_link: 在 Google Scholar 查看完整记录
+    filters_label: 按论文主题筛选
+    empty: 没有符合筛选条件的论文。
+    equal: 星号表示同等贡献。
+  research:
+    eyebrow: 研究
+    h2: 从模型到系统。
+    rows:
+    - title: MoE 与高效微调
+      thesis: 混合专家模型（MoE）的能力集中于少量 FFN 中间维度，很少被激活的长尾专家仍保留有用知识。我研究在压缩或微调时保留两者，并降低微调的 GPU 显存需求。
+    - title: GPU 通信
+      thesis: 专家并行时，每层都向其他 GPU 分发 token，再合并结果。我为此写内核和传输代码，也支持不保证按序交付的传输。
+    - title: 自进化智能体
+      thesis: 我开发能从自身记录和反馈中持续改进的智能体。它们可以更新模型权重，也可以修改提示词和规则。
+    - title: 高性能计算与仿真
+      thesis: 我从交通仿真开始做系统研究，用多张 GPU 模拟整座城市的交通，也研究城市空中交通的仿真。
+  honors:
+    eyebrow: 学术经历
+    h2: 经历、荣誉与服务。
+    education_label: 教育经历
+    positions_label: 工作与研究经历
+    awards_label: 所获奖项
+    service_label: 学术服务
+    journals_label: 期刊审稿
+    conferences_label: 会议审稿
+    mentoring_label: 学生指导
+    mentoring_note: 我指导过的学生。
+    education:
+    - when: 2016 至 2020 年
+      org: 同济大学
+      text: 学士。
+    - when: 2020 至 2024 年
+      org: 加州大学伯克利分校
+      text: 硕士（2020 至 2021 年）及博士（2021 至 2024 年），研究机器学习与高性能计算。导师为 James Demmel、Raja Sengupta 和 Alexandre Bayen。
+    positions:
+    - when: 2023 年至今
+      org: MIT
+      text: Research Affiliate，与 Jinhua Zhao 和 Haris Koutsopoulos 合作，用高性能仿真器研究复杂系统的强化学习优化；我们也研究用于云系统异常检测的大语言模型智能体。
+    - when: 2022 至 2025 年
+      org: 加州大学伯克利分校
+      text: 研究生研究员，2022 至 2024 年任职于 Aviation Innovation Research（AIR）Lab 和 Cal Unmanned Lab。2022 至 2025 年与 James Demmel 和 Raja Sengupta 合作研究高性能计算，用 GPU 做多模式时间驱动仿真。
+    - when: 2022 至 2023 年
+      org: 华盛顿大学 STAR Lab
+      text: 研究助理，参与 TinT 城市级拥堵预测研究。
+    - when: 2021 至 2023 年
+      org: 伯克利国家实验室
+      text: 研究生研究员。
+    - when: 2019 至 2020 年
+      org: 上海会米策信息科技有限公司
+      text: AI 科学家。
+    awards:
+    - when: '2024'
+      text: ICRAT 最佳论文奖，轨迹与网络方向。
+    - when: '2023'
+      text: ASCE ICTD 交通人工智能委员会优秀专场组织者奖。
+    - when: '2022'
+      text: NSF AI Workshop 第二阶段旅行资助。
+    - when: '2021'
+      text: Joseph M. Sussman 最佳论文奖。
+    - when: '2020'
+      text: 第六届中国国际“互联网+”大学生创新创业大赛金奖。
+    - when: '2019'
+      text: 上海市优秀学生。
+    - when: '2018'
+      text: 上海市创新创业项目奖。
+    - when: '2017'
+      text: 同济大学优秀学生干部。
+    mentees:
+    - now: MIT 博士生
+    - now: UIUC 博士生
+    - now: 耶鲁大学
+    - now: 苏黎世联邦理工学院 ESOP 奖学金获得者（2024）
+    - now: UCSD 计算机科学硕士
+    - now: CMU 计算机科学硕士
+    - now: 美国东北大学计算机科学博士生
+    - now: 杜克大学电子与计算机工程硕士
+    teaching_label: 教学经历
+    teaching:
+    - when: 2022 年秋季
+      org: 加州大学伯克利分校
+      text: 研究生助教（Graduate Student Instructor），课程为 Control and Information Management。
+    - when: 2023 至 2024 年
+      org: 加州大学伯克利分校
+      text: 助教，课程为 Emerging Technologies for Public Health。
+    editorial_label: 编辑与委员会服务
+    editorial:
+    - when: 2024 年
+      org: Frontiers in Built Environment
+      text: 专题编辑（“Advanced Technologies for Aviation Operations and Passenger Experience”）。
+    - when: 2023 至 2024 年
+      org: ASCE
+      text: 交通人工智能委员会成员，兼任其学生分委员会副主席。
+    - when: 2023 至 2024 年
+      org: ASCE
+      text: 慢行交通委员会（Active Transportation Committee）成员。
+    position_link_labels:
+    - MIT JTL 论文列表
+    - 伯克利 AIR 实验室个人主页
+    - ''
+    - ''
+    - ''
+    reviewing_label: 审稿
+  contact:
+    eyebrow: 联系我
+    h2_line1: 聊聊你的研究
+    h2_line2: 也聊聊代码。
+    body: 如果你也在研究 AI 基础设施、自进化智能体或大规模仿真，欢迎写信至 xuanj@mit.edu，交流研究问题或合作想法。
+    email_btn: 给我写信
+    scholar_btn: Google Scholar
+    github_btn: GitHub
+  footer:
+    who: 'xuanxuan（Xuan Jiang），加州大学伯克利分校博士，MIT Research Affiliate。
+
+      我研究混合专家模型、GPU 通信和自进化智能体。'
+    updated: 最近更新
+    links_label: 个人主页链接
+  lang_hint:
+    text: 你也可以用中文阅读本站。
+    action: 切换到中文
+    dismiss: 关闭语言提示
+  notfound:
+    title: 找不到这个页面
+    body: 这个地址没有对应的页面。你可以返回首页，继续查看我的研究与项目。
+    home: 返回首页
+  brand:
+    sub: 高性能计算与智能体
+    home_label: xuanxuan，返回顶部
+  redirect:
+    title: 论文列表已移至首页
+    body: 论文列表已移至首页的论文部分，浏览器正在跳转到那里。
+    link: 立即前往论文列表
+  comms:
+    eyebrow: 开源贡献
+    h2_line1: 专家并行所需的
+    h2_line2: GPU 通信。
+    intro: 下面是我署名提交的混合专家模型（MoE）通信层开源贡献，每一行都链接到对应的上游项目。
+    items:
+    - name: DeepEP
+      status: PR 待合并
+      line: 新增可选分发与合并内核，仅需弱信号，让混合模式支持不保证按序交付的传输。
+      link: '查看 PR #732'
+    - name: NVSHMEM
+      status: 随 3.7.0 发布
+      line: 我与 NVSHMEM 团队为 3.7.0 改进 libfabric 传输的 RMA 批处理，修复信号路径死锁与卡死，排空完成队列并做发布前测试。
+      link: 我的提交
+    - name: vLLM
+      status: 已合并
+      line: 修复 NCCL 2.31 及以后版本的主机堆损坏。
+      link: '查看 PR #53008'
+    - name: rdmatop
+      status: 已合并
+      line: 支持无界面 CSV 记录，按亚毫秒间隔采集 RDMA 计数器。
+      link: '查看 PR #48'
+  earlier:
+    eyebrow: 早年的科普工作
+    h2: 帮子豪做 AI 科普。
+    body: 去美国之前，我帮子豪（同济子豪兄）在 B 站做 AI 科普频道。频道现在已有超过 35 万粉丝。
+    channel: 同济子豪兄
+    followers_label: B 站粉丝
+    follow_btn: 在 B 站关注
+    note: 粉丝数截至 2026 年 10 月。
+    card_label: B 站频道：同济子豪兄
+  writing:
+    eyebrow: 每周来信
+    h2_line1: 我准备每周写信，
+    h2_line2: 聊 AI 系统。
+    body: 我准备写 Substack 周刊，聊混合专家模型（MoE）、GPU 通信、自进化智能体的开发与研究。订阅后，每篇文章都会发到邮箱。
+    subscribe_btn: 在 Substack 订阅
+    read_btn: 去 Substack 看看
+    note: 免费订阅，文章会发到邮箱，可随时退订。
+en:
+  meta:
+    title: 'Xuan Jiang: Computing and agents'
+    description: Xuan Jiang is a UC Berkeley Ph.D. and MIT Research Affiliate working on mixture-of-experts fine-tuning, compression, GPU communication for expert parallelism, and self-evolving agents as a reef team member and CORAL co-author.
+    og_alt: 'Xuan Jiang: Make compute fast. Let agents learn.'
+    short: Xuan Jiang
+  nav:
+    work: Open source
+    agents: Agents
+    papers: Papers
+    research: Research
+    honors: Background
+    contact: Contact
+    contact_cta: Email me
+    lang_switch: 切换到中文
+    menu_open: Open navigation menu
+    menu_close: Close navigation menu
+    skip: Skip to content
+    label: Main navigation
+    email_label: Email
+    comms: GPU comms
+  hero:
+    h1_line1: Make compute fast.
+    h1_line2: Let agents learn.
+    lede: I'm Xuan Jiang, a UC Berkeley Ph.D. and Research Affiliate at MIT. I've been in AI since 2019, working on mixture-of-experts models end to end, from fine-tuning and compression to the GPU communication they need at scale. I also build self-evolving agents on the reef team and co-authored CORAL (COLM 2026).
+    cta_work: Explore my work
+    cta_scholar: Google Scholar
+    follow_label: Elsewhere
+    portrait_alt: Photo of Xuan Jiang
+  hero_alts:
+  - line1: Faster computing.
+    line2: Learn by doing.
+  - line1: Compute faster.
+    line2: Agents learn.
+  path:
+    label: Timeline
+    note: From GPU traffic simulation to AI infrastructure and agents
+    items:
+    - org: Tongji University
+      role: B.S., 2016 to 2020
+    - org: Shanghai Huimice
+      role: AI Scientist, 2019 to 2020
+    - org: UC Berkeley
+      role: M.S. and Ph.D., 2020 to 2024
+    - org: Berkeley Lab
+      role: Graduate Student Researcher, 2021 to 2023
+    - org: MIT
+      role: Research Affiliate, 2023 to present
+    - org: reef and CORAL
+      role: reef team, CORAL co-author, 2026 to present
+  stats:
+    items:
+    - label: Years in AI
+    - label: Google Scholar citations
+    - label: h-index
+    - label: Papers and preprints
+    - label: Merged reef/CORAL PRs
+    source_note: Google Scholar and GitHub, October 2026; AI experience counted from 2019.
+    venues_label: Publication venues
+  reel:
+    captions:
+    - CORAL polyomino packing, COLM 2026
+    - Less is MoE critical intermediate dimensions, EMNLP 2026
+    - ExpertCondenser expert scaling strategies, COLM 2026
+    - RAST-MoE-RL ride-hailing reinforcement learning, ICML 2026
+    - CloudAnoAgent neuro-symbolic anomaly detection, COLM 2026 Workshop on AI Measurement
+    - Urban air mobility fleet optimization, IEEE T-ITS 2026
+    - Simulation-based vertiport location optimization, Transportation Research Record 2025
+    - LPSim multi-GPU traffic simulation, Transportation Research Part C 2024
+    - Devastator parallel discrete event simulation, ACM SIGSIM PADS 2024
+    - TinT congestion prediction, Information Fusion 2023
+    pause: Pause figure scrolling
+    play: Resume figure scrolling
+    alts:
+    - Single-attempt baseline and CORAL polyomino packings compared on a grid
+    - 3D Fisher scores across Qwen1.5-MoE experts, layers, and intermediate dimensions, with a few critical dimensions standing out
+    - 'Accuracy curves for three expert scaling strategies: small dense models, small MoE models, and inference reduction'
+    - Transformer encoder, mixture-of-experts layer, and actor and critic heads in the RAST-MoE-RL model
+    - Agent diagram and one example traced through fast detection, log summary, and slow detection
+    - Aircraft cross GPU zones in a 3D air grid, with border ghost zones and partial ground layer below
+    - Map of the San Francisco Bay Area with colored points marking candidate vertiport locations
+    - Edge 1 has lanes a to d divided into cells, with cars moving between them
+    - Plot of committed-to-executed event ratio against core count, from 128 to 32,768
+    - Traffic parameter tensor with block, node, and temporal-slice tokenization
+    title: Figures from my papers
+    prev: Previous figure
+    next: Next figure
+  works:
+    eyebrow: Open source
+    h2_line1: Selected research
+    h2_line2: and open source.
+    cards:
+      coral:
+        meta: Multi-agent research, COLM 2026
+        title: CORAL
+        desc: CORAL lets long-running agents explore, reflect, and collaborate through shared persistent memory and asynchronous execution. The paper reports new state-of-the-art results on 10 tasks.
+        go: Read the paper
+      lpsim:
+        meta: Simulation system, Transportation Research Part C 2024
+        title: LPSim
+        desc: I built LPSim for traffic simulation across multiple GPUs, using graph partitioning and ghost-zone vehicle migration. It handles networks with over 223,000 nodes in seconds on one GPU.
+        go: View the code
+      smt:
+        meta: Model fine-tuning, ICLR 2025
+        title: Sparse Matrix Tuning
+        desc: SMT updates only the most significant sub-matrices selected from gradient updates. It outperforms LoRA and DoRA across tasks on LLaMA-family models, using 67% less GPU memory than full fine-tuning.
+        go: Read the paper
+      rast:
+        meta: Reinforcement learning, ICML 2026
+        title: RAST-MoE-RL
+        desc: RAST-MoE-RL, a 12M-parameter model, uses regime-aware modeling and a self-attention mixture-of-experts encoder to set pre-match waits for batched ride-hailing requests and vehicles, cutting average matching delay by 10% and pickup delay by 15% on real San Francisco trajectories.
+        go: Read the paper
+      icrat:
+        meta: Air mobility, ICRAT 2024
+        title: Wind-Resilient AAM Networks
+        desc: Our simulation-optimization framework models wind variability and nonlinear charging across multiple vertiports to optimize advanced air mobility (AAM) fleet size and scheduling. Wind affects fleet size even on short flights, with larger effects on longer ones.
+        go: Read the paper
+      lessmoe:
+        meta: MoE compression, EMNLP 2026
+        title: Less is MoE
+        desc: 'Capabilities concentrate in sparse FFN intermediate dimensions: in Qwen1.5-MoE, removing 12 of its 1.35M routed-FFN intermediate dimensions collapses GSM8K accuracy. At 50% compression, Fisher-MoE preserves capability with about 45% less weight memory and 21% higher inference throughput.'
+        go: Read the paper
+        alt: An expert FFN with edges colored by Fisher importance; top 50% of intermediate dimensions retained, the rest removed
+      condenser:
+        meta: MoE fine-tuning, COLM 2026
+        title: ExpertCondenser
+        desc: ExpertCondenser fine-tunes MoE models without auxiliary loss, using bias-driven sparsification and always-active gated condenser experts to retain rarely used experts' knowledge. On mathematical reasoning and commonsense QA, it improves on DenseMixer and ESFT by more than 2.5% on average.
+        go: Read the paper
+        alt: Framework with trainable router biases and always-active condenser experts beside routed experts
+    coral_stat: Four co-evolving CORAL agents set a new record on Anthropic's kernel engineering task, measured in cycles; lower is better.
+    lpsim_alt: San Francisco Bay Area road network partitioned across several GPUs, with one color per partition
+    award_badge: Best Paper Award
+  agents:
+    eyebrow: Self-evolving agents
+    h2_line1: Agents learn
+    h2_line2: from what they do.
+    intro: 'I contribute to reef and CORAL, two open-source systems for self-evolving agents. reef uses interaction records and feedback to update model weights or the agent''s harness: prompts, rules, and skills. CORAL runs long-lived agents that explore and collaborate through shared persistent memory.'
+    loop_title: The reef learning loop
+    loop_caption: Based on the learning loop documented by reef.
+    stages:
+    - name: Serve
+      desc: Serve requests and record interactions.
+    - name: Observe
+      desc: Match feedback to recorded interactions.
+    - name: Grow
+      desc: Produce updates from eligible records.
+    - name: Commit
+      desc: Evaluate candidates and publish accepted updates to version history.
+    reef:
+      tag: Open source, team member
+      title: reef
+      what: reef connects agent inference, feedback, learning, and versioned delivery so agents can continually improve.
+      role: I'm on the team, with 25 PRs authored and 18 merged.
+      body: I added reef's Claude Code harness adapter and CORAL test-time-training example, and fixed training-stack bugs. For SAO, an asynchronous RL method from another group's paper, I added the paper's value-model warmup and learning rate to reef's example, plus batch-128 runs configured like the paper's, documenting results and limitations.
+      repo: View the repository
+      prs: My pull requests
+    coral:
+      tag: Open source, COLM 2026
+      title: CORAL
+      what: CORAL is an open-source research system where autonomous coding agents explore and collaborate through shared persistent memory.
+      role: I co-authored the COLM 2026 paper and authored 14 PRs, with 12 merged.
+      body: I updated the LLM gateway to record streamed responses in request logs and added a hook for supplying headers. I also fixed CLI and agent runtime issues and updated the docs.
+      repo: View the repository
+      paper: Read on arXiv
+      prs: My pull requests
+  papers:
+    eyebrow: Publications
+    h2_line1: Published papers
+    h2_line2: and preprints.
+    intro: Papers are listed newest first. Filter by topic or show only selected work, and visit Google Scholar for the complete record of papers and preprints.
+    filters:
+      all: All
+      agents: LLMs and agents
+      systems: HPC and simulation
+      mobility: Urban and air mobility
+      moe: MoE
+    selected_only: Selected papers only
+    show_all: Show all papers
+    show_less: Show fewer papers
+    labels:
+      paper: Paper
+      arxiv: arXiv
+      code: Code
+      award: Best paper
+      first_author: First author
+      sole_author: Sole author
+      cites_tpl: '%n citations'
+      cite_one_tpl: '%n citation'
+    scholar_link: Full record on Google Scholar
+    filters_label: Filter papers by topic
+    empty: No papers match these filters.
+    equal: An asterisk indicates equal contribution.
+  research:
+    eyebrow: Research
+    h2: From models to systems.
+    rows:
+    - title: MoE and efficient fine-tuning
+      thesis: Capabilities in MoE models concentrate in a few FFN intermediate dimensions; rarely activated, long-tailed experts retain useful knowledge. I work on preserving both during compression or fine-tuning, and on fine-tuning that uses less GPU memory.
+    - title: GPU communication
+      thesis: Each MoE layer dispatches tokens to experts on other GPUs and combines their results. I write kernels and transport code for this path, including kernels for transports without ordered delivery.
+    - title: Self-evolving agents
+      thesis: I build agents that use their own records and feedback to keep improving. Updates can change model weights or revise the prompts and rules they follow.
+    - title: HPC and simulation
+      thesis: My systems work began with simulation. I built a simulator that runs city-scale traffic across several GPUs, with applications in urban and air mobility.
+  honors:
+    eyebrow: Academic background
+    h2: Background, honors, and service.
+    education_label: Education
+    positions_label: Experience
+    awards_label: Awards
+    service_label: Academic service
+    journals_label: Journal reviewing
+    conferences_label: Conference reviewing
+    mentoring_label: Mentoring
+    mentoring_note: Students I have mentored.
+    education:
+    - when: 2016 to 2020
+      org: Tongji University
+      text: B.S.
+    - when: 2020 to 2024
+      org: UC Berkeley
+      text: M.S. (2020 to 2021) and Ph.D. (2021 to 2024). Specialized in machine learning and HPC, advised by James Demmel, Raja Sengupta, and Alexandre Bayen.
+    positions:
+    - when: 2023 to present
+      org: MIT
+      text: Research Affiliate. With Jinhua Zhao and Haris Koutsopoulos, I work on reinforcement learning to optimize complex systems using HPC-based simulators and on LLM agents for cloud anomaly detection.
+    - when: 2022 to 2025
+      org: UC Berkeley
+      text: Graduate Student Researcher at the Aviation Innovation Research (AIR) Lab and the Cal Unmanned Lab (2022 to 2024). Researched HPC with James Demmel and Raja Sengupta using GPU-based multimodal time-driven simulation (2022 to 2025).
+    - when: 2022 to 2023
+      org: University of Washington STAR Lab
+      text: Research Assistant. Worked on TinT for city-wide congestion prediction.
+    - when: 2021 to 2023
+      org: Lawrence Berkeley National Laboratory
+      text: Graduate Student Researcher.
+    - when: 2019 to 2020
+      org: Shanghai Huimice Information Technology Co., Ltd.
+      text: AI Scientist.
+    awards:
+    - when: '2024'
+      text: ICRAT Best Paper Award, Trajectories and Networks track.
+    - when: '2023'
+      text: ASCE ICTD AI in Transportation Committee Outstanding Session Organizer Award.
+    - when: '2022'
+      text: NSF AI Workshop Phase II Travel Award.
+    - when: '2021'
+      text: Joseph M. Sussman Best Paper Prize.
+    - when: '2020'
+      text: Gold Award, 6th China International "Internet+" College Students' Innovation and Entrepreneurship Competition.
+    - when: '2019'
+      text: Outstanding Student of Shanghai.
+    - when: '2018'
+      text: Shanghai Municipal Innovation and Entrepreneurship Project Award.
+    - when: '2017'
+      text: Outstanding Student Leader, Tongji University.
+    mentees:
+    - now: MIT, Ph.D. student
+    - now: UIUC, Ph.D. student
+    - now: Yale University
+    - now: ETH Zurich, ESOP Scholar 2024
+    - now: UCSD, CS master's
+    - now: CMU, CS master's
+    - now: Northeastern University, CS Ph.D. student
+    - now: Duke, ECE master's
+    teaching_label: Teaching
+    teaching:
+    - when: Fall 2022
+      org: UC Berkeley
+      text: Graduate Student Instructor for Control and Information Management.
+    - when: 2023 to 2024
+      org: UC Berkeley
+      text: Teaching Assistant for Emerging Technologies for Public Health.
+    editorial_label: Editorial and committee service
+    editorial:
+    - when: '2024'
+      org: Frontiers in Built Environment
+      text: Topic Editor for the research topic "Advanced Technologies for Aviation Operations and Passenger Experience".
+    - when: 2023 to 2024
+      org: ASCE
+      text: Member of the Artificial Intelligence in Transportation Committee and vice chair of its Student Subcommittee.
+    - when: 2023 to 2024
+      org: ASCE
+      text: Member of the Active Transportation Committee.
+    position_link_labels:
+    - MIT JTL publication list
+    - Berkeley AIR Lab profile
+    - ''
+    - ''
+    - ''
+    reviewing_label: Reviewing
+  contact:
+    eyebrow: Contact
+    h2_line1: Tell me about
+    h2_line2: your research or code.
+    body: If you work on AI infrastructure, self‑evolving agents, or large-scale simulation, email me at xuanj@mit.edu to discuss research, code, or a possible collaboration.
+    email_btn: Email me
+    scholar_btn: Google Scholar
+    github_btn: GitHub
+  footer:
+    who: 'Xuan Jiang, UC Berkeley Ph.D., MIT Research Affiliate.
+
+      I work on MoE models, GPU communication and self-evolving agents.'
+    updated: Last updated
+    links_label: Profile links
+  lang_hint:
+    text: You can also read this page in English.
+    action: Read in English
+    dismiss: Dismiss language suggestion
+  notfound:
+    title: Page not found
+    body: There's no page at this address. You can return to the homepage to browse my research and projects.
+    home: Back to home
+  brand:
+    sub: High performance computing and agents
+    home_label: Xuan Jiang, back to top
+  redirect:
+    title: Papers have moved to the homepage
+    body: The paper list has moved to the papers section of the homepage, and your browser is redirecting you there.
+    link: Go to papers now
+  comms:
+    eyebrow: Open-source contributions
+    h2_line1: GPU communication
+    h2_line2: for MoE.
+    intro: These are my public contributions to the communication layer for MoE, submitted under my own name. Each row links to the upstream project.
+    items:
+    - name: DeepEP
+      status: Open pull request
+      line: Adds opt-in dispatch and combine kernels needing only weak signals, enabling hybrid mode on transports without ordered delivery.
+      link: 'Pull request #732'
+    - name: NVSHMEM
+      status: Released in NVSHMEM 3.7.0
+      line: 'Worked with the NVSHMEM team on libfabric transport: RMA batching, signal-path deadlock and hang fixes, completion-queue draining, and pre-release testing for 3.7.0.'
+      link: My commits
+    - name: vLLM
+      status: Merged
+      line: Fixes host heap corruption with NCCL 2.31 and later.
+      link: 'Pull request #53008'
+    - name: rdmatop
+      status: Merged
+      line: Adds headless CSV recording of RDMA counters at sub-millisecond sampling intervals.
+      link: 'Pull request #48'
+  earlier:
+    eyebrow: Earlier work
+    h2: Helping build an AI science channel.
+    body: Before moving to the US, I helped Zihao (同济子豪兄) build his AI popular-science channel on Bilibili. The channel now has more than 350,000 followers.
+    channel: 同济子豪兄 (Tongji Zihao)
+    followers_label: Bilibili followers
+    follow_btn: Follow on Bilibili
+    note: Follower count from October 2026.
+    card_label: 'Bilibili channel: 同济子豪兄 (Tongji Zihao)'
+  writing:
+    eyebrow: Weekly
+    h2_line1: I'll write weekly
+    h2_line2: about AI systems.
+    body: I'm starting a weekly newsletter on Substack about building AI systems, including mixture-of-experts models, GPU communication and self-evolving agents, and about research. Subscribers get each post by email.
+    subscribe_btn: Subscribe on Substack
+    read_btn: Visit the newsletter
+    note: Get posts by email for free. Unsubscribe any time.

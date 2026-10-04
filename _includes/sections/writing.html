@@ -1,0 +1,17 @@
+{%- assign W = t.writing -%}
+<section class="sec writing" id="writing" aria-labelledby="writing-title">
+  <div class="wrap">
+    <div class="letter rv">
+      <div class="letter-copy">
+        <div class="eyebrow">{{ W.eyebrow }}</div>
+        <h2 id="writing-title"><span class="ln">{{ W.h2_line1 }}</span><span class="ln">{{ W.h2_line2 }}</span></h2>
+        <p>{{ W.body }}</p>
+      </div>
+      <div class="letter-act">
+        <a class="btn btn-sea" href="{{ pf.links.substack_subscribe }}" target="_blank" rel="noopener">{% include icon.html name='substack' %}{{ W.subscribe_btn }}</a>
+        <a class="letter-read" href="{{ pf.links.substack }}" target="_blank" rel="noopener">{{ W.read_btn }}{% include icon.html name='external' %}</a>
+        <p class="letter-note">{{ W.note }}</p>
+      </div>
+    </div>
+  </div>
+</section>

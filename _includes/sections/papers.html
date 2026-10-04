@@ -1,0 +1,64 @@
+{%- assign P = t.papers -%}
+{%- assign papers = site.data.papers -%}
+<section class="sec papers" id="papers" data-spy="papers" aria-labelledby="papers-title">
+  <div class="wrap">
+    <div class="head rv">
+      <div>
+        <div class="eyebrow">{{ P.eyebrow }}</div>
+        <h2 id="papers-title"><span class="ln">{{ P.h2_line1 }}</span><span class="ln">{{ P.h2_line2 }}</span></h2>
+      </div>
+      <p>{{ P.intro }}</p>
+    </div>
+    <div class="pub-tools" hidden data-pub-tools>
+      <div class="chips" role="group" aria-label="{{ P.filters_label | escape }}">
+        <button class="chip" type="button" aria-pressed="true" data-topic="all">{{ P.filters.all }}</button>
+        <button class="chip" type="button" aria-pressed="false" data-topic="moe">{{ P.filters.moe }}</button>
+        <button class="chip" type="button" aria-pressed="false" data-topic="agents">{{ P.filters.agents }}</button>
+        <button class="chip" type="button" aria-pressed="false" data-topic="systems">{{ P.filters.systems }}</button>
+        <button class="chip" type="button" aria-pressed="false" data-topic="mobility">{{ P.filters.mobility }}</button>
+      </div>
+      <button class="sel-toggle" type="button" aria-pressed="false" data-sel-toggle><span class="sw" aria-hidden="true"></span>{{ P.selected_only }}</button>
+    </div>
+    <ol class="pubs" id="pub-list" data-pubs>
+      {%- assign prev = '' -%}
+      {%- for p in papers %}
+      {%- capture yr %}{{ p.year }}{% endcapture %}
+      <li class="pub{% if yr != prev %} is-first{% endif %}" data-topics="{{ p.topics | join: ' ' }}" data-year="{{ p.year }}"{% if p.selected %} data-selected{% endif %}>
+        <div class="pub-year" aria-hidden="true">{{ p.year }}</div>
+        <div class="pub-main">
+          {%- assign main_link = p.links.paper | default: p.links.arxiv %}
+          <h3 class="pub-title"><a href="{{ main_link }}" target="_blank" rel="noopener">{{ p.title }}</a></h3>
+          <p class="pub-authors">
+            {%- for name in p.authors -%}
+            {%- assign url = site.data.authors[name] -%}
+            {%- if name == pf.name -%}<b class="me">{{ name }}{% if p.equal contains name %}*{% endif %}</b>
+            {%- elsif url -%}<a href="{{ url }}" target="_blank" rel="noopener">{{ name }}</a>{% if p.equal contains name %}*{% endif %}
+            {%- else -%}{{ name }}{% if p.equal contains name %}*{% endif %}
+            {%- endif -%}
+            {%- unless forloop.last %}, {% endunless -%}
+            {%- endfor -%}
+          </p>
+          <p class="pub-venue"><span class="v">{{ p.venue }}</span>, {{ p.year }}
+            {%- if p.award %}<span class="pub-flag award">{{ P.labels.award }}</span>{% endif %}
+            {%- if p.sole_author %}<span class="pub-flag">{{ P.labels.sole_author }}</span>{% elsif p.first_author %}<span class="pub-flag">{{ P.labels.first_author }}</span>{% endif %}</p>
+        </div>
+        <div class="pub-side">
+          <div class="pub-links">
+            {%- if p.links.paper %}<a href="{{ p.links.paper }}" target="_blank" rel="noopener">{{ P.labels.paper }}</a>{% endif %}
+            {%- if p.links.arxiv %}<a href="{{ p.links.arxiv }}" target="_blank" rel="noopener">{{ P.labels.arxiv }}</a>{% endif %}
+            {%- if p.links.code %}<a href="{{ p.links.code }}" target="_blank" rel="noopener">{{ P.labels.code }}</a>{% endif %}
+          </div>
+          {%- if p.cites %}{% capture n %}{{ p.cites }}{% endcapture %}<div class="pub-cites">{% if p.cites == 1 %}{{ P.labels.cite_one_tpl | replace: '%n', n }}{% else %}{{ P.labels.cites_tpl | replace: '%n', n }}{% endif %}</div>{% endif %}
+        </div>
+      </li>
+      {%- assign prev = yr -%}
+      {%- endfor %}
+    </ol>
+    <p class="pub-empty" hidden data-pub-empty>{{ P.empty }}</p>
+    <div class="pub-more">
+      <button class="btn btn-line-ink" type="button" hidden aria-expanded="false" aria-controls="pub-list" data-pub-more data-label-more="{{ P.show_all | escape }}" data-label-less="{{ P.show_less | escape }}">{{ P.show_all }}</button>
+      <a class="pub-scholar" href="{{ pf.links.scholar }}" target="_blank" rel="noopener">{% include icon.html name='scholar' %}{{ P.scholar_link }}{% include icon.html name='external' %}</a>
+    </div>
+    <p class="pub-note">{{ P.equal }}</p>
+  </div>
+</section>

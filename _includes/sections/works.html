@@ -1,0 +1,65 @@
+{%- assign c = t.works.cards -%}
+<section class="sec works" id="work" data-spy="work" aria-labelledby="work-title">
+  <div class="wrap">
+    <div class="head head-solo rv">
+      <div>
+        <div class="eyebrow">{{ t.works.eyebrow }}</div>
+        <h2 id="work-title"><span class="ln">{{ t.works.h2_line1 }}</span><span class="ln">{{ t.works.h2_line2 }}</span></h2>
+      </div>
+    </div>
+
+    <a class="feature rv" href="{{ pf.links.coral_paper }}" target="_blank" rel="noopener">
+      <div class="feature-text">
+        <div class="meta">{{ c.coral.meta }}</div>
+        <h3>{{ c.coral.title }}</h3>
+        <p>{{ c.coral.desc }}</p>
+        <span class="go">{{ c.coral.go }}{% include icon.html name='external' %}</span>
+      </div>
+      <div class="feature-art">
+        <div class="coral-stat">
+          <div class="coral-num"><span class="from">1363</span><span class="to-arrow" aria-hidden="true">→</span><span class="to">1103</span></div>
+          <p class="coral-cap">{{ t.works.coral_stat }}</p>
+        </div>
+      </div>
+    </a>
+
+    <div class="pair">
+      {%- assign pair = 'lessmoe,condenser' | split: ',' %}
+      {%- for k in pair %}
+      {%- assign card = c[k] %}
+      {%- capture img_key %}{{ k }}-card{% endcapture %}
+      {%- if k == 'lessmoe' %}{% assign href = pf.links.lessmoe_paper %}{% else %}{% assign href = pf.links.condenser_paper %}{% endif %}
+      <a class="piece rv" href="{{ href }}" target="_blank" rel="noopener">
+        <div class="piece-fig"><img src="{{ '/assets/img/fig/' | append: img_key | append: '.webp' | relative_url }}" alt="{{ card.alt | escape }}" width="{{ site.data.assets[img_key].w }}" height="{{ site.data.assets[img_key].h }}" loading="lazy" decoding="async"></div>
+        <div class="meta">{{ card.meta }}</div>
+        <h3>{{ card.title }}</h3>
+        <p>{{ card.desc }}</p>
+        <span class="go">{{ card.go }}{% include icon.html name='external' %}</span>
+      </a>
+      {%- endfor %}
+    </div>
+
+    <ol class="plist">
+      {%- assign rows = 'lpsim,smt,rast,icrat' | split: ',' %}
+      {%- for k in rows %}
+      {%- assign card = c[k] %}
+      {%- case k %}
+        {%- when 'lpsim' %}{% assign href = pf.links.lpsim %}
+        {%- when 'smt' %}{% assign href = pf.links.smt_paper %}
+        {%- when 'rast' %}{% assign href = pf.links.rast_paper %}
+        {%- when 'icrat' %}{% assign href = pf.links.icrat_paper %}
+      {%- endcase %}
+      <li class="prow rv">
+        <a href="{{ href }}" target="_blank" rel="noopener">
+          <span class="prow-head">
+            <span class="meta">{{ card.meta }}{% if k == 'icrat' %}<span class="award">{{ t.works.award_badge }}</span>{% endif %}</span>
+            <b class="prow-title">{{ card.title }}</b>
+          </span>
+          <span class="prow-desc">{{ card.desc }}</span>
+          <span class="prow-go">{{ card.go }}{% if k == 'lpsim' %}{% include icon.html name='github' %}{% else %}{% include icon.html name='external' %}{% endif %}</span>
+        </a>
+      </li>
+      {%- endfor %}
+    </ol>
+  </div>
+</section>

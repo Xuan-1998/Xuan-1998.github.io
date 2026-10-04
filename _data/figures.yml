@@ -1,0 +1,21 @@
+# Figures in the moving strip under the numbers, newest paper first. Same order as reel.captions and reel.alts in i18n.yml.
+- img: coral-polyomino
+  link: https://arxiv.org/abs/2604.01658
+- img: lessmoe-fisher
+  link: https://arxiv.org/abs/2606.05538
+- img: condenser-scaling
+  link: https://arxiv.org/abs/2604.23036
+- img: rast
+  link: https://arxiv.org/abs/2512.13727
+- img: cloudanoagent
+  link: https://arxiv.org/abs/2508.01844v1
+- img: patch
+  link: https://arxiv.org/abs/2510.04186
+- img: vertiport
+  link: https://doi.org/10.1177/03611981241277755
+- img: lpsim
+  link: https://doi.org/10.1016/j.trc.2024.104873
+- img: devastator
+  link: https://doi.org/10.1145/3615979.3656061
+- img: tint
+  link: https://doi.org/10.1016/j.inffus.2023.101837

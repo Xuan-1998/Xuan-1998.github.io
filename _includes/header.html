@@ -1,0 +1,34 @@
+{%- assign other_url = O.path | relative_url -%}
+{%- capture nav_links -%}
+<a href="{{ home }}#research" data-nav="research">{{ t.nav.research }}</a>
+<a href="{{ home }}#work" data-nav="work">{{ t.nav.work }}</a>
+<a href="{{ home }}#comms" data-nav="comms">{{ t.nav.comms }}</a>
+<a href="{{ home }}#agents" data-nav="agents">{{ t.nav.agents }}</a>
+<a href="{{ home }}#papers" data-nav="papers">{{ t.nav.papers }}</a>
+<a href="{{ home }}#background" data-nav="background">{{ t.nav.honors }}</a>
+<a href="{{ home }}#contact" data-nav="contact">{{ t.nav.contact }}</a>
+{%- endcapture -%}
+<header class="hdr{% if page.layout == 'home' %} is-overlay{% endif %}" data-hdr>
+  <div class="hdr-bar wrap">
+    <a class="brand" href="{{ home }}" aria-label="{{ t.brand.home_label | escape }}">
+      {% include mark.svg %}
+      <span class="brand-text"><b>{{ display_name }}</b><small>{{ t.brand.sub }}</small></span>
+    </a>
+    <nav class="nav" aria-label="{{ t.nav.label | escape }}">
+      {{ nav_links }}
+    </nav>
+    <div class="hdr-actions">
+      <a class="lang-switch" href="{{ other_url }}" hreflang="{{ O.hreflang }}" lang="{{ O.html }}" aria-label="{{ t.nav.lang_switch | escape }}" data-lang-switch>{{ L.switch_label }}</a>
+      <a class="hdr-cta" href="mailto:{{ pf.email }}">{% include icon.html name='mail' %}<span>{{ t.nav.contact_cta }}</span></a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu" aria-label="{{ t.nav.menu_open | escape }}" data-label-open="{{ t.nav.menu_open | escape }}" data-label-close="{{ t.nav.menu_close | escape }}" data-menu-btn>{% include icon.html name='menu' %}</button>
+    </div>
+  </div>
+  <div class="menu" id="menu" hidden data-menu>
+    <nav class="menu-nav wrap" aria-label="{{ t.nav.label | escape }}">
+      {{ nav_links }}
+    </nav>
+    <div class="menu-foot wrap">
+      <a class="btn btn-sea" href="mailto:{{ pf.email }}">{% include icon.html name='mail' %}{{ t.nav.contact_cta }}</a>
+    </div>
+  </div>
+</header>

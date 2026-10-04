@@ -1,0 +1,27 @@
+<section class="reel-sec" aria-labelledby="reel-title">
+  <div class="wrap reel-head">
+    <h2 class="reel-title" id="reel-title">{{ t.reel.title }}</h2>
+    <div class="reel-ctrl" hidden data-reel-ctrl>
+    <button class="reel-nav prev" type="button" aria-label="{{ t.reel.prev | escape }}" data-reel-prev>{% include icon.html name='arrow' %}</button>
+    <button class="reel-nav next" type="button" aria-label="{{ t.reel.next | escape }}" data-reel-next>{% include icon.html name='arrow' %}</button>
+    <button class="reel-toggle" type="button" hidden data-reel-toggle data-label-pause="{{ t.reel.pause | escape }}" data-label-play="{{ t.reel.play | escape }}" aria-label="{{ t.reel.pause | escape }}">
+      <span class="i-pause">{% include icon.html name='pause' %}</span><span class="i-play">{% include icon.html name='play' %}</span>
+    </button>
+    </div>
+  </div>
+  <div class="reel" data-reel>
+    <div class="reel-track" data-reel-track>
+      <div class="reel-copy">
+        {%- for f in site.data.figures %}
+        {%- assign a = site.data.assets[f.img] %}
+        <a class="fig" href="{{ f.link }}" target="_blank" rel="noopener" draggable="false">
+          <figure>
+            <div class="fig-img"><img src="{{ '/assets/img/fig/' | append: f.img | append: '.webp' | relative_url }}" alt="{{ t.reel.alts[forloop.index0] | escape }}" width="{{ a.w }}" height="{{ a.h }}" loading="lazy" decoding="async" draggable="false"></div>
+            <figcaption>{{ t.reel.captions[forloop.index0] }}</figcaption>
+          </figure>
+        </a>
+        {%- endfor %}
+      </div>
+    </div>
+  </div>
+</section>

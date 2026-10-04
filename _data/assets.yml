@@ -1,0 +1,44 @@
+# Intrinsic sizes of the images in assets/img, written by the image conversion step.
+cloudanoagent:
+  h: 500
+  w: 800
+condenser-card:
+  h: 586
+  w: 1200
+condenser-scaling:
+  h: 500
+  w: 800
+coral-polyomino:
+  h: 500
+  w: 800
+devastator:
+  h: 500
+  w: 800
+lessmoe-card:
+  h: 640
+  w: 1200
+lessmoe-fisher:
+  h: 500
+  w: 800
+lpsim:
+  h: 500
+  w: 800
+lpsim-bay:
+  h: 460
+  w: 817
+patch:
+  h: 500
+  w: 800
+portrait:
+  h: 461
+  w: 540
+  w2: 1080
+rast:
+  h: 500
+  w: 800
+tint:
+  h: 500
+  w: 800
+vertiport:
+  h: 500
+  w: 800

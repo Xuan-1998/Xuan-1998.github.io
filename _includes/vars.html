@@ -1,0 +1,9 @@
+{%- assign lang = page.lang | default: site.default_lang -%}
+{%- assign t = site.data.i18n[lang] -%}
+{%- assign L = site.langs[lang] -%}
+{%- if lang == 'en' -%}{%- assign other = 'zh' -%}{%- else -%}{%- assign other = 'en' -%}{%- endif -%}
+{%- assign ot = site.data.i18n[other] -%}
+{%- assign O = site.langs[other] -%}
+{%- assign pf = site.data.profile -%}
+{%- if lang == 'zh' and pf.name_zh != '' -%}{%- assign display_name = pf.name_zh -%}{%- else -%}{%- assign display_name = pf.name -%}{%- endif -%}
+{%- assign home = L.path | relative_url -%}

@@ -1,16 +1,31 @@
-<footer class="footer">
-    <div class="{% if page.container_class %}{{ page.container_class }}{% else %}container-lg{% endif %}">
-        <div class="row my-3">
-            <div class="col-6">
-                <div class="text-muted">
-                    <i>Last updated: {{ "now" | date: "%b %Y" }}</i>
-                </div>
-            </div>
-            <div class="col-6">
-                <div class="text-right text-muted">
-                    {{ site.data.display.footer_text }}
-                </div>
-            </div>
-        </div>
+<footer class="ftr">
+  <div class="wrap">
+    <div class="ftr-top">
+      <div class="who">
+        <div><b>{{ display_name }}</b><p>{{ t.footer.who | escape | newline_to_br }}</p></div>
+      </div>
+      <div class="ftr-reach">
+        <ul class="ftr-links" aria-label="{{ t.footer.links_label | escape }}">
+          <li><a href="{{ pf.links.scholar }}" target="_blank" rel="noopener" aria-label="Google Scholar" title="Google Scholar">{% include icon.html name='scholar' %}</a></li>
+          <li><a href="{{ pf.links.github }}" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub">{% include icon.html name='github' %}</a></li>
+          <li><a href="{{ pf.links.linkedin }}" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">{% include icon.html name='linkedin' %}</a></li>
+          <li><a href="{{ pf.links.substack }}" target="_blank" rel="noopener" aria-label="Substack" title="Substack">{% include icon.html name='substack' %}</a></li>
+        </ul>
+        <a class="ftr-mail" href="mailto:{{ pf.email }}">{% include icon.html name='mail' %}{{ pf.email }}</a>
+      </div>
     </div>
+    <div class="ftr-base">
+      <ul class="ftr-nav">
+        <li><a href="{{ home }}#research">{{ t.nav.research }}</a></li>
+        <li><a href="{{ home }}#work">{{ t.nav.work }}</a></li>
+        <li><a href="{{ home }}#comms">{{ t.nav.comms }}</a></li>
+        <li><a href="{{ home }}#agents">{{ t.nav.agents }}</a></li>
+        <li><a href="{{ home }}#papers">{{ t.nav.papers }}</a></li>
+        <li><a href="{{ home }}#background">{{ t.nav.honors }}</a></li>
+        <li><a href="{{ O.path | relative_url }}" hreflang="{{ O.hreflang }}" lang="{{ O.html }}">{{ t.nav.lang_switch }}</a></li>
+      </ul>
+      <span>{{ t.footer.updated }}{% if lang == 'zh' %}：{{ site.time | date: '%Y 年 %-m 月' }}{% else %}: {{ site.time | date: '%B %Y' }}{% endif %}</span>
+      <span>© {{ site.time | date: '%Y' }} {{ pf.name }}</span>
+    </div>
+  </div>
 </footer>

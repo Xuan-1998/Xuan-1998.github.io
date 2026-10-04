@@ -1,0 +1,84 @@
+{%- assign H = t.honors -%}
+<section class="sec bg" id="background" data-spy="background" aria-labelledby="bg-title">
+  <div class="wrap">
+    <div class="head head-solo rv">
+      <div>
+        <div class="eyebrow">{{ H.eyebrow }}</div>
+        <h2 id="bg-title"><span class="ln">{{ H.h2 }}</span></h2>
+      </div>
+    </div>
+    <div class="bg-grid">
+      <div class="bg-col">
+        <div class="bg-block rv">
+          <h3>{{ H.education_label }}</h3>
+          <ul class="tl">
+            {%- for e in H.education %}
+            <li><span class="when">{{ e.when }}</span><span class="text">{% if e.org %}<b class="org">{{ e.org }}</b>{% endif %}{{ e.text }}</span></li>
+            {%- endfor %}
+          </ul>
+        </div>
+        <div class="bg-block rv">
+          <h3>{{ H.positions_label }}</h3>
+          <ul class="tl">
+            {%- for e in H.positions %}
+            {%- assign u = pf.position_links[forloop.index0] %}
+            <li><span class="when">{{ e.when }}</span><span class="text">{% if e.org %}<b class="org">{{ e.org }}{% if u and u != '' %} <a class="tl-link" href="{{ u }}" target="_blank" rel="noopener" aria-label="{{ H.position_link_labels[forloop.index0] | escape }}">{% include icon.html name='external' %}</a>{% endif %}</b>{% endif %}{{ e.text }}</span></li>
+            {%- endfor %}
+          </ul>
+        </div>
+      </div>
+      <div class="bg-col">
+        <div class="bg-block rv">
+          <h3>{{ H.awards_label }}</h3>
+          <ul class="tl tl-awards">
+            {%- for e in H.awards %}
+            <li{% if forloop.first %} class="hl"{% endif %}><span class="when">{{ e.when }}</span><span class="text">{{ e.text }}</span></li>
+            {%- endfor %}
+          </ul>
+        </div>
+        <div class="bg-block rv">
+          <h3>{{ H.teaching_label }}</h3>
+          <ul class="tl">
+            {%- for e in H.teaching %}
+            <li><span class="when">{{ e.when }}</span><span class="text">{% if e.org %}<b class="org">{{ e.org }}</b>{% endif %}{{ e.text }}</span></li>
+            {%- endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="bg-grid bg-grid-2">
+      <div class="bg-block rv">
+        <h3>{{ H.service_label }}</h3>
+        <ul class="tl tl-compact">
+          {%- for e in H.editorial %}
+          <li><span class="when">{{ e.when }}</span><span class="text">{% if e.org %}<b class="org">{{ e.org }}</b>{% endif %}{{ e.text }}</span></li>
+          {%- endfor %}
+        </ul>
+      </div>
+      <div class="bg-block rv">
+        <h3>{{ H.reviewing_label }}</h3>
+        <h4>{{ H.journals_label }}</h4>
+        <ul class="plain">
+          {%- for j in pf.journals %}
+          <li>{{ j }}</li>
+          {%- endfor %}
+        </ul>
+        <h4>{{ H.conferences_label }}</h4>
+        <ul class="inline-list">
+          {%- for j in pf.conferences %}
+          <li>{{ j }}</li>
+          {%- endfor %}
+        </ul>
+      </div>
+      <div class="bg-block rv">
+        <h3>{{ H.mentoring_label }}</h3>
+        <p class="bg-note">{{ H.mentoring_note }}</p>
+        <ul class="mentees">
+          {%- for m in pf.mentees %}
+          <li><a href="{{ m.url }}" target="_blank" rel="noopener">{{ m.name }}</a><span>{{ H.mentees[forloop.index0].now }}</span></li>
+          {%- endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

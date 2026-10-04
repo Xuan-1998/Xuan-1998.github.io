@@ -1,77 +1,62 @@
-# academic-homepage
+# xuan-1998.github.io
 
-![Preview](assets/images/etc/preview.png)
+This repository contains the source for Xuan Jiang's personal website at `https://xuan-1998.github.io/`. English is served at `/` and Chinese at `/zh/`.
 
-[![pages-build-deployment](https://github.com/luost26/academic-homepage/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/luost26/academic-homepage/actions/workflows/pages/pages-build-deployment)
-[![Hits](https://hits.sh/github.com/luost26/academic-homepage.svg?view=today-total)](https://hits.sh/github.com/luost26/academic-homepage/)
-[![GitHub stars](https://img.shields.io/github/stars/luost26/academic-homepage)](https://github.com/luost26/academic-homepage)
-[![GitHub forks](https://img.shields.io/github/forks/luost26/academic-homepage)](https://github.com/luost26/academic-homepage/forks)
-<!--[![W3C Validation](https://img.shields.io/w3c-validation/html?targetUrl=https%3A%2F%2Fluost26.github.io%2Facademic-homepage)](https://validator.nu/?doc=https%3A%2F%2Fluost26.github.io%2Facademic-homepage)-->
+## Build
 
-A GitHub Pages (Jekyll) template for personal academic website. Click [here](https://luost.me/academic-homepage/) to see the demo.
+GitHub Pages builds the site with Jekyll, with no plugins beyond the `github-pages` gem. There is no JavaScript framework; the site uses one stylesheet, `assets/css/site.css`, and one script, `assets/js/site.js`. The page works without JavaScript except for the paper filters and animations.
 
-## User Community
+The hero mark and headline lines wipe in on load, section headings wipe in when they scroll into view, and the figure strip drifts. Everything is static for readers who request reduced motion.
 
-[🏡](https://luost.me/)
-[:star:](https://cch1999.github.io/)
-[:star:](https://kyrrego.github.io/)
-[:star:](https://ced3-han.github.io/)
-[:star:](https://lihengchen.com/)
-[:star:](https://hpwang-whu.github.io/)
-[:star:](https://zhang-yingyi.github.io/)
-[:star:](https://wby24.github.io/)
-[:star:](https://pengfeixu.com/)
-[:star:](https://boqiuphd.github.io/)
-[:star:](https://www.huabing.li/)
-[:star:](https://xiecuiying.github.io/)
-[:star:](https://hannyang.github.io/)
-[:star:](https://king-play.github.io/)
-[🤖](https://andrewcwlee.github.io)
-[:star:](https://laiyao1.github.io)
-[🌜](https://tmsultan.github.io)
-[🚀](https://zaxguo.github.io)
-[:gemini:](https://hongyang-du.github.io)
-[🇻‍🇳](https://thuanz123.github.io)
-[🧬](https://gdalba.github.io/)
-[🇭🇰](https://yhhan.com/)
-[🌔](https://chen-huaneng.github.io/academic)
+## Edit content
 
-:hugs: Feel free to tell us if you are using this template for your website by creating an issue [here](https://github.com/luost26/academic-homepage/issues/new?assignees=&labels=&projects=&template=user-report.md&title=I+am+using+this+template%21).
+| File | What to edit |
+| --- | --- |
+| `_data/i18n.yml` | Every piece of page text, in `zh` and `en` blocks with the same keys. |
+| `_data/profile.yml` | Name, email, profile and project links, `stats`, publication venues, reviewing, and mentees and their links. It also holds `research_tags`, `comms`, `position_links`, `bilibili_followers`, and the links for Substack (`substack`, `substack_subscribe`) and Bilibili. |
+| `_data/papers.yml` | The paper list, newest year first. The order within each year is the display order. |
+| `_data/authors.yml` | Coauthor names that should link to a home page. |
+| `_data/figures.yml` | Detail crops of figures for the moving strip and the paper each links to. Images in `assets/img/fig/` come from papers listed on the site. Captions and alt text are under `reel` in `_data/i18n.yml`. |
 
+The `stats` field holds five numbers: years in AI since 2019, Google Scholar citations, h-index, papers, and merged reef and CORAL pull requests. They are updated by hand and reflect October 2026.
 
-## Need Help?
+The `research_tags` field holds one list of linked tags per research row. Each `comms` item has a repository, link and status (`open`, `merged` or `released`). `position_links` adds an optional link after each research position.
 
-If you run into **any** issues while using this template, or have suggestions for improvements, please don't hesitate to create an issue [here](https://github.com/luost26/academic-homepage/issues/new).
+The `name_zh` field is the name shown in the Chinese header, intro and footer. Paper author lists keep "Xuan Jiang".
 
-### FAQs
-- [Need blogging feature?](https://github.com/luost26/academic-homepage/issues/13#issuecomment-2646371324)
-- [How to show citation count for papers?](https://github.com/luost26/academic-homepage/issues/29#issuecomment-3222496187)
+Edit section text in `_data/i18n.yml` under `research.rows`, `comms`, `writing`, `earlier`, and `honors.teaching` / `honors.editorial`. Lists in `_data/i18n.yml` and `_data/profile.yml` match by position, so keep them in the same order.
 
+Paper fields are `title`, `authors`, `equal` (names marked with an asterisk), `venue`, `year`, `topics` (`moe`, `agents`, `systems`, `mobility`), `selected`, `award`, `first_author`, `sole_author`, `cites`, and `links` (`paper`, `arxiv`, `code`). The paper list has a filter chip for each topic.
 
-## Getting Started
+## Templates and languages
 
-1. First, fork this repository or click the "Use this template" button to create a new repository. The name of the repository should be `<your-github-username>.github.io` (click [here](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages#types-of-github-pages-sites) to learn more about naming a GitHub Pages repository).
-   - If you plan to customize the functionality or style of the template, and do not want to get updates from this repository, choose "Use this template".
-   - If you plan to only edit the content (biography, publications, news, etc.), and would like to get updates from this repository, choose "Fork".
-   - If you want to contribute to this project, fork the repository and submit a pull request.
+- `_layouts/base.html` defines the head, header and footer.
+- `_layouts/home.html` sets the section order: hero, timeline, numbers, figure strip, research, selected work, GPU communication, self-evolving agents, papers, newsletter, background, earlier work (a Bilibili channel), contact.
+- `_includes/sections/*.html` contains one file per section.
 
-### Running Locally (Debug & Preview)
+To change which language is at the root, edit `langs` in `_config.yml` and the `permalink` values in `index.html` and `zh/index.html`.
 
-2. Follow the **step 1** and **step 2** of the instruction [here](https://jekyllrb.com/docs/) to install prerequisites and jekyll.
+Each page links to the other language. Browsers whose first language is the other one get a small, dismissible suggestion after scrolling.
 
-3. Clone your forked repository to your local machine.
+The old `/publications` address forwards to the paper list on the home page.
 
-4. Run the following command in the root directory of the repository:
+## Fonts
 
-   ```bash
-   bundle exec jekyll serve
-   ```
+Subsets of Source Serif 4 and Noto Serif SC are self-hosted in `assets/fonts/` and declared in `_includes/fonts.html`. Both fonts use the SIL Open Font License.
 
-5. Browse to the displayed URL to see the website.
+The Chinese serif has a small core file containing the characters currently used in headings, research row titles and the channel name, and a larger fallback file containing the 3,755 most common characters. The browser downloads the fallback only when the serif text needs it.
 
-### Deploying to GitHub Pages
+After changing Chinese text set in the serif face (headings, research row titles or the channel name), rerun `python tools/build_fonts.py --src DIR`. `DIR` must contain `SourceSerif4-Var.ttf` and `NotoSerifSC-Bold.otf`; the script needs `fonttools`, `brotli` and `pyyaml`.
 
-2. Go to the repository settings and enable GitHub Pages. Detailed instructions can be found [here](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site#creating-your-site).
+## Social preview images
 
-3. Navigate to your created website, and follow the instructions displayed on the homepage (if any) to finalize the setup.
+Run `python tools/build_og.py --src DIR` to render `assets/img/og-en.jpg` and `assets/img/og-zh.jpg` from the hero text. `DIR` needs the same font files plus `portrait-bust.png`. The script needs `pillow` and `pyyaml`.
 
+## Local preview
+
+```sh
+bundle install
+bundle exec jekyll serve
+```
+
+Open `http://127.0.0.1:4000/` for English and `http://127.0.0.1:4000/zh/` for Chinese.

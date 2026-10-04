@@ -1,0 +1,17 @@
+---
+layout: null
+permalink: /sitemap.xml
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+{%- for pair in site.langs %}
+  <url>
+    <loc>{{ pair[1].path | absolute_url }}</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+{%- for alt in site.langs %}
+    <xhtml:link rel="alternate" hreflang="{{ alt[1].hreflang }}" href="{{ alt[1].path | absolute_url }}"/>
+{%- endfor %}
+    <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.langs[site.default_lang].path | absolute_url }}"/>
+  </url>
+{%- endfor %}
+</urlset>

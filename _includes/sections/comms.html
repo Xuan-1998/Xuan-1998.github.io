@@ -1,0 +1,24 @@
+{%- assign K = t.comms -%}
+<section class="sec comms" id="comms" data-spy="comms" aria-labelledby="comms-title">
+  <div class="wrap">
+    <div class="head rv">
+      <div>
+        <div class="eyebrow">{{ K.eyebrow }}</div>
+        <h2 id="comms-title"><span class="ln">{{ K.h2_line1 }}</span><span class="ln">{{ K.h2_line2 }}</span></h2>
+      </div>
+      <p>{{ K.intro }}</p>
+    </div>
+    <ol class="clog">
+      {%- for it in K.items %}
+      {%- assign meta = pf.comms[forloop.index0] %}
+      <li class="clog-row rv">
+        <a href="{{ meta.url }}" target="_blank" rel="noopener">
+          <span class="clog-name"><b>{{ it.name }}</b><code>{{ meta.repo }}</code></span>
+          <span class="clog-line">{{ it.line }}</span>
+          <span class="clog-end"><span class="cstat cstat-{{ meta.status }}">{{ it.status }}</span><span class="clog-link">{{ it.link }}{% include icon.html name='external' %}</span></span>
+        </a>
+      </li>
+      {%- endfor %}
+    </ol>
+  </div>
+</section>

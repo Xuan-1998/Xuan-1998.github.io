@@ -1,0 +1,27 @@
+{%- assign R = t.research -%}
+<section class="sec research" id="research" data-spy="research" aria-labelledby="research-title">
+  <div class="wrap">
+    <div class="head head-solo rv">
+      <div>
+        <div class="eyebrow">{{ R.eyebrow }}</div>
+        <h2 id="research-title"><span class="ln">{{ R.h2 }}</span></h2>
+      </div>
+    </div>
+    <ol class="rrows">
+      {%- for r in R.rows %}
+      <li class="rrow rv">
+        <span class="rrow-n" aria-hidden="true">0{{ forloop.index }}</span>
+        <h3 class="rrow-t">{{ r.title }}</h3>
+        <div class="rrow-body">
+          <p>{{ r.thesis }}</p>
+          <ul class="rrow-tags">
+            {%- for tg in pf.research_tags[forloop.index0] %}
+            <li><a href="{{ tg.url }}" target="_blank" rel="noopener">{{ tg.label }}</a></li>
+            {%- endfor %}
+          </ul>
+        </div>
+      </li>
+      {%- endfor %}
+    </ol>
+  </div>
+</section>

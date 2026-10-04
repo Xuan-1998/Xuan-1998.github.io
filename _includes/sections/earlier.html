@@ -1,0 +1,20 @@
+{%- assign E = t.earlier -%}
+<section class="sec earlier" id="earlier" aria-labelledby="earlier-title">
+  <div class="wrap">
+    <div class="early rv">
+      <div class="early-copy">
+        <div class="eyebrow">{{ E.eyebrow }}</div>
+        <h2 id="earlier-title"><span class="ln">{{ E.h2 }}</span></h2>
+        <p>{{ E.body }}</p>
+      </div>
+      <div class="early-side">
+      <a class="early-fact" href="{{ pf.links.bilibili }}" target="_blank" rel="noopener" aria-label="{{ E.card_label | escape }}">
+        <span class="early-name">{{ E.channel }}</span>
+        <span class="early-count"><span class="early-n">{% if lang == 'zh' %}{{ pf.bilibili_followers | divided_by: 10000 }} 万+{% else %}{{ pf.bilibili_followers | divided_by: 10000 | times: 10 }}K+{% endif %}</span><span class="early-l">{{ E.followers_label }}</span></span>
+        <span class="early-note">{{ E.note }}</span>
+      </a>
+      <a class="tlink-ink" href="{{ pf.links.bilibili }}" target="_blank" rel="noopener">{% include icon.html name='bilibili' %}{{ E.follow_btn }}</a>
+      </div>
+    </div>
+  </div>
+</section>

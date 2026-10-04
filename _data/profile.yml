@@ -1,124 +1,145 @@
-primary_name: "Xuan Jiang"
-secondary_name: ""
-navbar_name: "Xuan Jiang"
+name: Xuan Jiang
+# Name shown on the Chinese page (header, intro, footer). Paper author lists and the copyright keep "Xuan Jiang".
+name_zh: "xuanxuan"
+email: xuanj@mit.edu
 
-positions:
-- logo: /assets/images/badges/mit.png  # Logo is optional
-  name: Research Affiliate at MIT
-- logo: /assets/images/badges/aws.png
-  name: Sr. HPC/AI Engineer at AWS Annapurna Lab
+links:
+  scholar: https://scholar.google.com/citations?user=YiUWYl0AAAAJ&hl=en
+  github: https://github.com/Xuan-1998
+  linkedin: https://www.linkedin.com/in/xuan-jiang-0494a7192/
+  reef: https://github.com/Human-Agent-Society/reef
+  reef_site: https://reefinfra.ai
+  reef_prs: https://github.com/Human-Agent-Society/reef/pulls?q=is%3Apr+author%3AXuan-1998
+  coral: https://github.com/Human-Agent-Society/CORAL
+  coral_paper: https://arxiv.org/abs/2604.01658
+  coral_prs: https://github.com/Human-Agent-Society/CORAL/pulls?q=is%3Apr+author%3AXuan-1998
+  lpsim: https://github.com/Xuan-1998/LPSim
+  lpsim_paper: https://doi.org/10.1016/j.trc.2024.104873
+  smt_paper: https://arxiv.org/abs/2405.15525
+  rast_paper: https://arxiv.org/abs/2512.13727
+  icrat_paper: https://arxiv.org/abs/2405.11118
+  lessmoe_paper: https://arxiv.org/abs/2606.05538
+  lessmoe_code: https://github.com/HectorHHZ/Less-is-MoE
+  condenser_paper: https://arxiv.org/abs/2604.23036
+  condenser_code: https://github.com/HectorHHZ/ExpertCondenser
+  mit_jtl: https://mobility.mit.edu/biblio-author/xuan-jiang/
+  berkeley_air: https://air.berkeley.edu/xuan-jiang/
+  bilibili: https://space.bilibili.com/1900783
+  substack: https://xuanxuan98.substack.com/
+  substack_subscribe: https://xuanxuan98.substack.com/subscribe
 
+# Tags under each research row, same order as research.rows in i18n.yml.
+research_tags:
+  - - {label: "Less is MoE · EMNLP 2026", url: "https://arxiv.org/abs/2606.05538"}
+    - {label: "ExpertCondenser · COLM 2026", url: "https://arxiv.org/abs/2604.23036"}
+    - {label: "SMT · ICLR 2025", url: "https://arxiv.org/abs/2405.15525"}
+    - {label: "RAST-MoE-RL · ICML 2026", url: "https://arxiv.org/abs/2512.13727"}
+  - - {label: "DeepEP #732", url: "https://github.com/deepseek-ai/DeepEP/pull/732"}
+    - {label: "NVSHMEM commits", url: "https://github.com/NVIDIA/nvshmem/commits?author=Xuan-1998"}
+    - {label: "vLLM #53008", url: "https://github.com/vllm-project/vllm/pull/53008"}
+    - {label: "rdmatop #48", url: "https://github.com/uccl-project/rdmatop/pull/48"}
+  - - {label: "reef", url: "https://github.com/Human-Agent-Society/reef"}
+    - {label: "CORAL · COLM 2026", url: "https://arxiv.org/abs/2604.01658"}
+  - - {label: "LPSim", url: "https://github.com/Xuan-1998/LPSim"}
+    - {label: "Transportation Research Part C 2024", url: "https://doi.org/10.1016/j.trc.2024.104873"}
+    - {label: "Devastator · PADS 2024", url: "https://doi.org/10.1145/3615979.3656061"}
+    - {label: "ICRAT 2024 Best Paper", url: "https://arxiv.org/abs/2405.11118"}
 
-email: "xuanj@mit.edu"
-cv_link: /assets/xuan_cv.pdf
-gscholar: YiUWYl0AAAAJ  # Google Scholar ID
-github: Xuan-1998
-# twitter: your_twitter_id  # Do not include the '@' symbol
-# wechat_qrcode: /assets/images/etc/wechat.jpg
-# wechat_prompt: >-
-#   Please tell me your <strong>name</strong> and <strong>affiliation</strong> (current or past) when adding my wechat. Thanks!
-linkedin: xuan-jiang-0494a7192
-# orcid: 0000-0000-0000-0000
+# Open-source GPU communication work, same order as comms.items in i18n.yml.
+comms:
+  - repo: deepseek-ai/DeepEP
+    url: https://github.com/deepseek-ai/DeepEP/pull/732
+    status: open
+  - repo: NVIDIA/nvshmem
+    url: https://github.com/NVIDIA/nvshmem/commits?author=Xuan-1998
+    status: released
+  - repo: vllm-project/vllm
+    url: https://github.com/vllm-project/vllm/pull/53008
+    status: merged
+  - repo: uccl-project/rdmatop
+    url: https://github.com/uccl-project/rdmatop/pull/48
+    status: merged
 
-short_bio_text_justify: false
-short_bio: >-
-  <p>
-  
-    I am a Ph.D. graduated from the University of California, Berkeley who are interested in high performance computing and artificial intelligence. I was advised by <a href="https://people.eecs.berkeley.edu/~demmel/" target="_blank" rel="noopener">Prof. James Demmel</a>,
-    <a href="https://ce.berkeley.edu/people/faculty/sengupta" target="_blank" rel="noopener">Prof. Raja Sengupta</a>, and <a href="https://www2.eecs.berkeley.edu/Faculty/Homepages/bayen.html" target="_blank" rel="noopener">Prof. Alexandre Bayen</a>. My research interests ligns in the intersection of high performance computing and artificial intelligence.
-  </p>
+# Links shown after the matching entries in honors.positions (same order; empty means no link).
+position_links:
+  - https://mobility.mit.edu/biblio-author/xuan-jiang/
+  - https://air.berkeley.edu/xuan-jiang/
+  - ""
+  - ""
+  - ""
 
-portrait_url: /assets/images/photos/xuan_jiang_young.JPG
+# Followers of the Bilibili channel in the "Earlier" section, October 2026.
+bilibili_followers: 354755
 
-education:
-- name: University of California, Berkeley
-  logo: /assets/images/badges/ucb.png
-  position: >-
-    Ph.D.
-  date: 2020 - 2024
-- name: Tongji University
-  logo: /assets/images/badges/tongji.png
-  position: Undergraduate
-  date: 2016 - 2020
+# Numbers in the band under the hero: years in AI since 2019, then Google Scholar and GitHub, October 2026.
+stats:
+  - 7
+  - 394
+  - 11
+  - 26
+  - 30
 
-experience:
-- name: Massachusetts Institute of Technology
-  logo: /assets/images/badges/MIT_Social_circle.png
-  position: Research Affiliate at MIT
-  date: May. 2023 - Present
+# Where his papers appeared, shown under the numbers.
+published_in:
+  - ICLR
+  - ICML
+  - COLM
+  - EMNLP
+  - Transportation Research Part C
+  - IEEE T-ITS
+  - ACM SIGSIM PADS
+  - Transportation Research Record
+  - Information Fusion
+  - Journal of Air Transportation
+  - ICRAT
 
-- name: AWS Annapurna Lab
-  logo: /assets/images/badges/aws.png
-  position: Sr. HPC/AI Engineer
-  date: Feb. 2026 - Present
+reviewing:
+  - ICLR
+  - ICML
+  - NeurIPS
+  - COLM
+  - CVPR
+  - ECCV
+  - AAAI
+  - ITSC
+  - TRB Annual Meeting
+  - IEEE T-ITS
+  - IEEE TII
+  - Scientific Reports
+  - Frontiers in Psychology
 
-- name: Google
-  logo: /assets/images/badges/google.png
-  position: Software Engineer
-  date: May. 2024 - Feb. 2026
+journals:
+  - IEEE Transactions on Intelligent Transportation Systems
+  - IEEE Transactions on Industrial Informatics
+  - Scientific Reports
+  - Frontiers in Psychology
 
+conferences:
+  - ICLR 2026
+  - ICML 2026
+  - CVPR 2026
+  - ECCV 2026
+  - COLM 2026
+  - NeurIPS 2025
+  - AAAI 2025
+  - ITSC 2025
+  - TRB Annual Meeting 2025
 
-- name: Lawrence Berkeley National Laboratory
-  logo: /assets/images/badges/lbnl.png
-  position: Graduate Student Researcher
-  date: Jun. 2021 - Jun. 2023
-
-awards:
-  - name: Google Software Engineering Evolution and Transformation (SWEETY) Award
-    date: 2025
-  - name: ICRAT Best Paper Award
-    date: 2024
-  - name: ASCE ICTD AI in Transportation Committee Outstanding Session Organizer Award
-    date: 2023
-  - name: NSF AI Workshop Phase II Travel Award
-    date: 2022
-  - name: Joseph M. Sussman Best Paper Prize
-    date: 2021
-  - name: Gold Award, 6th China International "Internet+" College Students' Innovation and Entrepreneurship Competition
-    date: 2020
-  - name: Outstanding Student (Moral, Academic, and Physical Excellence) of Shanghai
-    date: 2019
-  - name: Shanghai Municipal Innovation and Entrepreneurship Project Award
-    date: 2018
-  - name: Outstanding Student Leader, Tongji University
-    date: 2017
-
-academic_services:
-  journal_referees:
-    - IEEE Transactions on Intelligent Transportation Systems
-    - Frontiers in Psychology
-    - Scientific Reports
-    - IEEE Transactions on Industrial Informatics
-  conference_referees:
-    - ICLR 2026
-    - ICML 2026
-    - CVPR 2026
-    - ECCV 2026
-    - NeurIPS 2025
-    - COLM 2026
-    - AAAI 2025
-    - ITSC 2025
-    - TRB Annual Meeting 2025
-
-mentored:
+# Same order as honors.mentees in i18n.yml, which holds where each student is now.
+mentees:
   - name: Yuhan Tang
-    affiliation: MIT Master
-    link: https://scholar.google.com/citations?user=SrVt6pgAAAAJ&hl=en
+    url: https://scholar.google.com/citations?user=SrVt6pgAAAAJ&hl=en
   - name: Yibo Zhao
-    affiliation: MIT Research Affiliate
-    link: https://yibozh.github.io/
+    url: https://yibozh.github.io/
+  - name: Lucas Huang
+    url: https://www.linkedin.com/in/lucas-wang-85aa6b329/
   - name: Junzhe Cao
-    affiliation: ESOP Scholar 2024 @ ETH Zürich
-    link: https://www.linkedin.com/in/junzhecao/
+    url: https://www.linkedin.com/in/junzhecao/
   - name: Xinkai Zou
-    affiliation: UCSD CS Master
-    link: https://scholar.google.com/citations?user=cHQSO10AAAAJ&hl=en
+    url: https://scholar.google.com/citations?user=cHQSO10AAAAJ&hl=en
   - name: Jiaying Li
-    affiliation: CMU CS Master
-    link: https://www.linkedin.com/in/jiaying-li-537950233/
+    url: https://www.linkedin.com/in/jiaying-li-537950233/
   - name: Luze Sun
-    affiliation: UPenn CS Master
-    link: https://www.linkedin.com/in/luze-sun-45624a1b7/
+    url: https://www.linkedin.com/in/luze-sun-45624a1b7/
   - name: Jieying Zhang
-    affiliation: Duke University ECE Master
-    link: https://www.linkedin.com/in/jz560/
+    url: https://www.linkedin.com/in/jz560/

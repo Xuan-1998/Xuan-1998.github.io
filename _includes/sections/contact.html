@@ -1,0 +1,17 @@
+{%- assign C = t.contact -%}
+<section class="sec invite sea grain" id="contact" data-spy="contact" aria-labelledby="contact-title">
+  <div class="wrap invite-in rv">
+    <div class="invite-head">
+      <div class="eyebrow">{{ C.eyebrow }}</div>
+      <h2 id="contact-title"><span class="ln">{{ C.h2_line1 }}</span><span class="ln">{{ C.h2_line2 }}</span></h2>
+    </div>
+    <div class="invite-body">
+      <p>{{ C.body }}</p>
+      <div class="invite-act">
+        <a class="btn btn-ivory" href="mailto:{{ pf.email }}">{% include icon.html name='mail' %}{{ C.email_btn }}</a>
+        <a class="tlink" href="{{ pf.links.scholar }}" target="_blank" rel="noopener">{% include icon.html name='scholar' %}{{ C.scholar_btn }}</a>
+        <a class="tlink" href="{{ pf.links.github }}" target="_blank" rel="noopener">{% include icon.html name='github' %}{{ C.github_btn }}</a>
+      </div>
+    </div>
+  </div>
+</section>

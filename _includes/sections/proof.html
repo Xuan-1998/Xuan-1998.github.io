@@ -1,0 +1,17 @@
+<section class="proof">
+  <div class="wrap">
+    <div class="stats">
+      {%- for it in t.stats.items %}
+      {%- assign n = pf.stats[forloop.index0] %}
+      <div class="stat rv">
+        <div class="n" data-count="{{ n }}">{{ n }}</div>
+        <div class="l">{{ it.label }}</div>
+      </div>
+      {%- endfor %}
+    </div>
+    <p class="stats-note">{{ t.stats.source_note }}</p>
+    <p class="venues rv"><span class="lab">{{ t.stats.venues_label }}</span>
+      {%- for o in pf.published_in %}<span class="o">{{ o }}</span>{% endfor -%}
+    </p>
+  </div>
+</section>

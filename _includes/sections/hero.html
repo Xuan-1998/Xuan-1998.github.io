@@ -1,0 +1,24 @@
+<section class="hero grain" id="top" aria-labelledby="hero-title">
+  <canvas class="hero-net" aria-hidden="true" data-net></canvas>
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <h1 id="hero-title" class="rise d1"><span class="ln">{{ t.hero.h1_line1 }}</span><span class="ln">{{ t.hero.h1_line2 }}</span></h1>
+      <p class="lede rise d2">{{ t.hero.lede }}</p>
+      <div class="cta-row rise d3">
+        <a class="btn btn-ivory" href="#work">{{ t.hero.cta_work }}{% include icon.html name='arrow' %}</a>
+        <a class="tlink" href="{{ pf.links.scholar }}" target="_blank" rel="noopener">{% include icon.html name='scholar' %}{{ t.hero.cta_scholar }}</a>
+      </div>
+      <div class="social rise d4">
+        <span class="lab">{{ t.hero.follow_label }}</span>
+        <a href="{{ pf.links.github }}" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub">{% include icon.html name='github' %}</a>
+        <a href="{{ pf.links.linkedin }}" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">{% include icon.html name='linkedin' %}</a>
+        <a href="{{ pf.links.substack }}" target="_blank" rel="noopener" aria-label="Substack" title="Substack">{% include icon.html name='substack' %}</a>
+        <a href="mailto:{{ pf.email }}" aria-label="{{ t.nav.email_label | escape }}" title="{{ pf.email }}">{% include icon.html name='mail' %}</a>
+      </div>
+    </div>
+    <div class="hero-art">
+      <div class="hero-mark">{% include hero-mark.svg %}</div>
+      <img class="portrait" src="{{ '/assets/img/portrait.webp' | relative_url }}" srcset="{{ '/assets/img/portrait.webp' | relative_url }} {{ site.data.assets.portrait.w }}w, {{ '/assets/img/portrait-2x.webp' | relative_url }} {{ site.data.assets.portrait.w2 }}w" sizes="(max-width: 560px) min(440px, 92vw), (max-width: 860px) 400px, 540px" alt="{{ t.hero.portrait_alt | escape }}" width="{{ site.data.assets.portrait.w }}" height="{{ site.data.assets.portrait.h }}" fetchpriority="high" decoding="async">
+    </div>
+  </div>
+</section>

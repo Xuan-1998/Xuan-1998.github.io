@@ -1,0 +1,92 @@
+{%- include vars.html -%}
+{%- if page.title_key == 'notfound' -%}
+  {%- assign doc_title = t.notfound.title | append: ' · ' | append: pf.name -%}
+{%- elsif page.title_key == 'redirect' -%}
+  {%- assign doc_title = t.redirect.title | append: ' · ' | append: pf.name -%}
+{%- else -%}
+  {%- assign doc_title = t.meta.title -%}
+{%- endif -%}
+{%- assign page_url = page.url | replace: 'index.html', '' | absolute_url -%}
+{%- assign v = site.time | date: '%s' -%}
+<!doctype html>
+<html lang="{{ L.html }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>{{ doc_title | escape }}</title>
+<meta name="description" content="{{ t.meta.description | escape }}">
+<meta name="author" content="{{ pf.name }}">
+<meta name="theme-color" content="#0c2a33">
+<meta name="color-scheme" content="light">
+{%- if page.noindex %}
+<meta name="robots" content="noindex">
+{%- else %}
+<link rel="canonical" href="{{ page_url }}">
+{%- for pair in site.langs %}
+<link rel="alternate" hreflang="{{ pair[1].hreflang }}" href="{{ pair[1].path | absolute_url }}">
+{%- endfor %}
+<link rel="alternate" hreflang="x-default" href="{{ site.langs[site.default_lang].path | absolute_url }}">
+{%- endif %}
+<link rel="icon" href="{{ '/assets/img/favicon.svg' | relative_url }}" type="image/svg+xml">
+<link rel="icon" href="{{ '/assets/img/favicon-32.png' | relative_url }}" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="{{ '/assets/img/apple-touch-icon.png' | relative_url }}">
+<meta property="og:type" content="profile">
+<meta property="og:site_name" content="{{ t.meta.short | escape }}">
+<meta property="og:title" content="{{ doc_title | escape }}">
+<meta property="og:description" content="{{ t.meta.description | escape }}">
+<meta property="og:url" content="{{ page_url }}">
+<meta property="og:image" content="{{ '/assets/img/og-' | append: lang | append: '.jpg' | absolute_url }}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="{{ t.meta.og_alt | escape }}">
+<meta property="og:locale" content="{{ L.og_locale }}">
+<meta property="og:locale:alternate" content="{{ O.og_locale }}">
+<meta property="profile:first_name" content="Xuan">
+<meta property="profile:last_name" content="Jiang">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ doc_title | escape }}">
+<meta name="twitter:description" content="{{ t.meta.description | escape }}">
+<meta name="twitter:image" content="{{ '/assets/img/og-' | append: lang | append: '.jpg' | absolute_url }}">
+<link rel="preload" href="{{ '/assets/fonts/source-serif-4-latin.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
+{%- if lang == 'zh' %}
+<link rel="preload" href="{{ '/assets/fonts/noto-serif-sc-700-core.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
+{%- endif %}
+{%- if page.layout == 'home' %}
+<link rel="preload" as="image" type="image/webp" fetchpriority="high" imagesrcset="{{ '/assets/img/portrait.webp' | relative_url }} {{ site.data.assets.portrait.w }}w, {{ '/assets/img/portrait-2x.webp' | relative_url }} {{ site.data.assets.portrait.w2 }}w" imagesizes="(max-width: 560px) min(440px, 92vw), (max-width: 860px) 400px, 540px">
+{%- endif %}
+{% include fonts.html %}
+<link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}?v={{ v }}">
+<script>document.documentElement.classList.add('js')</script>
+{%- if page.layout == 'home' %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "{{ pf.name }}",{% if pf.name_zh != '' %}
+  "alternateName": "{{ pf.name_zh }}",{% endif %}
+  "url": "{{ site.url }}/",
+  "image": "{{ '/assets/img/portrait.webp' | absolute_url }}",
+  "email": "mailto:{{ pf.email }}",
+  "description": {{ t.meta.description | jsonify }},
+  "affiliation": {"@type": "CollegeOrUniversity", "name": "Massachusetts Institute of Technology"},
+  "alumniOf": [
+    {"@type": "CollegeOrUniversity", "name": "University of California, Berkeley"},
+    {"@type": "CollegeOrUniversity", "name": "Tongji University"}
+  ],
+  "knowsAbout": ["AI infrastructure", "Self-evolving agents", "High performance computing", "Traffic simulation"],
+  "sameAs": [{{ pf.links.scholar | jsonify }}, {{ pf.links.github | jsonify }}, {{ pf.links.linkedin | jsonify }}]
+}
+</script>
+{%- endif %}
+</head>
+<body class="lang-{{ lang }}{% if page.layout == 'home' %} is-home{% endif %}">
+<a class="skip" href="#main">{{ t.nav.skip }}</a>
+{% include header.html %}
+<main id="main" tabindex="-1">
+{{ content }}
+</main>
+{% include footer.html %}
+{% include lang-hint.html %}
+<script src="{{ '/assets/js/site.js' | relative_url }}?v={{ v }}" defer></script>
+</body>
+</html>

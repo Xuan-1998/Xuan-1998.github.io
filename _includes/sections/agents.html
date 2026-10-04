@@ -1,0 +1,43 @@
+{%- assign a = t.agents -%}
+<section class="sec agents sea grain" id="agents" data-spy="agents" aria-labelledby="agents-title">
+  <div class="wrap">
+    <div class="head rv">
+      <div>
+        <div class="eyebrow">{{ a.eyebrow }}</div>
+        <h2 id="agents-title"><span class="ln">{{ a.h2_line1 }}</span><span class="ln">{{ a.h2_line2 }}</span></h2>
+      </div>
+      <p>{{ a.intro }}</p>
+    </div>
+    <figure class="loop rv">
+      <figcaption class="loop-title">{{ a.loop_title }}<span class="loop-cap">{{ a.loop_caption }}</span></figcaption>
+      <ol class="loop-steps">
+        {%- for s in a.stages %}
+        <li><span class="st-n" aria-hidden="true">0{{ forloop.index }}</span><b>{{ s.name }}</b><span class="st-d">{{ s.desc }}</span></li>
+        {%- endfor %}
+      </ol>
+    </figure>
+    <div class="projs">
+      {%- assign projects = 'reef,coral' | split: ',' %}
+      {%- for k in projects %}
+      {%- assign pr = a[k] %}
+      <article class="proj rv" aria-labelledby="proj-{{ k }}">
+        <div class="proj-tag">{{ pr.tag }}</div>
+        <h3 id="proj-{{ k }}">{{ pr.title }}</h3>
+        <p class="proj-what">{{ pr.what }}</p>
+        <p class="proj-role">{{ pr.role }}</p>
+        <p class="proj-body">{{ pr.body }}</p>
+        <div class="proj-links">
+          {%- if k == 'reef' %}
+          <a href="{{ pf.links.reef }}" target="_blank" rel="noopener">{{ pr.repo }}</a>
+          <a href="{{ pf.links.reef_prs }}" target="_blank" rel="noopener">{{ pr.prs }}</a>
+          {%- else %}
+          <a href="{{ pf.links.coral }}" target="_blank" rel="noopener">{{ pr.repo }}</a>
+          <a href="{{ pf.links.coral_paper }}" target="_blank" rel="noopener">{{ pr.paper }}</a>
+          <a href="{{ pf.links.coral_prs }}" target="_blank" rel="noopener">{{ pr.prs }}</a>
+          {%- endif %}
+        </div>
+      </article>
+      {%- endfor %}
+    </div>
+  </div>
+</section>

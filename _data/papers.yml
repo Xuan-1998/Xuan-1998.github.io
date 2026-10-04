@@ -1,0 +1,456 @@
+# Papers shown on the home page, newest year first. Order inside a year is the display order.
+# topics: moe (mixture-of-experts), agents (LLMs and agents), systems (HPC and simulation), mobility (urban and air mobility).
+# cites: Google Scholar, October 2026.
+- title: 'CORAL: Towards Autonomous Multi-Agent Evolution for Open-Ended Discovery'
+  authors:
+  - Ao Qu
+  - Han Zheng
+  - Zijian Zhou
+  - Yihao Yan
+  - Yihong Tang
+  - Shao Yong Ong
+  - Fenglu Hong
+  - Kaichen Zhou
+  - Chonghe Jiang
+  - Minwei Kong
+  - Jiacheng Zhu
+  - Xuan Jiang
+  - Sirui Li
+  - Cathy Wu
+  - Bryan Kian Hsiang Low
+  - Jinhua Zhao
+  - Paul Pu Liang
+  equal:
+  - Ao Qu
+  - Han Zheng
+  - Zijian Zhou
+  venue: Conference on Language Modeling (COLM)
+  year: 2026
+  topics:
+  - agents
+  selected: true
+  cites: 51
+  links:
+    arxiv: https://arxiv.org/abs/2604.01658
+    code: https://github.com/Human-Agent-Society/CORAL
+- title: 'RAST-MoE-RL: A Regime-Aware Spatio-Temporal MoE Framework for Deep Reinforcement Learning in Ride-Hailing'
+  authors:
+  - Yuhan Tang
+  - Kangxin Cui
+  - Jung Ho Park
+  - Yibo Zhao
+  - Xuan Jiang
+  - Haoze He
+  - Jiangbo Yu
+  - Haris N. Koutsopoulos
+  - Jinhua Zhao
+  equal:
+  - Yuhan Tang
+  - Kangxin Cui
+  - Jung Ho Park
+  - Yibo Zhao
+  venue: International Conference on Machine Learning (ICML)
+  year: 2026
+  topics:
+  - moe
+  - agents
+  - mobility
+  selected: true
+  links:
+    arxiv: https://arxiv.org/abs/2512.13727
+- title: Preserving Long-Tailed Expert Information in Mixture-of-Experts Tuning
+  authors:
+  - Haoze He
+  - Xingyuan Ding
+  - Xuan Jiang
+  - Xinkai Zou
+  - Alex Cheng
+  - Yibo Zhao
+  - Juncheng Billy Li
+  - Heather Miller
+  venue: Conference on Language Modeling (COLM)
+  year: 2026
+  topics:
+  - moe
+  - agents
+  selected: true
+  cites: 1
+  links:
+    arxiv: https://arxiv.org/abs/2604.23036
+    code: https://github.com/HectorHHZ/ExpertCondenser
+- title: 'Less is MoE: Trimming Experts in Domain-Specialist Language Models'
+  authors:
+  - Haoze He
+  - Xinkai Zou
+  - Xuan Jiang
+  - Xingyuan Ding
+  - Ao Qu
+  - Juncheng Billy Li
+  - Heather Miller
+  equal:
+  - Haoze He
+  - Xinkai Zou
+  venue: Conference on Empirical Methods in Natural Language Processing (EMNLP)
+  year: 2026
+  topics:
+  - moe
+  - agents
+  selected: true
+  cites: 2
+  links:
+    arxiv: https://arxiv.org/abs/2606.05538
+    code: https://github.com/HectorHHZ/Less-is-MoE
+- title: 'CloudAnoAgent: Anomaly Detection for Cloud Sites via LLM Agent with Neuro-Symbolic Mechanism'
+  authors:
+  - Xinkai Zou
+  - Xuan Jiang
+  - Ruikai Huang
+  - Haoze He
+  - Parv Kapoor
+  - Jinhua Zhao
+  venue: COLM 2026 Workshop on AI Measurement
+  year: 2026
+  topics:
+  - agents
+  selected: true
+  cites: 6
+  links:
+    arxiv: https://arxiv.org/abs/2508.01844v1
+- title: 'From Patchwork to Network: A Comprehensive Framework for Demand Analysis and Fleet Optimization of Urban Air Mobility'
+  authors:
+  - Xuan Jiang
+  - Xuanyu Zhou
+  - Yibo Zhao
+  - Shangqing Cao
+  - Haoze He
+  - Jinhua Zhao
+  - Mark Hansen
+  - Raja Sengupta
+  venue: IEEE Transactions on Intelligent Transportation Systems
+  year: 2026
+  topics:
+  - mobility
+  - systems
+  selected: true
+  first_author: true
+  cites: 1
+  links:
+    arxiv: https://arxiv.org/abs/2510.04186
+- title: 'Evaluating Multi-Modal UAM Impacts at Metro Region Scale: A San Francisco Bay Area Study'
+  authors:
+  - Xin Peng
+  - Xuan Jiang
+  - Vishwanath Bulusu
+  - Emin Burak Onat
+  - Raja Sengupta
+  venue: IEEE Transactions on Intelligent Transportation Systems
+  year: 2026
+  topics:
+  - mobility
+  links:
+    paper: https://doi.org/10.1109/TITS.2026.3704878
+- title: Sparse Matrix in Large Language Model Fine-Tuning
+  authors:
+  - Haoze He
+  - Juncheng Billy Li
+  - Xuan Jiang
+  - Heather Miller
+  equal:
+  - Haoze He
+  - Juncheng Billy Li
+  venue: International Conference on Learning Representations (ICLR)
+  year: 2025
+  topics:
+  - agents
+  selected: true
+  cites: 38
+  links:
+    arxiv: https://arxiv.org/abs/2405.15525
+- title: 'Simulation-Based Optimization for Vertiport Location Selection: A Surrogate Model with Machine Learning Method'
+  authors:
+  - Xuan Jiang
+  - Shangqing Cao
+  - Baichuan Mo
+  - Junzhe Cao
+  - Hao Yang
+  - Yuhan Tang
+  - Mark Hansen
+  - Jinhua Zhao
+  - Raja Sengupta
+  venue: Transportation Research Record
+  year: 2025
+  topics:
+  - mobility
+  - systems
+  selected: true
+  first_author: true
+  cites: 15
+  links:
+    paper: https://doi.org/10.1177/03611981241277755
+- title: 'DRBO: A Regional Scale Simulator Calibration Framework Based on Day-to-Day Dynamic Routing and Bayesian Optimization'
+  authors:
+  - Xuan Jiang
+  - Yibo Zhao
+  - Chonghe Jiang
+  - Junzhe Cao
+  - Alexander Skabardonis
+  - Alex Kurzhanskiy
+  - Raja Sengupta
+  venue: Smart Cities
+  year: 2025
+  topics:
+  - systems
+  - mobility
+  first_author: true
+  cites: 6
+  links:
+    paper: https://doi.org/10.3390/smartcities8020049
+- title: The Urban Air Mobility Fleet Scheduling Problem with Nonlinear Charging Time
+  authors:
+  - Shangqing Cao
+  - Emin Burak Onat
+  - Xuan Jiang
+  - Raja Sengupta
+  - Mark Hansen
+  venue: SSRN preprint
+  year: 2025
+  topics:
+  - mobility
+  links:
+    paper: https://doi.org/10.2139/ssrn.7157818
+- title: Large Scale Multi-GPU Based Parallel Traffic Simulation for Accelerated Traffic Assignment and Propagation
+  authors:
+  - Xuan Jiang
+  - Raja Sengupta
+  - James Demmel
+  - Samuel Williams
+  venue: 'Transportation Research Part C: Emerging Technologies'
+  year: 2024
+  topics:
+  - systems
+  - mobility
+  selected: true
+  first_author: true
+  cites: 36
+  links:
+    paper: https://doi.org/10.1016/j.trc.2024.104873
+    arxiv: https://arxiv.org/abs/2406.08496
+    code: https://github.com/Xuan-1998/LPSim
+- title: A Simulation-Optimization Framework for Developing Wind-Resilient AAM Networks
+  authors:
+  - Emin Burak Onat
+  - Shangqing Cao
+  - Raiyan Rizwan
+  - Xuan Jiang
+  - Mark Hansen
+  - Raja Sengupta
+  - Anjan Chakrabarty
+  venue: International Conference on Research in Air Transportation (ICRAT)
+  year: 2024
+  topics:
+  - mobility
+  selected: true
+  award: true
+  cites: 5
+  links:
+    arxiv: https://arxiv.org/abs/2405.11118
+- title: 'Devastator: A Scalable Parallel Discrete Event Simulation Framework for Modern C++'
+  authors:
+  - John Bachan
+  - Jianlan Ye
+  - Xuan Jiang
+  - Tan Nguyen
+  - Mahesh Natarajan
+  - Maximilian Bremer
+  - Cy Chan
+  venue: ACM SIGSIM Conference on Principles of Advanced Discrete Simulation (PADS)
+  year: 2024
+  topics:
+  - systems
+  selected: true
+  cites: 6
+  links:
+    paper: https://doi.org/10.1145/3615979.3656061
+- title: Designing a Time-Driven Simulation Framework for Large-Scale Traffic Networks
+  authors:
+  - Xuan Jiang
+  venue: ACM SIGSIM Conference on Principles of Advanced Discrete Simulation (PADS)
+  year: 2024
+  topics:
+  - systems
+  - mobility
+  selected: true
+  first_author: true
+  sole_author: true
+  cites: 10
+  links:
+    paper: https://doi.org/10.1145/3615979.3665104
+- title: 'Simulating Integration of Urban Air Mobility into Existing Transportation Systems: Survey'
+  authors:
+  - Xuan Jiang
+  - Yuhan Tang
+  - Junzhe Cao
+  - Vishwanath Bulusu
+  - Hao Yang
+  - Xin Peng
+  - Yunhan Zheng
+  - Jinhua Zhao
+  - Raja Sengupta
+  venue: Journal of Air Transportation
+  year: 2024
+  topics:
+  - mobility
+  selected: true
+  first_author: true
+  cites: 34
+  links:
+    paper: https://doi.org/10.2514/1.D0431
+- title: Fleet Size and Spill for UAM Operation under Uncertain Demand
+  authors:
+  - Shangqing Cao
+  - Xuan Jiang
+  - Emin Burak Onat
+  - Bo Zou
+  - Mark Hansen
+  - Raja Sengupta
+  - Anjan Chakrabarty
+  venue: International Conference on Research in Air Transportation (ICRAT)
+  year: 2024
+  topics:
+  - mobility
+  cites: 17
+  links:
+    arxiv: https://arxiv.org/abs/2407.00947
+- title: Robust Reinforcement Learning Strategies with Evolving Curriculum for Efficient Bus Operations in Smart Cities
+  authors:
+  - Yuhan Tang
+  - Ao Qu
+  - Xuan Jiang
+  - Baichuan Mo
+  - Shangqing Cao
+  - Joseph Rodriguez
+  - Haris N. Koutsopoulos
+  - Cathy Wu
+  - Jinhua Zhao
+  venue: Smart Cities
+  year: 2024
+  topics:
+  - agents
+  - mobility
+  cites: 9
+  links:
+    paper: https://doi.org/10.3390/smartcities7060141
+- title: Entropy-Based Dynamic Programming for Efficient Vehicle Parking
+  authors:
+  - Jean-Luc Lupien
+  - Abdullah Alhadlaq
+  - Yuhan Tang
+  - Yan Wu
+  - Jiayu Joyce Chen
+  - Yutan Long
+  - Xuan Jiang
+  venue: IEEE International Conference on Intelligent Transportation Systems (ITSC)
+  year: 2024
+  topics:
+  - mobility
+  cites: 2
+  links:
+    paper: https://doi.org/10.1109/ITSC58415.2024.10919895
+    arxiv: https://arxiv.org/abs/2411.17014
+- title: Integrating the Traffic Science with Representation Learning for City-Wide Network Congestion Prediction
+  authors:
+  - Wenqing Zheng
+  - Hao Frank Yang
+  - Jiarui Cai
+  - Peihao Wang
+  - Xuan Jiang
+  - Simon Shaolei Du
+  - Yinhai Wang
+  - Zhangyang Wang
+  venue: Information Fusion
+  year: 2023
+  topics:
+  - mobility
+  selected: true
+  cites: 38
+  links:
+    paper: https://doi.org/10.1016/j.inffus.2023.101837
+- title: An Automated Machine Learning (AutoML) Method for Driving Distraction Detection Based on Lane-Keeping Performance
+  authors:
+  - Chen Chai
+  - Juanwu Lu
+  - Xuan Jiang
+  - Xiupeng Shi
+  - Zeng Zeng
+  venue: INFORMS Annual Meeting
+  year: 2023
+  topics:
+  - mobility
+  cites: 22
+  links:
+    arxiv: https://arxiv.org/abs/2103.08311
+- title: A Metrics-based Method for Evaluating Corridors for Urban Air Mobility Operations
+  authors:
+  - Xuan Jiang
+  - Xin Peng
+  - Vishwanath Bulusu
+  - Cristian Poliziani
+  - Gano Chatterji
+  - Raja Sengupta
+  venue: IEEE International Smart Cities Conference (ISC2)
+  year: 2022
+  topics:
+  - mobility
+  first_author: true
+  cites: 12
+  links:
+    paper: https://ieeexplore.ieee.org/document/9922442
+- title: 'Causality and Advanced Models in Trip Mode Prediction: Interest in Choosing Swissmetro'
+  authors:
+  - Huy Pham
+  - Xuan Jiang
+  - Cong Zhang
+  venue: International Conference on Transportation and Development (ICTD)
+  year: 2022
+  topics:
+  - mobility
+  cites: 7
+  links:
+    paper: https://osf.io/preprints/osf/m4w38
+- title: Quantifying the Resilience of the US Domestic Aviation Network During the COVID-19 Pandemic
+  authors:
+  - Aleksandar Bauranov
+  - Steven Parks
+  - Xuan Jiang
+  - Jasenka Rakas
+  - Marta C. González
+  venue: Frontiers in Built Environment
+  year: 2021
+  topics:
+  - mobility
+  cites: 45
+  links:
+    paper: https://doi.org/10.3389/fbuil.2021.642295
+- title: Making Sense of Electrical Vehicle Discussions Using Sentiment Analysis on Closely Related News and User Comments
+  authors:
+  - Xuan Jiang
+  - Josh Everts
+  venue: International Conference on Transportation and Development (ICTD)
+  year: 2021
+  topics:
+  - mobility
+  first_author: true
+  cites: 17
+  links:
+    arxiv: https://arxiv.org/abs/2112.12327
+- title: Chemical and Rheology Evaluation on the Field Short-Term Aging of High Content Polymer Modified Asphalt
+  authors:
+  - Weidong Huang
+  - Chuanqi Yan
+  - Xuan Jiang
+  venue: Transportation Research Board Annual Meeting
+  year: 2019
+  topics: []
+  cites: 7
+  links:
+    paper: https://trid.trb.org/View/1572334

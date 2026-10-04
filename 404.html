@@ -1,7 +1,26 @@
 ---
-layout: prompt
-title: 404 - Page Not Found
+layout: base
+lang: en
+title_key: notfound
+permalink: /404.html
+noindex: true
 ---
-<h1 class="mt-5">404</h1>
-<p class="lead">The requested page could not be found.</p>
-<p><a href="{{ '/' | relative_url }}">Go home</a></p>
+{%- assign en = site.data.i18n.en.notfound -%}
+{%- assign zh = site.data.i18n.zh.notfound -%}
+<section class="page-msg">
+  <div class="wrap">
+    <p class="msg-code" aria-hidden="true">404</p>
+    <div class="msg-pair">
+      <div lang="en">
+        <h1>{{ en.title }}</h1>
+        <p>{{ en.body }}</p>
+        <a class="btn btn-sea" href="{{ site.langs.en.path | relative_url }}">{{ en.home }}</a>
+      </div>
+      <div lang="zh-CN">
+        <h2>{{ zh.title }}</h2>
+        <p>{{ zh.body }}</p>
+        <a class="btn btn-sea" href="{{ site.langs.zh.path | relative_url }}">{{ zh.home }}</a>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,10 @@
+<section class="path" aria-labelledby="path-title">
+  <div class="wrap">
+    <div class="path-head"><b id="path-title">{{ t.path.label }}</b><span>{{ t.path.note }}</span></div>
+    <ol class="path-list">
+      {%- for it in t.path.items %}
+      <li{% if forloop.last %} class="now"{% endif %}><b>{{ it.org }}</b><span>{{ it.role }}</span></li>
+      {%- endfor %}
+    </ol>
+  </div>
+</section>
