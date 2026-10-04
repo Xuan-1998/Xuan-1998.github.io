@@ -47,7 +47,7 @@ zh:
       role: AI 科学家，2019 至 2020 年
     - org: 加州大学<wbr>伯克利分校
       role: 硕士及博士，2020 至 2024 年
-    - org: 伯克利<wbr>国家实验室
+    - org: 劳伦斯<wbr>伯克利<wbr>国家实验室
       role: 研究生研究员，2021 至 2023 年
     - org: 麻省理工学院
       role: Research Affiliate，2023 年至今
@@ -243,7 +243,7 @@ zh:
       org: 华盛顿大学 STAR Lab
       text: 研究助理，参与 TinT 城市级拥堵预测研究。
     - when: 2021 至 2023 年
-      org: 伯克利国家实验室
+      org: 劳伦斯伯克利国家实验室
       text: 研究生研究员。
     - when: 2019 至 2020 年
       org: 上海会米策信息科技有限公司
@@ -267,7 +267,7 @@ zh:
       text: 同济大学优秀学生干部。
     mentees:
     - now: MIT 博士生
-    - now: UIUC 博士生
+    - now: UIUC 博士生，研究编程智能体
     - now: 耶鲁大学
     - now: 苏黎世联邦理工学院 ESOP 奖学金获得者（2024）
     - now: UCSD 计算机科学硕士
@@ -642,7 +642,7 @@ en:
       text: Outstanding Student Leader, Tongji University.
     mentees:
     - now: MIT, Ph.D. student
-    - now: UIUC, Ph.D. student
+    - now: UIUC, Ph.D. student working on coding agents
     - now: Yale University
     - now: ETH Zurich, ESOP Scholar 2024
     - now: UCSD, CS master's
