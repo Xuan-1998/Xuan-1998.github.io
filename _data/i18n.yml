@@ -29,8 +29,8 @@ zh:
     cta_scholar: Google Scholar
     follow_label: 其他平台
     portrait_alt: xuanxuan 的照片
-    kicker: 新开了免费 AI 周刊，想和同好交交朋友
-    kicker_link: 去订阅
+    kicker: 新开了 AI 周刊，纯粹图个开心、交交朋友
+    kicker_link: 请订阅，不用付费
     cta_subscribe: 免费订阅周刊
   hero_alts:
   - line1: 让大规模运算更快，
@@ -306,7 +306,7 @@ zh:
     eyebrow: 常联系
     h2_line1: 订阅我的周刊，
     h2_line2: 也来交个朋友。
-    body: 我的周刊每周更新，免费订阅。如果你也在做 AI 基础设施、自进化智能体或大规模仿真，欢迎写信到 xuanj@mit.edu 打个招呼。
+    body: 我的周刊不收费。如果你也在做 AI 基础设施、自进化智能体或大规模仿真，欢迎写信到 xuanj@mit.edu 打个招呼。
     email_btn: 给我写信
     scholar_btn: Google Scholar
     github_btn: GitHub
@@ -368,12 +368,12 @@ zh:
     card_label: B 站频道：同济子豪兄
   writing:
     eyebrow: 每周来信
-    h2_line1: 我准备每周写信，
-    h2_line2: 聊 AI 里的有趣想法。
-    body: 我准备在 Substack 写免费周刊，主要聊 AI 领域有趣的想法和应用，也聊研究。订阅后，每篇文章都会发到邮箱。我也想和喜欢这些话题的读者交朋友。
+    h2_line1: 写周刊图个开心，
+    h2_line2: 也想交交朋友。
+    body: 我准备每周在 Substack 写一篇，聊 AI 领域有趣的想法和应用，也聊研究。订阅后，每篇都会发到邮箱。
     subscribe_btn: 在 Substack 订阅
     read_btn: 去 Substack 看看
-    note: 免费订阅，文章会发到邮箱，可随时退订。
+    note: 不收费，也不用承诺付费，可随时退订。
 en:
   meta:
     title: 'Xuan Jiang: Computing and agents'
@@ -404,8 +404,8 @@ en:
     cta_scholar: Google Scholar
     follow_label: Elsewhere
     portrait_alt: Photo of Xuan Jiang
-    kicker: 'New: my free weekly AI newsletter, a way to make like-minded friends'
-    kicker_link: Subscribe
+    kicker: 'New: a weekly AI newsletter purely for fun and making friends'
+    kicker_link: Please subscribe, no pledge
     cta_subscribe: Subscribe for free
   hero_alts:
   - line1: Faster computing.
@@ -681,7 +681,7 @@ en:
     eyebrow: Keep in touch
     h2_line1: Subscribe, then
     h2_line2: let's be friends.
-    body: My newsletter is free and comes out every week. If you work on AI infrastructure, self‑evolving agents or large-scale simulation, you can also email me at xuanj@mit.edu to say hi.
+    body: My weekly newsletter is free. If you work on AI infrastructure, self‑evolving agents or large-scale simulation, you can also email me at xuanj@mit.edu to say hi.
     email_btn: Email me
     scholar_btn: Google Scholar
     github_btn: GitHub
@@ -743,9 +743,9 @@ en:
     card_label: 'Bilibili channel: 同济子豪兄 (Tongji Zihao)'
   writing:
     eyebrow: Weekly
-    h2_line1: I'll write weekly about
-    h2_line2: interesting ideas in AI.
-    body: I'm starting a free weekly newsletter on Substack, mostly about interesting AI ideas and applications, plus research. Subscribers get each post by email. I hope to make friends with readers who like the same things.
+    h2_line1: I write for fun
+    h2_line2: and to make friends.
+    body: I'll write one post a week on Substack about interesting AI ideas and applications, plus research. Subscribers will get each post by email.
     subscribe_btn: Subscribe on Substack
     read_btn: Visit the newsletter
-    note: Get posts by email for free. Unsubscribe any time.
+    note: It's free, with no pledge. Unsubscribe any time.
