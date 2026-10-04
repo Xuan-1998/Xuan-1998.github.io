@@ -50,6 +50,9 @@ comms:
   - repo: deepseek-ai/DeepEP
     url: https://github.com/deepseek-ai/DeepEP/pull/732
     status: open
+    extra:
+      - https://github.com/amazon-contributing/DeepEP
+      - https://github.com/awslabs/awsome-distributed-ai/commit/9baf5aa749b54d36c3c159345cd5094b6282d5a3
   - repo: NVIDIA/nvshmem
     url: https://github.com/NVIDIA/nvshmem/commits?author=Xuan-1998
     status: released
@@ -62,6 +65,8 @@ comms:
 
 # Links shown after the matching entries in honors.positions (same order; empty means no link).
 position_links:
+  - ""
+  - ""
   - https://mobility.mit.edu/biblio-author/xuan-jiang/
   - https://air.berkeley.edu/xuan-jiang/
   - ""

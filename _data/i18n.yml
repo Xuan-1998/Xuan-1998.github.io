@@ -23,7 +23,7 @@ zh:
   hero:
     h1_line1: 让大规模计算提速，
     h1_line2: 让智能体边做边学。
-    lede: 我是 xuanxuan（Xuan Jiang），加州大学伯克利分校博士、MIT Research Affiliate。我自 2019 年起从事 AI，研究混合专家模型（MoE）的微调、压缩及大规模运行所需的 GPU 通信，也在 reef 团队开发自进化智能体，合著了 CORAL（COLM 2026）。
+    lede: 我是 xuanxuan（Xuan Jiang），加州大学伯克利分校博士、MIT Research Affiliate。我自 2019 年起从事 AI，研究混合专家模型（MoE）的微调、压缩及大规模运行所需的 GPU 通信，也和 <a href="https://github.com/Human-Agent-Society/reef" target="_blank" rel="noopener">reef</a> 团队一起开发自进化智能体，合著了 <a href="https://arxiv.org/abs/2604.01658" target="_blank" rel="noopener">CORAL</a>（COLM 2026）。
     cta_work: 看看项目
     cta_scholar: Google Scholar
     follow_label: 其他平台
@@ -46,9 +46,11 @@ zh:
     - org: 伯克利<wbr>国家实验室
       role: 研究生研究员，2021 至 2023 年
     - org: 麻省理工学院
-      role: Research Affiliate，2023 年至今
-    - org: reef 与 CORAL
-      role: reef 团队成员，CORAL 论文合著者，2026 年至今
+      role: Research Affiliate，2023 年至今；reef 团队成员、CORAL 论文合著者，2026 年至今
+    - org: 谷歌
+      role: 软件工程师，2024 至 2026 年
+    - org: AWS Annapurna Labs
+      role: 高级 HPC/AI 工程师，2026 年至今
   stats:
     items:
     - label: 接触 AI 的年数
@@ -99,7 +101,7 @@ zh:
       lpsim:
         meta: 仿真系统，Transportation Research Part C 2024
         title: LPSim
-        desc: 我开发了多 GPU 交通仿真器 LPSim：图划分把路网分到多块 GPU，车辆跨分区时经幽灵区迁移；单块 GPU 几秒内就能处理超过 22.3 万个节点的路网。
+        desc: 我开发了多 GPU 交通仿真器 LPSim：图划分把路网分到多块 GPU，车辆跨分区时经幽灵区迁移；单块 GPU 几秒内就能处理超过 22.3 万个节点的路网。我还与 James Demmel 以及 Roofline 模型的提出者 Samuel Williams 一起，深入优化了 LPSim 的性能。
         go: 查看代码
       smt:
         meta: 模型微调，ICLR 2025
@@ -222,9 +224,15 @@ zh:
       org: 加州大学伯克利分校
       text: 硕士（2020 至 2021 年）及博士（2021 至 2024 年），研究机器学习与高性能计算。导师为 James Demmel、Raja Sengupta 和 Alexandre Bayen。
     positions:
+    - when: 2026 年至今
+      org: Amazon Web Services (AWS), Annapurna Labs
+      text: 高级 HPC/AI 工程师。我负责优化大规模 GPU 集群的 GPU 通信性能和混合专家模型（MoE）的专家并行内核，并与 NVIDIA 的 NCCL 团队共同牵头推进 NCCL EP 在 EFA 上的适配。我曾共同主导 DeepEP v2 在 EFA 上的工作，并与 NVIDIA 的 NVSHMEM 团队合作，主导了 DeepEP v1 的 NVSHMEM 工作，相关改动已随 NVSHMEM 3.7.0 发布。
+    - when: 2024 至 2026 年
+      org: 谷歌
+      text: 软件工程师。我主导了 AI 辅助的大规模代码变更工作流，以及基于 AI 的集成测试环境搭建。我还构建了用于智能体代码生成的多智能体框架，并在 Google Cloud Assist 中上线了基于告警的调查功能。
     - when: 2023 年至今
       org: MIT
-      text: Research Affiliate，与 Jinhua Zhao 和 Haris Koutsopoulos 合作，用高性能仿真器研究复杂系统的强化学习优化；我们也研究用于云系统异常检测的大语言模型智能体。
+      text: Research Affiliate，与 Jinhua Zhao 和 Haris Koutsopoulos 合作，用高性能仿真器研究复杂系统的强化学习优化；我们也研究用于云系统异常检测的大语言模型智能体。自 2026 年起，我也与 reef 团队合作开发自进化智能体，并合著了 CORAL（COLM 2026）。
     - when: 2022 至 2025 年
       org: 加州大学伯克利分校
       text: 研究生研究员，2022 至 2024 年任职于 Aviation Innovation Research（AIR）Lab 和 Cal Unmanned Lab。2022 至 2025 年与 James Demmel 和 Raja Sengupta 合作研究高性能计算，用 GPU 做多模式时间驱动仿真。
@@ -283,6 +291,8 @@ zh:
       org: ASCE
       text: 慢行交通委员会（Active Transportation Committee）成员。
     position_link_labels:
+    - ''
+    - ''
     - MIT JTL 论文列表
     - 伯克利 AIR 实验室个人主页
     - ''
@@ -322,12 +332,15 @@ zh:
     eyebrow: 开源贡献
     h2_line1: 专家并行所需的
     h2_line2: GPU 通信。
-    intro: 下面是我署名提交的混合专家模型（MoE）通信层开源贡献，每一行都链接到对应的上游项目。
+    intro: 下面是我署名提交的混合专家模型（MoE）通信层开源贡献。
     items:
     - name: DeepEP
       status: PR 待合并
-      line: 新增可选分发与合并内核，仅需弱信号，让混合模式支持不保证按序交付的传输。
+      line: 我的 PR 新增可选的分发与合并内核，仅需弱信号，让混合模式支持不保证按序交付的传输。EFA 版本已在 amazon-contributing/DeepEP 开源，我在 awsome-distributed-ai 中编写的示例可在 EFA 集群上构建该版本。
       link: '查看 PR #732'
+      extra:
+      - EFA 代码仓库
+      - EFA 构建示例
     - name: NVSHMEM
       status: 随 3.7.0 发布
       line: 我与 NVSHMEM 团队为 3.7.0 改进 libfabric 传输的 RMA 批处理，修复信号路径死锁与卡死，排空完成队列并做发布前测试。
@@ -352,8 +365,8 @@ zh:
   writing:
     eyebrow: 每周来信
     h2_line1: 我准备每周写信，
-    h2_line2: 聊 AI 系统。
-    body: 我准备写 Substack 周刊，聊混合专家模型（MoE）、GPU 通信、自进化智能体的开发与研究。订阅后，每篇文章都会发到邮箱。
+    h2_line2: 聊 AI 里的有趣想法。
+    body: 我准备写 Substack 周刊，主要聊 AI 领域有趣的想法和应用，也聊研究。订阅后，每篇文章都会发到邮箱。
     subscribe_btn: 在 Substack 订阅
     read_btn: 去 Substack 看看
     note: 免费订阅，文章会发到邮箱，可随时退订。
@@ -381,7 +394,7 @@ en:
   hero:
     h1_line1: Make compute fast.
     h1_line2: Let agents learn.
-    lede: I'm Xuan Jiang, a UC Berkeley Ph.D. and Research Affiliate at MIT. I've been in AI since 2019, working on mixture-of-experts models end to end, from fine-tuning and compression to the GPU communication they need at scale. I also build self-evolving agents on the reef team and co-authored CORAL (COLM 2026).
+    lede: I'm Xuan Jiang, a UC Berkeley Ph.D. and Research Affiliate at MIT. I've been in AI since 2019, working on mixture-of-experts models end to end, from fine-tuning and compression to the GPU communication they need at scale. I also build self-evolving agents with the <a href="https://github.com/Human-Agent-Society/reef" target="_blank" rel="noopener">reef</a> team and co-authored <a href="https://arxiv.org/abs/2604.01658" target="_blank" rel="noopener">CORAL</a> (COLM 2026).
     cta_work: Explore my work
     cta_scholar: Google Scholar
     follow_label: Elsewhere
@@ -404,9 +417,11 @@ en:
     - org: Berkeley Lab
       role: Graduate Student Researcher, 2021 to 2023
     - org: MIT
-      role: Research Affiliate, 2023 to present
-    - org: reef and CORAL
-      role: reef team, CORAL co-author, 2026 to present
+      role: Research Affiliate, 2023 to present; reef team member and CORAL co-author, 2026 to present
+    - org: Google
+      role: Software Engineer, 2024 to 2026
+    - org: AWS Annapurna Labs
+      role: Sr. HPC/AI Engineer, 2026 to present
   stats:
     items:
     - label: Years in AI
@@ -457,7 +472,7 @@ en:
       lpsim:
         meta: Simulation system, Transportation Research Part C 2024
         title: LPSim
-        desc: I built LPSim for traffic simulation across multiple GPUs, using graph partitioning and ghost-zone vehicle migration. It handles networks with over 223,000 nodes in seconds on one GPU.
+        desc: I built LPSim for traffic simulation across multiple GPUs, using graph partitioning and ghost-zone vehicle migration. It handles networks with over 223,000 nodes in seconds on one GPU. I also worked with James Demmel and Roofline model creator Samuel Williams on in-depth performance optimization.
         go: View the code
       smt:
         meta: Model fine-tuning, ICLR 2025
@@ -580,9 +595,15 @@ en:
       org: UC Berkeley
       text: M.S. (2020 to 2021) and Ph.D. (2021 to 2024). Specialized in machine learning and HPC, advised by James Demmel, Raja Sengupta, and Alexandre Bayen.
     positions:
+    - when: 2026 to present
+      org: Amazon Web Services (AWS), Annapurna Labs
+      text: Sr. HPC/AI Engineer. I work on GPU communication performance on large GPU clusters and optimize kernels for mixture-of-experts expert parallelism; with NVIDIA's NCCL team, I co-lead the work to run NCCL EP on EFA. I co-led DeepEP v2 on EFA and led the NVSHMEM work for DeepEP v1 with NVIDIA's NVSHMEM team; those changes shipped in NVSHMEM 3.7.0.
+    - when: 2024 to 2026
+      org: Google
+      text: Software Engineer. I led AI-assisted workflows for large-scale code changes and AI-powered integration test setups. I built multi-agent frameworks for agentic code generation and launched alert-based investigations in Google Cloud Assist.
     - when: 2023 to present
       org: MIT
-      text: Research Affiliate. With Jinhua Zhao and Haris Koutsopoulos, I work on reinforcement learning to optimize complex systems using HPC-based simulators and on LLM agents for cloud anomaly detection.
+      text: Research Affiliate. With Jinhua Zhao and Haris Koutsopoulos, I work on reinforcement learning to optimize complex systems using HPC-based simulators and on LLM agents for cloud anomaly detection. Since 2026, I have also built self-evolving agents with the reef team and co-authored CORAL (COLM 2026).
     - when: 2022 to 2025
       org: UC Berkeley
       text: Graduate Student Researcher at the Aviation Innovation Research (AIR) Lab and the Cal Unmanned Lab (2022 to 2024). Researched HPC with James Demmel and Raja Sengupta using GPU-based multimodal time-driven simulation (2022 to 2025).
@@ -641,6 +662,8 @@ en:
       org: ASCE
       text: Member of the Active Transportation Committee.
     position_link_labels:
+    - ''
+    - ''
     - MIT JTL publication list
     - Berkeley AIR Lab profile
     - ''
@@ -680,12 +703,15 @@ en:
     eyebrow: Open-source contributions
     h2_line1: GPU communication
     h2_line2: for MoE.
-    intro: These are my public contributions to the communication layer for MoE, submitted under my own name. Each row links to the upstream project.
+    intro: These are my open-source contributions to communication for mixture-of-experts (MoE) models, submitted under my own name.
     items:
     - name: DeepEP
       status: Open pull request
-      line: Adds opt-in dispatch and combine kernels needing only weak signals, enabling hybrid mode on transports without ordered delivery.
+      line: My pull request adds opt-in dispatch and combine kernels that need only weak signals, enabling hybrid mode on transports without ordered delivery. The EFA version is open source in amazon-contributing/DeepEP, and my awsome-distributed-ai recipe builds it on EFA clusters.
       link: 'Pull request #732'
+      extra:
+      - EFA repository
+      - EFA build recipe
     - name: NVSHMEM
       status: Released in NVSHMEM 3.7.0
       line: 'Worked with the NVSHMEM team on libfabric transport: RMA batching, signal-path deadlock and hang fixes, completion-queue draining, and pre-release testing for 3.7.0.'
@@ -710,8 +736,8 @@ en:
   writing:
     eyebrow: Weekly
     h2_line1: I'll write weekly
-    h2_line2: about AI systems.
-    body: I'm starting a weekly newsletter on Substack about building AI systems, including mixture-of-experts models, GPU communication and self-evolving agents, and about research. Subscribers get each post by email.
+    h2_line2: about interesting ideas in AI.
+    body: I'm starting a weekly newsletter on Substack, mainly about interesting ideas and applications in AI, plus research. Subscribers get each post by email.
     subscribe_btn: Subscribe on Substack
     read_btn: Visit the newsletter
     note: Get posts by email for free. Unsubscribe any time.

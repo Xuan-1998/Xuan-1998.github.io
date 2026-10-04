@@ -12,11 +12,21 @@
       {%- for it in K.items %}
       {%- assign meta = pf.comms[forloop.index0] %}
       <li class="clog-row rv">
+        {%- if meta.extra %}
+        <div class="clog-box">
+          <span class="clog-name"><b>{{ it.name }}</b><code>{{ meta.repo }}</code></span>
+          <span class="clog-line">{{ it.line }}</span>
+          <span class="clog-end"><span class="cstat cstat-{{ meta.status }}">{{ it.status }}</span><a class="clog-link" href="{{ meta.url }}" target="_blank" rel="noopener">{{ it.link }}{% include icon.html name='external' %}</a>
+            {%- for u in meta.extra %}<a class="clog-link" href="{{ u }}" target="_blank" rel="noopener">{{ it.extra[forloop.index0] }}{% include icon.html name='external' %}</a>{% endfor -%}
+          </span>
+        </div>
+        {%- else %}
         <a href="{{ meta.url }}" target="_blank" rel="noopener">
           <span class="clog-name"><b>{{ it.name }}</b><code>{{ meta.repo }}</code></span>
           <span class="clog-line">{{ it.line }}</span>
           <span class="clog-end"><span class="cstat cstat-{{ meta.status }}">{{ it.status }}</span><span class="clog-link">{{ it.link }}{% include icon.html name='external' %}</span></span>
         </a>
+        {%- endif %}
       </li>
       {%- endfor %}
     </ol>
