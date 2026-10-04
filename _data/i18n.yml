@@ -28,6 +28,8 @@ zh:
     cta_scholar: Google Scholar
     follow_label: 其他平台
     portrait_alt: xuanxuan 的照片
+    kicker: 新开了 AI 周刊，聊有趣的想法和应用
+    kicker_link: 去订阅
   hero_alts:
   - line1: 让大规模运算更快，
     line2: 让智能体随做随学。
@@ -58,7 +60,7 @@ zh:
     - label: h-index
     - label: 论文及预印本
     - label: reef、CORAL 已合并 PR
-    source_note: Google Scholar、GitHub，2026 年 10 月；年限自 2019 年起。
+    source_note: Google Scholar、GitHub，2026 年 10 月。年限自 2019 年起。
     venues_label: 发表期刊与会议
   reel:
     captions:
@@ -101,7 +103,7 @@ zh:
       lpsim:
         meta: 仿真系统，Transportation Research Part C 2024
         title: LPSim
-        desc: 我开发了多 GPU 交通仿真器 LPSim：图划分把路网分到多块 GPU，车辆跨分区时经幽灵区迁移；单块 GPU 几秒内就能处理超过 22.3 万个节点的路网。我还与 James Demmel 以及 Roofline 模型的提出者 Samuel Williams 一起，深入优化了 LPSim 的性能。
+        desc: 我开发了多 GPU 交通仿真器 LPSim：图划分把路网分到多块 GPU，车辆跨分区时经幽灵区迁移。单块 GPU 几秒内就能处理超过 22.3 万个节点的路网。我还与 James Demmel 以及 Roofline 模型的提出者 Samuel Williams 一起，深入优化了 LPSim 的性能。
         go: 查看代码
       smt:
         meta: 模型微调，ICLR 2025
@@ -116,7 +118,7 @@ zh:
       icrat:
         meta: 空中交通，ICRAT 2024
         title: Wind-Resilient AAM Networks
-        desc: 这套仿真优化框架将风况变化纳入先进空中交通（AAM），结合多座垂直起降场的非线性充电模型优化机队规模与调度。即使航程较短，风也会影响机队规模；航程越长，影响越大。
+        desc: 这套仿真优化框架将风况变化纳入先进空中交通（AAM），结合多座垂直起降场的非线性充电模型优化机队规模与调度。即使航程较短，风也会影响机队规模，航程越长，影响越大。
         go: 阅读论文
       lessmoe:
         meta: MoE 压缩，EMNLP 2026
@@ -137,7 +139,7 @@ zh:
     eyebrow: 自进化智能体
     h2_line1: 让智能体
     h2_line2: 从自己的经验中学习。
-    intro: 我参与 reef、CORAL 两个开源自进化智能体系统的开发。reef 用交互记录和反馈更新模型权重或 harness（提示词、规则和技能）；CORAL 让长期运行的智能体通过共享持久记忆探索与协作。
+    intro: 我参与 reef、CORAL 两个开源自进化智能体系统的开发。reef 用交互记录和反馈更新模型权重或 harness（提示词、规则和技能）。CORAL 让长期运行的智能体通过共享持久记忆探索与协作。
     loop_title: reef 的学习循环
     loop_caption: 按 reef 文档中的流程整理。
     stages:
@@ -162,7 +164,7 @@ zh:
       title: CORAL
       what: CORAL 是开源自主研究系统，让编程智能体通过共享记忆开展探索与协作。
       role: 我是 CORAL 论文（COLM 2026）的合著者，提交了 14 个 PR，其中 12 个已合并。
-      body: 我在大语言模型网关的请求日志里记录完整的流式响应，并加了一个提供请求头的回调接口；我也修复了命令行和智能体运行时的问题，并补充了文档。
+      body: 我在大语言模型网关的请求日志里记录完整的流式响应，并加了一个提供请求头的回调接口。我也修复了命令行和智能体运行时的问题，并补充了文档。
       repo: 查看代码仓库
       paper: 在 arXiv 阅读论文
       prs: 查看我的 PR
@@ -231,7 +233,7 @@ zh:
       text: 软件工程师。我主导了 AI 辅助的大规模代码变更工作流，以及基于 AI 的集成测试环境搭建。我还构建了用于智能体代码生成的多智能体框架，并在 Google Cloud Assist 中上线了基于告警的调查功能。
     - when: 2023 年至今
       org: MIT
-      text: Research Affiliate，与 Jinhua Zhao 和 Haris Koutsopoulos 合作，用高性能仿真器研究复杂系统的强化学习优化；我们也研究用于云系统异常检测的大语言模型智能体。自 2026 年起，我也与 reef 团队合作开发自进化智能体，并合著了 CORAL（COLM 2026）。
+      text: Research Affiliate，与 Jinhua Zhao 和 Haris Koutsopoulos 合作，用高性能仿真器研究复杂系统的强化学习优化。我们也研究用于云系统异常检测的大语言模型智能体。自 2026 年起，我也与 reef 团队合作开发自进化智能体，并合著了 CORAL（COLM 2026）。
     - when: 2022 至 2025 年
       org: 加州大学伯克利分校
       text: 研究生研究员，2022 至 2024 年任职于 Aviation Innovation Research（AIR）Lab 和 Cal Unmanned Lab。2022 至 2025 年与 James Demmel 和 Raja Sengupta 合作研究高性能计算，用 GPU 做多模式时间驱动仿真。
@@ -398,6 +400,8 @@ en:
     cta_scholar: Google Scholar
     follow_label: Elsewhere
     portrait_alt: Photo of Xuan Jiang
+    kicker: 'New: my weekly newsletter on AI ideas and applications'
+    kicker_link: Subscribe
   hero_alts:
   - line1: Faster computing.
     line2: Learn by doing.
@@ -428,7 +432,7 @@ en:
     - label: h-index
     - label: Papers and preprints
     - label: Merged reef/CORAL PRs
-    source_note: Google Scholar and GitHub, October 2026; AI experience counted from 2019.
+    source_note: Google Scholar and GitHub, October 2026. AI experience counted from 2019.
     venues_label: Publication venues
   reel:
     captions:
@@ -493,14 +497,14 @@ en:
         title: Less is MoE
         desc: 'Capabilities concentrate in sparse FFN intermediate dimensions: in Qwen1.5-MoE, removing 12 of its 1.35M routed-FFN intermediate dimensions collapses GSM8K accuracy. At 50% compression, Fisher-MoE preserves capability with about 45% less weight memory and 21% higher inference throughput.'
         go: Read the paper
-        alt: An expert FFN with edges colored by Fisher importance; top 50% of intermediate dimensions retained, the rest removed
+        alt: An expert FFN with edges colored by Fisher importance, top 50% of intermediate dimensions retained, the rest removed
       condenser:
         meta: MoE fine-tuning, COLM 2026
         title: ExpertCondenser
         desc: ExpertCondenser fine-tunes MoE models without auxiliary loss, using bias-driven sparsification and always-active gated condenser experts to retain rarely used experts' knowledge. On mathematical reasoning and commonsense QA, it improves on DenseMixer and ESFT by more than 2.5% on average.
         go: Read the paper
         alt: Framework with trainable router biases and always-active condenser experts beside routed experts
-    coral_stat: Four co-evolving CORAL agents set a new record on Anthropic's kernel engineering task, measured in cycles; lower is better.
+    coral_stat: Four co-evolving CORAL agents set a new record on Anthropic's kernel engineering task, measured in cycles where lower is better.
     lpsim_alt: San Francisco Bay Area road network partitioned across several GPUs, with one color per partition
     award_badge: Best Paper Award
   agents:
@@ -567,7 +571,7 @@ en:
     h2: From models to systems.
     rows:
     - title: MoE and efficient fine-tuning
-      thesis: Capabilities in MoE models concentrate in a few FFN intermediate dimensions; rarely activated, long-tailed experts retain useful knowledge. I work on preserving both during compression or fine-tuning, and on fine-tuning that uses less GPU memory.
+      thesis: Capabilities in MoE models concentrate in a few FFN intermediate dimensions, and rarely activated, long-tailed experts retain useful knowledge. I work on preserving both during compression or fine-tuning, and on fine-tuning that uses less GPU memory.
     - title: GPU communication
       thesis: Each MoE layer dispatches tokens to experts on other GPUs and combines their results. I write kernels and transport code for this path, including kernels for transports without ordered delivery.
     - title: Self-evolving agents
@@ -595,7 +599,7 @@ en:
     positions:
     - when: 2026 to present
       org: Amazon Web Services (AWS), Annapurna Labs
-      text: Sr. HPC/AI Engineer. I work on GPU communication performance on large GPU clusters and optimize kernels for mixture-of-experts expert parallelism; with NVIDIA's NCCL team, I co-lead the work to run NCCL EP on EFA. I co-led DeepEP v2 on EFA and led the NVSHMEM work for DeepEP v1 with NVIDIA's NVSHMEM team; those changes shipped in NVSHMEM 3.7.0.
+      text: Sr. HPC/AI Engineer. I work on GPU communication performance on large GPU clusters and optimize kernels for mixture-of-experts expert parallelism, and with NVIDIA's NCCL team, I co-lead the work to run NCCL EP on EFA. I co-led DeepEP v2 on EFA and led the NVSHMEM work for DeepEP v1 with NVIDIA's NVSHMEM team, where the changes shipped in NVSHMEM 3.7.0.
     - when: 2024 to 2026
       org: Google
       text: Software Engineer. I led AI-assisted workflows for large-scale code changes and AI-powered integration test setups. I built multi-agent frameworks for agentic code generation and launched alert-based investigations in Google Cloud Assist.
