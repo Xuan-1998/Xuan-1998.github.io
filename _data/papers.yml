@@ -1,5 +1,5 @@
 # Papers shown on the home page, newest year first. Order inside a year is the display order.
-# topics: moe (mixture-of-experts), agents (LLMs and agents), systems (HPC and simulation), mobility (urban and air mobility).
+# topics: moe (mixture-of-experts), agents (LLMs and agents), systems (HPC and simulation). Papers with no topic appear under All only.
 # cites: Google Scholar, October 2026.
 - title: 'CORAL: Towards Autonomous Multi-Agent Evolution for Open-Ended Discovery'
   authors:
@@ -54,7 +54,6 @@
   topics:
   - moe
   - agents
-  - mobility
   selected: true
   links:
     arxiv: https://arxiv.org/abs/2512.13727
@@ -129,7 +128,6 @@
   venue: IEEE Transactions on Intelligent Transportation Systems
   year: 2026
   topics:
-  - mobility
   - systems
   selected: true
   first_author: true
@@ -146,7 +144,7 @@
   venue: IEEE Transactions on Intelligent Transportation Systems
   year: 2026
   topics:
-  - mobility
+  - systems
   links:
     paper: https://doi.org/10.1109/TITS.2026.3704878
 - title: Sparse Matrix in Large Language Model Fine-Tuning
@@ -180,7 +178,6 @@
   venue: Transportation Research Record
   year: 2025
   topics:
-  - mobility
   - systems
   selected: true
   first_author: true
@@ -200,7 +197,6 @@
   year: 2025
   topics:
   - systems
-  - mobility
   first_author: true
   cites: 6
   links:
@@ -214,8 +210,7 @@
   - Mark Hansen
   venue: SSRN preprint
   year: 2025
-  topics:
-  - mobility
+  topics: []
   links:
     paper: https://doi.org/10.2139/ssrn.7157818
 - title: Large Scale Multi-GPU Based Parallel Traffic Simulation for Accelerated Traffic Assignment and Propagation
@@ -228,7 +223,6 @@
   year: 2024
   topics:
   - systems
-  - mobility
   selected: true
   first_author: true
   cites: 36
@@ -248,7 +242,7 @@
   venue: International Conference on Research in Air Transportation (ICRAT)
   year: 2024
   topics:
-  - mobility
+  - systems
   selected: true
   award: true
   cites: 5
@@ -278,7 +272,6 @@
   year: 2024
   topics:
   - systems
-  - mobility
   selected: true
   first_author: true
   sole_author: true
@@ -299,7 +292,7 @@
   venue: Journal of Air Transportation
   year: 2024
   topics:
-  - mobility
+  - systems
   selected: true
   first_author: true
   cites: 34
@@ -316,8 +309,7 @@
   - Anjan Chakrabarty
   venue: International Conference on Research in Air Transportation (ICRAT)
   year: 2024
-  topics:
-  - mobility
+  topics: []
   cites: 17
   links:
     arxiv: https://arxiv.org/abs/2407.00947
@@ -336,7 +328,6 @@
   year: 2024
   topics:
   - agents
-  - mobility
   cites: 9
   links:
     paper: https://doi.org/10.3390/smartcities7060141
@@ -351,8 +342,7 @@
   - Xuan Jiang
   venue: IEEE International Conference on Intelligent Transportation Systems (ITSC)
   year: 2024
-  topics:
-  - mobility
+  topics: []
   cites: 2
   links:
     paper: https://doi.org/10.1109/ITSC58415.2024.10919895
@@ -369,8 +359,7 @@
   - Zhangyang Wang
   venue: Information Fusion
   year: 2023
-  topics:
-  - mobility
+  topics: []
   selected: true
   cites: 38
   links:
@@ -384,8 +373,7 @@
   - Zeng Zeng
   venue: INFORMS Annual Meeting
   year: 2023
-  topics:
-  - mobility
+  topics: []
   cites: 22
   links:
     arxiv: https://arxiv.org/abs/2103.08311
@@ -399,8 +387,7 @@
   - Raja Sengupta
   venue: IEEE International Smart Cities Conference (ISC2)
   year: 2022
-  topics:
-  - mobility
+  topics: []
   first_author: true
   cites: 12
   links:
@@ -412,8 +399,7 @@
   - Cong Zhang
   venue: International Conference on Transportation and Development (ICTD)
   year: 2022
-  topics:
-  - mobility
+  topics: []
   cites: 7
   links:
     paper: https://osf.io/preprints/osf/m4w38
@@ -426,8 +412,7 @@
   - Marta C. González
   venue: Frontiers in Built Environment
   year: 2021
-  topics:
-  - mobility
+  topics: []
   cites: 45
   links:
     paper: https://doi.org/10.3389/fbuil.2021.642295
@@ -437,8 +422,7 @@
   - Josh Everts
   venue: International Conference on Transportation and Development (ICTD)
   year: 2021
-  topics:
-  - mobility
+  topics: []
   first_author: true
   cites: 17
   links:

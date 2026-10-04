@@ -26,7 +26,7 @@ The `name_zh` field is the name shown in the Chinese header, intro and footer. P
 
 Edit section text in `_data/i18n.yml` under `research.rows`, `comms`, `writing`, `earlier`, and `honors.teaching` / `honors.editorial`. Lists in `_data/i18n.yml` and `_data/profile.yml` match by position, so keep them in the same order.
 
-Paper fields are `title`, `authors`, `equal` (names marked with an asterisk), `venue`, `year`, `topics` (`moe`, `agents`, `systems`, `mobility`), `selected`, `award`, `first_author`, `sole_author`, `cites`, and `links` (`paper`, `arxiv`, `code`). The paper list has a filter chip for each topic.
+Paper fields are `title`, `authors`, `equal` (names marked with an asterisk), `venue`, `year`, `topics` (`moe`, `agents`, `systems`; a paper with no topic appears under All only), `selected`, `award`, `first_author`, `sole_author`, `cites`, and `links` (`paper`, `arxiv`, `code`). The paper list has a filter chip for each topic.
 
 ## Templates and languages
 

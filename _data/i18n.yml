@@ -175,7 +175,6 @@ zh:
       all: 全部
       agents: 大语言模型与智能体
       systems: 高性能计算与仿真
-      mobility: 城市与空中交通
       moe: MoE
     selected_only: 只看精选论文
     show_all: 显示全部论文
@@ -546,7 +545,6 @@ en:
       all: All
       agents: LLMs and agents
       systems: HPC and simulation
-      mobility: Urban and air mobility
       moe: MoE
     selected_only: Selected papers only
     show_all: Show all papers
