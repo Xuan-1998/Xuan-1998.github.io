@@ -1,0 +1,15 @@
+# My Substack posts, newest first, listed on /blog/ and /zh/blog/.
+# zh and en hold each language's version of a post. A page shows its own
+# language and falls back to the other one, marked, when a version is missing.
+# cover: an image URL; substackcdn.com/image/fetch/w_960,... resizes Substack images.
+- date: 2026-10-05
+  zh:
+    url: https://xuanxuan98.substack.com/p/ai-mentee-mentee
+    title: AI 时代什么样的 mentee 是好 mentee
+    summary: 今年暑假在一个科研营义务带学生，带完之后的一些想法。
+    cover: https://substackcdn.com/image/fetch/w_960,c_limit,f_auto,q_auto:good/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F78979967-5cba-4ab2-9a0d-d884383199ec_2912x1632.png
+  en:
+    url: https://xuanxuan98.substack.com/p/what-makes-a-good-mentee-in-the-age
+    title: What makes a good mentee in the age of AI
+    summary: Some thoughts after mentoring students for free at a research camp this summer.
+    cover: https://substackcdn.com/image/fetch/w_960,c_limit,f_auto,q_auto:good/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F71b9665a-df12-4d57-94be-319715627b7f_2912x1632.png

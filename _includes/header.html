@@ -1,4 +1,4 @@
-{%- assign other_url = O.path | relative_url -%}
+{%- assign other_url = page.paths[other] | default: O.path | relative_url -%}
 {%- capture nav_links -%}
 <a href="{{ home }}#research" data-nav="research">{{ t.nav.research }}</a>
 <a href="{{ home }}#work" data-nav="work">{{ t.nav.work }}</a>
@@ -7,6 +7,7 @@
 <a href="{{ home }}#papers" data-nav="papers">{{ t.nav.papers }}</a>
 <a href="{{ home }}#background" data-nav="background">{{ t.nav.honors }}</a>
 <a href="{{ home }}#contact" data-nav="contact">{{ t.nav.contact }}</a>
+<a href="{{ L.path | append: 'blog/' | relative_url }}"{% if page.title_key == 'blog' %} class="is-current" aria-current="page"{% endif %}>{{ t.nav.blog }}</a>
 {%- endcapture -%}
 <header class="hdr{% if page.layout == 'home' %} is-overlay{% endif %}" data-hdr>
   <div class="hdr-bar wrap">

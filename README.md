@@ -15,6 +15,7 @@ The hero mark and headline lines wipe in on load, section headings wipe in when 
 | `_data/i18n.yml` | Every piece of page text, in `zh` and `en` blocks with the same keys. |
 | `_data/profile.yml` | Name, email, profile and project links, `stats`, publication venues, reviewing, and mentees and their links. It also holds `research_tags`, `comms`, `position_links`, `bilibili_followers`, and the links for Substack (`substack`, `substack_subscribe`) and Bilibili. |
 | `_data/papers.yml` | The paper list, newest year first. The order within each year is the display order. |
+| `_data/blog.yml` | Substack posts for the blog page (`/blog/`, `/zh/blog/`), newest first, with a `zh` and `en` block (url, title, summary, cover) per post. A page falls back to the other language, marked, when its own version is missing. |
 | `_data/authors.yml` | Coauthor names that should link to a home page. |
 | `_data/figures.yml` | Detail crops of figures for the moving strip and the paper each links to. Images in `assets/img/fig/` come from papers listed on the site. Captions and alt text are under `reel` in `_data/i18n.yml`. |
 
@@ -33,6 +34,8 @@ Paper fields are `title`, `authors`, `equal` (names marked with an asterisk), `v
 - `_layouts/base.html` defines the head, header and footer.
 - `_layouts/home.html` sets the section order: hero, timeline, numbers, figure strip, research, selected work, GPU communication, self-evolving agents, papers, newsletter, background, earlier work (a Bilibili channel), contact.
 - `_includes/sections/*.html` contains one file per section.
+
+The blog pages are `blog.html` and `zh/blog.html`; both render `_includes/blog.html`, and their `paths` front matter points the language switch and `hreflang` links at each other.
 
 To change which language is at the root, edit `langs` in `_config.yml` and the `permalink` values in `index.html` and `zh/index.html`.
 

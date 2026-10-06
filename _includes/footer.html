@@ -22,7 +22,8 @@
         <li><a href="{{ home }}#agents">{{ t.nav.agents }}</a></li>
         <li><a href="{{ home }}#papers">{{ t.nav.papers }}</a></li>
         <li><a href="{{ home }}#background">{{ t.nav.honors }}</a></li>
-        <li><a href="{{ O.path | relative_url }}" hreflang="{{ O.hreflang }}" lang="{{ O.html }}">{{ t.nav.lang_switch }}</a></li>
+        <li><a href="{{ L.path | append: 'blog/' | relative_url }}">{{ t.nav.blog }}</a></li>
+        <li><a href="{{ page.paths[other] | default: O.path | relative_url }}" hreflang="{{ O.hreflang }}" lang="{{ O.html }}">{{ t.nav.lang_switch }}</a></li>
       </ul>
       <span>{{ t.footer.updated }}{% if lang == 'zh' %}：{{ site.time | date: '%Y 年 %-m 月' }}{% else %}: {{ site.time | date: '%B %Y' }}{% endif %}</span>
       <span>© {{ site.time | date: '%Y' }} {{ pf.name }}</span>

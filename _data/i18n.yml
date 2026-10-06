@@ -21,6 +21,7 @@ zh:
     email_label: 电子邮件
     comms: GPU 通信
     subscribe_cta: 免费订阅
+    blog: 博客
   hero:
     h1_line1: 让大规模计算提速，
     h1_line2: 让智能体边做边学。
@@ -374,6 +375,16 @@ zh:
     subscribe_btn: 在 Substack 订阅
     read_btn: 去 Substack 看看
     note: 不收费，也不用承诺付费，可随时退订。
+  blog:
+    title: 博客 · xuanxuan
+    description: xuanxuan（Xuan Jiang）在 Substack 上写的文章。
+    eyebrow: 博客
+    h1: 我写的文章
+    intro: 文章都发在 Substack 上，订阅后每篇都会发到邮箱。这里按时间列出全部文章。
+    read: 在 Substack 阅读
+    written_in: 英文
+    all: 看全部文章
+    empty: 还没有文章。
 en:
   meta:
     title: 'Xuan Jiang: Computing and agents'
@@ -396,6 +407,7 @@ en:
     email_label: Email
     comms: GPU comms
     subscribe_cta: Subscribe
+    blog: Blog
   hero:
     h1_line1: Make compute fast.
     h1_line2: Let agents learn.
@@ -749,3 +761,13 @@ en:
     subscribe_btn: Subscribe on Substack
     read_btn: Visit the newsletter
     note: It's free, with no pledge. Unsubscribe any time.
+  blog:
+    title: Blog · Xuan Jiang
+    description: Posts by Xuan Jiang on Substack.
+    eyebrow: Blog
+    h1: Things I've written
+    intro: I publish on Substack, and subscribers get each post by email. Every post is listed here, newest first.
+    read: Read on Substack
+    written_in: In Chinese
+    all: All posts
+    empty: No posts yet.

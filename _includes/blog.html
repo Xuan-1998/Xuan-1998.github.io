@@ -1,0 +1,35 @@
+{%- include vars.html -%}
+{%- assign B = t.blog -%}
+<section class="blog">
+  <div class="wrap">
+    <div class="head head-solo">
+      <div class="eyebrow">{{ B.eyebrow }}</div>
+      <h1>{{ B.h1 }}</h1>
+      <p>{{ B.intro }}</p>
+      <a class="btn btn-sea" href="{{ pf.links.substack_subscribe }}" target="_blank" rel="noopener">{% include icon.html name='substack' %}{{ t.writing.subscribe_btn }}</a>
+    </div>
+    {%- if site.data.blog.size > 0 %}
+    <ol class="posts">
+      {%- for p in site.data.blog %}
+      {%- assign tx = p[lang] | default: p[other] %}
+      {%- assign fallback = false %}{% unless p[lang].url %}{% assign fallback = true %}{% endunless %}
+      <li class="post">
+        <a class="post-link" href="{{ tx.url }}" target="_blank" rel="noopener">
+          {%- if tx.cover %}
+          <img class="post-cover" src="{{ tx.cover }}" alt="" loading="lazy" width="960" height="538">
+          {%- endif %}
+          <div class="post-copy">
+            <p class="meta"><time datetime="{{ p.date | date: '%Y-%m-%d' }}">{% if lang == 'zh' %}{{ p.date | date: '%Y 年 %-m 月 %-d 日' }}{% else %}{{ p.date | date: '%B %-d, %Y' }}{% endif %}</time>{% if fallback %}<span class="post-lang">{{ B.written_in }}</span>{% endif %}</p>
+            <h2>{{ tx.title }}</h2>
+            <p class="post-sum">{{ tx.summary }}</p>
+            <span class="letter-read">{{ B.read }}{% include icon.html name='external' %}</span>
+          </div>
+        </a>
+      </li>
+      {%- endfor %}
+    </ol>
+    {%- else %}
+    <p class="meta">{{ B.empty }}</p>
+    {%- endif %}
+  </div>
+</section>
