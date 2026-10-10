@@ -19,7 +19,7 @@ The hero mark and headline lines wipe in on load, section headings wipe in when 
 | `_data/authors.yml` | Coauthor names that should link to a home page. |
 | `_data/figures.yml` | Detail crops of figures for the moving strip and the paper each links to. Images in `assets/img/fig/` come from papers listed on the site. Captions and alt text are under `reel` in `_data/i18n.yml`. |
 
-The `stats` field holds five numbers: years in AI since 2019, Google Scholar citations, h-index, papers, and merged reef and CORAL pull requests. They are updated by hand and reflect October 2026.
+The `stats` field holds five numbers: years in AI since 2019, Google Scholar citations, h-index, papers, and merged reef and CORAL pull requests. Citations and h-index (and each paper's `cites`) are refreshed daily from Google Scholar by a launchd job on the Mac (~/.autobook/scholar_sync/sync.py); the rest are updated by hand.
 
 The `research_tags` field holds one list of linked tags per research row. Each `comms` item has a repository, link and status (`open`, `merged` or `released`). `position_links` adds an optional link after each research position.
 
