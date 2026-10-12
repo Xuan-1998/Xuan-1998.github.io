@@ -29,7 +29,7 @@
   topics:
   - agents
   selected: true
-  cites: 62
+  cites: 65
   links:
     arxiv: https://arxiv.org/abs/2604.01658
     code: https://github.com/Human-Agent-Society/CORAL
@@ -413,7 +413,7 @@
   venue: Frontiers in Built Environment
   year: 2021
   topics: []
-  cites: 45
+  cites: 46
   links:
     paper: https://doi.org/10.3389/fbuil.2021.642295
 - title: Making Sense of Electrical Vehicle Discussions Using Sentiment Analysis on Closely Related News and User Comments
