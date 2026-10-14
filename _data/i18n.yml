@@ -196,7 +196,7 @@ zh:
     scholar_link: 在 Google Scholar 查看完整记录
     filters_label: 按论文主题筛选
     empty: 没有符合筛选条件的论文。
-    equal: 星号表示同等贡献。
+    equal: 星号表示同等贡献，† 表示通讯作者。
   research:
     eyebrow: 研究
     h2: 从模型到系统。
@@ -582,7 +582,7 @@ en:
     scholar_link: Full record on Google Scholar
     filters_label: Filter papers by topic
     empty: No papers match these filters.
-    equal: An asterisk indicates equal contribution.
+    equal: An asterisk indicates equal contribution and † indicates the corresponding author.
   research:
     eyebrow: Research
     h2: From models to systems.

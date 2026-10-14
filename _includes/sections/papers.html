@@ -30,9 +30,9 @@
           <p class="pub-authors">
             {%- for name in p.authors -%}
             {%- assign url = site.data.authors[name] -%}
-            {%- if name == pf.name -%}<b class="me">{{ name }}{% if p.equal contains name %}*{% endif %}</b>
-            {%- elsif url -%}<a href="{{ url }}" target="_blank" rel="noopener">{{ name }}</a>{% if p.equal contains name %}*{% endif %}
-            {%- else -%}{{ name }}{% if p.equal contains name %}*{% endif %}
+            {%- if name == pf.name -%}<b class="me">{{ name }}{% if p.equal contains name %}*{% endif %}{% if p.corresponding contains name %}&dagger;{% endif %}</b>
+            {%- elsif url -%}<a href="{{ url }}" target="_blank" rel="noopener">{{ name }}</a>{% if p.equal contains name %}*{% endif %}{% if p.corresponding contains name %}&dagger;{% endif %}
+            {%- else -%}{{ name }}{% if p.equal contains name %}*{% endif %}{% if p.corresponding contains name %}&dagger;{% endif %}
             {%- endif -%}
             {%- unless forloop.last %}, {% endunless -%}
             {%- endfor -%}
