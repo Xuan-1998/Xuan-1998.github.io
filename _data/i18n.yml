@@ -582,7 +582,7 @@ en:
     scholar_link: Full record on Google Scholar
     filters_label: Filter papers by topic
     empty: No papers match these filters.
-    equal: An asterisk indicates equal contribution and † indicates the corresponding author.
+    equal: An asterisk indicates equal contribution and † indicates a corresponding author.
   research:
     eyebrow: Research
     h2: From models to systems.
