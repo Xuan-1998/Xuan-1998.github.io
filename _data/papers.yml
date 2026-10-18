@@ -29,7 +29,7 @@
   topics:
   - agents
   selected: true
-  cites: 65
+  cites: 70
   links:
     arxiv: https://arxiv.org/abs/2604.01658
     code: https://github.com/Human-Agent-Society/CORAL
