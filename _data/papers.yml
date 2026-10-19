@@ -29,7 +29,7 @@
   topics:
   - agents
   selected: true
-  cites: 70
+  cites: 73
   links:
     arxiv: https://arxiv.org/abs/2604.01658
     code: https://github.com/Human-Agent-Society/CORAL
@@ -366,7 +366,7 @@
   year: 2023
   topics: []
   selected: true
-  cites: 38
+  cites: 39
   links:
     paper: https://doi.org/10.1016/j.inffus.2023.101837
 - title: An Automated Machine Learning (AutoML) Method for Driving Distraction Detection Based on Lane-Keeping Performance
@@ -379,7 +379,7 @@
   venue: INFORMS Annual Meeting
   year: 2023
   topics: []
-  cites: 22
+  cites: 21
   links:
     arxiv: https://arxiv.org/abs/2103.08311
 - title: A Metrics-based Method for Evaluating Corridors for Urban Air Mobility Operations
@@ -394,7 +394,7 @@
   year: 2022
   topics: []
   first_author: true
-  cites: 12
+  cites: 11
   links:
     paper: https://ieeexplore.ieee.org/document/9922442
 - title: 'Causality and Advanced Models in Trip Mode Prediction: Interest in Choosing Swissmetro'
@@ -418,7 +418,7 @@
   venue: Frontiers in Built Environment
   year: 2021
   topics: []
-  cites: 46
+  cites: 45
   links:
     paper: https://doi.org/10.3389/fbuil.2021.642295
 - title: Making Sense of Electrical Vehicle Discussions Using Sentiment Analysis on Closely Related News and User Comments
@@ -429,7 +429,7 @@
   year: 2021
   topics: []
   first_author: true
-  cites: 17
+  cites: 16
   links:
     arxiv: https://arxiv.org/abs/2112.12327
 - title: Chemical and Rheology Evaluation on the Field Short-Term Aging of High Content Polymer Modified Asphalt
@@ -440,6 +440,6 @@
   venue: Transportation Research Board Annual Meeting
   year: 2019
   topics: []
-  cites: 7
+  cites: 6
   links:
     paper: https://trid.trb.org/View/1572334
