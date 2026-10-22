@@ -10,4 +10,4 @@ smt: {w: 520, h: 133, alt: "Diagram comparing LoRA's low-rank update with SMT's 
 lpsim: {w: 640, h: 400, alt: "LPSim visualizer: simulated trips moving over the San Francisco Bay Area road network", credit: 'Map &copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/about-carto/" target="_blank" rel="noopener">CARTO</a>'}
 devastator: {w: 520, h: 325, alt: "Plot of committed-to-executed event ratio against core count, from 128 to 32,768"}
 pads: {w: 520, h: 651, alt: "Framework diagram with routing, graph partition, and traffic propagation across GPUs"}
-reactionbench: {w: 520, h: 217, alt: "ReactionBench overview: synchronized stimulus and reaction videos, human evidence, and three tasks for intensity profiling, stimulus-reaction matching, and grounded rationales"}
+reactionbench: {w: 520, h: 480, alt: "ReactionBench data pipeline: reaction videos are collected, split into aligned reactor and stimulus clips, filtered for quality, and annotated with facial action units"}
