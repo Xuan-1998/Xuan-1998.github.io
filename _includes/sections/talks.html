@@ -3,7 +3,12 @@
   <hr>
   {%- for t in site.data.talks %}
   <div class="talk">
-    <div class="talk-title">{{ t.title }}</div>
+    <div class="talk-row talk-head">
+      <div class="talk-title">{{ t.title }}</div>
+      {%- if t.slides %}
+      <a class="talk-link" href="{{ t.slides | relative_url }}" target="_blank" rel="noopener">{% include icon.html name='slides' %} Slides</a>
+      {%- endif %}
+    </div>
     <div class="talk-row">
       {%- if t.date %}{% assign d = t.date | split: '-' %}
       <span class="talk-date">[{{ d[1] }}/{{ d[0] }}]</span>

@@ -141,11 +141,14 @@ html:not(.js) .pub-links .lnk, html:not(.js) .pub-links .lnk + br { display: non
 /* Talks */
 .sec-talks { font-size: 16px; }
 .talk { margin-bottom: 25px; }
-.talk-title { margin-bottom: 10px; font-size: 20px; font-weight: bold; color: #000; }
+.talk-title { font-size: 20px; font-weight: bold; color: #000; }
+.talk-head { margin-bottom: 10px; }
 .talk-row { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
 .talk-date { color: #000; font-size: 15px; }
 .talk-venue { display: flex; align-items: center; gap: 8px; }
 .talk-logo { width: 24px; height: 24px; vertical-align: middle; }
+.talk-link { padding: 4px 8px; border: 1px solid #ddd; border-radius: 4px; color: #555; font-size: 14px; line-height: 1.2; transition: all .2s ease; }
+.talk-link:hover, .talk-link:focus { background: #f0f0f0; color: #007bff; }
 
 /* Open source */
 .project { margin-bottom: 15px; }

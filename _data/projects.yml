@@ -13,6 +13,16 @@
     - label: My commits
       url: https://github.com/NVIDIA/nvshmem/commits?author=Xuan-1998
   desc: 'I worked with the NVSHMEM team on the libfabric transport: RMA batching, signal-path deadlock and hang fixes, completion-queue draining, and pre-release testing. The changes shipped in NVSHMEM 3.7.0.'
+- name: NCCL
+  links:
+    - label: My commit
+      url: https://github.com/NVIDIA/nccl/commits?author=Xuan-1998
+  desc: Added NCCL_GIN_PROXY_POLL_BATCH, which lets the proxy of GPU-initiated networking (GIN) drain its requests in batches.
+- name: aws-ofi-nccl
+  links:
+    - label: Merged PRs
+      url: https://github.com/aws/aws-ofi-nccl/pulls?q=is%3Apr+author%3AXuan-1998+is%3Amerged
+  desc: In the NCCL network plugin for EFA, I moved the GDRCopy signal path of GIN to a worker thread and made receive requests return to their pool only after that signal completes.
 - name: vLLM
   links:
     - label: 'PR #53008 (merged)'

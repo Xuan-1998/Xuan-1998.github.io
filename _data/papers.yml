@@ -69,8 +69,6 @@
     arxiv: https://arxiv.org/abs/2512.13727
 - title: Preserving Long-Tailed Expert Information in Mixture-of-Experts Tuning
   key: condenser
-  lead:
-  - Xuan Jiang
   authors:
   - Haoze He
   - Xingyuan Ding
@@ -92,8 +90,6 @@
     code: https://github.com/HectorHHZ/ExpertCondenser
 - title: 'Less is MoE: Trimming Experts in Domain-Specialist Language Models'
   key: lessmoe
-  lead:
-  - Xuan Jiang
   video: lessmoe.mp4
   authors:
   - Haoze He
@@ -138,6 +134,33 @@
   cites: 6
   links:
     arxiv: https://arxiv.org/abs/2508.01844v1
+- title: 'ReactionBench: A Human-Anchored Benchmark for Modeling Reactions to Video'
+  key: reactionbench
+  authors:
+  - Yibo Zhao
+  - Ao Qu
+  - Xuan Jiang
+  - Jiahao Xu
+  - Keane Ong
+  - Hang Jiang
+  - Zhaofeng Wu
+  - Dingyi Zhuang
+  - Yihong Tang
+  - Kaichen Zhou
+  - Jinhua Zhao
+  - Paul Pu Liang
+  equal:
+  - Yibo Zhao
+  - Ao Qu
+  venue: NeurIPS 2026 Workshop on Evaluation of Interactive Agents (IAEval)
+  year: 2026
+  topics:
+  - agents
+  selected: true
+  links:
+    website: https://yibozh.github.io/ReactionBench-page/
+    code: https://github.com/MIT-MI/ReactionBench
+    dataset: https://huggingface.co/datasets/YiboZhaoMit/ReactionBench
 - title: 'From Patchwork to Network: A Comprehensive Framework for Demand Analysis and Fleet Optimization of Urban Air Mobility'
   key: patch
   authors:

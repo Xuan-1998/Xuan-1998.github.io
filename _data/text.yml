@@ -10,18 +10,18 @@ nav:
 intro:
   photo_alt: Photo of Xuan Jiang
   bio:
-    - I work on high performance computing (HPC) and post-training for large models. I am a Sr. HPC/AI Engineer at AWS Annapurna Labs, where I work on GPU communication for mixture-of-experts (MoE) expert parallelism, and my changes have shipped in NVSHMEM 3.7.0 and vLLM. I am also a Research Affiliate at <a href="https://mobility.mit.edu/biblio-author/xuan-jiang/" target="_blank" rel="noopener">MIT</a>. Before that, I was a Software Engineer at Google.
+    - I work on high performance computing (HPC) and post-training for large models. I am a Sr. HPC/AI Engineer at AWS Annapurna Labs, where I work on GPU communication for collective operations and mixture-of-experts (MoE) expert parallelism. My changes have shipped in <a href="https://docs.nvidia.com/nvshmem/release-notes-install-guide/release-notes/release-3700.html" target="_blank" rel="noopener">NVSHMEM 3.7.0</a> and <a href="https://github.com/vllm-project/vllm/pull/53008" target="_blank" rel="noopener">vLLM</a>, and I co-led the open-source release of <a href="https://github.com/amazon-contributing/DeepEP" target="_blank" rel="noopener">DeepEP v2 on AWS</a>. I am also a Research Affiliate at <a href="https://mobility.mit.edu/biblio-author/xuan-jiang/" target="_blank" rel="noopener">MIT</a>. Before that, I was a Software Engineer at Google.
     - I did my Ph.D. at <a href="https://www.berkeley.edu/" target="_blank" rel="noopener">UC Berkeley</a>, advised by Prof. <a href="https://people.eecs.berkeley.edu/~demmel/" target="_blank" rel="noopener">James Demmel</a> (<a href="https://slice.eecs.berkeley.edu/" target="_blank" rel="noopener">SLICE Lab</a>) and Prof. <a href="https://ce.berkeley.edu/people/faculty/sengupta" target="_blank" rel="noopener">Raja Sengupta</a> (<a href="http://unmanned.berkeley.edu/" target="_blank" rel="noopener">Cal Unmanned Lab</a>), with Prof. Alexandre Bayen (<a href="https://bair.berkeley.edu/" target="_blank" rel="noopener">BAIR</a>) on my committee.
     - I have <a href="#mentoring">mentored eight students</a>, now at MIT, UIUC, Yale, ETH Zurich, UCSD, CMU, Northeastern, and Duke.
   email: "Email: xuanj [at] mit [dot] edu"
 
 research:
   title: Research
-  lede: My HPC work covers GPU communication for mixture-of-experts (MoE) expert parallelism, from DeepEP and NVSHMEM kernels to NCCL EP on EFA, and simulation that scales across many GPUs. My post-training work covers efficient fine-tuning, MoE compression, reinforcement learning, and self-evolving agents.
+  lede: My HPC work covers GPU communication for collective operations and mixture-of-experts (MoE) expert parallelism, in NCCL, aws-ofi-nccl, NVSHMEM, DeepEP, and NCCL EP on EFA, and simulation that scales across many GPUs. My post-training work covers efficient fine-tuning, MoE compression, reinforcement learning, and self-evolving agents.
   overview_label: Research Overview
   areas:
-    - name: "HPC: GPU Communication for Expert Parallelism"
-      text: I wrote dispatch and combine kernels for <a href="https://github.com/deepseek-ai/DeepEP/pull/732" target="_blank" rel="noopener">DeepEP</a> that need only weak signals, enabling hybrid mode on transports without ordered delivery. The EFA version is open source in <a href="https://github.com/amazon-contributing/DeepEP" target="_blank" rel="noopener">amazon-contributing/DeepEP</a>. With NVIDIA's NVSHMEM team, I improved the libfabric transport, and the changes shipped in <a href="https://github.com/NVIDIA/nvshmem/commits?author=Xuan-1998" target="_blank" rel="noopener">NVSHMEM 3.7.0</a>. With NVIDIA's NCCL team, I co-lead the work to run NCCL EP on EFA. I also fixed host heap corruption with NCCL 2.31 and later in <a href="https://github.com/vllm-project/vllm/pull/53008" target="_blank" rel="noopener">vLLM</a>.
+    - name: "HPC: GPU Communication for Collectives and Expert Parallelism"
+      text: I wrote dispatch and combine kernels for <a href="https://github.com/deepseek-ai/DeepEP/pull/732" target="_blank" rel="noopener">DeepEP</a> that need only weak signals, enabling hybrid mode on transports without ordered delivery. The EFA version is open source in <a href="https://github.com/amazon-contributing/DeepEP" target="_blank" rel="noopener">amazon-contributing/DeepEP</a>. With NVIDIA's NVSHMEM team, I improved the libfabric transport, and the changes shipped in <a href="https://github.com/NVIDIA/nvshmem/commits?author=Xuan-1998" target="_blank" rel="noopener">NVSHMEM 3.7.0</a>. With NVIDIA's NCCL team, I co-lead the work to run NCCL EP on EFA. In <a href="https://github.com/aws/aws-ofi-nccl/pulls?q=is%3Apr+author%3AXuan-1998+is%3Amerged" target="_blank" rel="noopener">aws-ofi-nccl</a>, the NCCL network plugin for EFA, I moved the GDRCopy signal path of GPU-initiated networking (GIN) to a worker thread and made receive requests go back to their pool only after that signal completes, and in <a href="https://github.com/NVIDIA/nccl/commits?author=Xuan-1998" target="_blank" rel="noopener">NCCL</a> I added NCCL_GIN_PROXY_POLL_BATCH to batch the GIN proxy's work. I also fixed host heap corruption with NCCL 2.31 and later in <a href="https://github.com/vllm-project/vllm/pull/53008" target="_blank" rel="noopener">vLLM</a>.
     - name: "HPC: Parallel Simulation"
       text: <a href="https://doi.org/10.1016/j.trc.2024.104873" target="_blank" rel="noopener">LPSim (TR Part C'24)</a> simulates city-scale traffic across multiple GPUs with graph partitioning and ghost-zone vehicle migration. <a href="https://doi.org/10.1145/3615979.3656061" target="_blank" rel="noopener">Devastator (PADS'24)</a> is a scalable parallel discrete event simulation framework for modern C++. My sole-author <a href="https://doi.org/10.1145/3615979.3665104" target="_blank" rel="noopener">PADS'24 paper</a> designs a time-driven simulation framework for large-scale traffic networks.
     - name: "Post-Training: Efficient Fine-Tuning and MoE"
@@ -36,6 +36,8 @@ pubs:
   paper: paper
   arxiv: arXiv
   code: code
+  website: website
+  dataset: dataset
   award: Best Paper Award
   more: Show all papers
   less: Show selected

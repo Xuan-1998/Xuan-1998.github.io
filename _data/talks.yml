@@ -1,10 +1,11 @@
 # Talks, in display order (newest first). date: YYYY-MM, shown as [MM/YYYY]; leave it out when unknown.
-# logo: a file in assets/img/logo/ (48 px square PNG), optional.
-# No slides or recordings here: internal talks stay internal.
+# logo: a file in assets/img/logo/ (48 px square PNG), optional. slides: a public PDF, optional.
+# Internal talks get no slides or recordings.
 - title: 'GPUs: From CUDA to the Gigawatt Rack'
   date: '2026-10'
   venue: UC Berkeley, guest lecture in Control and Information Management
   logo: berkeley
+  slides: /assets/slides/gpus-from-cuda-to-the-gigawatt-rack.pdf
 - title: 'DeepEPv2 Deep Dive: Unbalanced Scenario and Performance Simulator'
   date: '2026-07'
   venue: AWS Annapurna Labs
@@ -19,11 +20,14 @@
   logo: google
 - title: 'Sparse Matrix Tuning: Efficient Fine-Tuning of Large Language Models'
   date: '2025-04'
-  venue: MIT JTL Seminar
+  venue: MIT Senior Researcher Seminar
   logo: mit
+  slides: /assets/slides/sparse-matrix-tuning-mit-2025.pdf
 - title: The Intuition Behind Attention
   date: '2024-07'
   venue: Google
   logo: google
 - title: Large Scale Multi-GPU Based Parallel Traffic Simulation for Accelerated Traffic Assignment and Propagation
+  date: '2023-05'
   venue: Lawrence Berkeley National Laboratory, HPC Technology Department
+  logo: lbl
