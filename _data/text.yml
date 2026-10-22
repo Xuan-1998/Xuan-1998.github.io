@@ -75,9 +75,6 @@ misc:
     - when: 2021 to 2023
       org: Lawrence Berkeley National Laboratory
       text: Graduate Student Researcher.
-    - when: 2019 to 2020
-      org: Shanghai Huimice Information Technology Co., Ltd.
-      text: AI Scientist.
   education_label: Education
   education:
     - when: 2020 to 2024
