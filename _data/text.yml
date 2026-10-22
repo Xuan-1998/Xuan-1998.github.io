@@ -11,7 +11,7 @@ intro:
   photo_alt: Photo of Xuan Jiang
   bio:
     - I work on high performance computing (HPC) and post-training for large models. I am a Sr. HPC/AI Engineer at AWS Annapurna Labs, where I work on GPU communication for mixture-of-experts (MoE) expert parallelism, and my changes have shipped in NVSHMEM 3.7.0 and vLLM. I am also a Research Affiliate at <a href="https://mobility.mit.edu/biblio-author/xuan-jiang/" target="_blank" rel="noopener">MIT</a>. Before that, I was a Software Engineer at Google.
-    - I did my Ph.D. at <a href="https://www.berkeley.edu/" target="_blank" rel="noopener">UC Berkeley</a>, advised by Prof. <a href="https://people.eecs.berkeley.edu/~demmel/" target="_blank" rel="noopener">James Demmel</a> and Prof. <a href="https://ce.berkeley.edu/people/faculty/sengupta" target="_blank" rel="noopener">Raja Sengupta</a>.
+    - I did my Ph.D. at <a href="https://www.berkeley.edu/" target="_blank" rel="noopener">UC Berkeley</a>, advised by Prof. <a href="https://people.eecs.berkeley.edu/~demmel/" target="_blank" rel="noopener">James Demmel</a> (<a href="https://slice.eecs.berkeley.edu/" target="_blank" rel="noopener">SLICE Lab</a>) and Prof. <a href="https://ce.berkeley.edu/people/faculty/sengupta" target="_blank" rel="noopener">Raja Sengupta</a> (<a href="http://unmanned.berkeley.edu/" target="_blank" rel="noopener">Cal Unmanned Lab</a>), with Prof. Alexandre Bayen (<a href="https://bair.berkeley.edu/" target="_blank" rel="noopener">BAIR</a>) on my committee.
     - I have <a href="#mentoring">mentored eight students</a>, now at MIT, UIUC, Yale, ETH Zurich, UCSD, CMU, Northeastern, and Duke.
   email: "Email: xuanj [at] mit [dot] edu"
 
@@ -80,7 +80,7 @@ misc:
   education:
     - when: 2020 to 2024
       org: UC Berkeley
-      text: Ph.D. (2021 to 2024) and M.S. (2020 to 2021), advised by James Demmel and Raja Sengupta.
+      text: Ph.D. (2021 to 2024) and M.S. (2020 to 2021), advised by James Demmel (<a href="https://slice.eecs.berkeley.edu/" target="_blank" rel="noopener">SLICE Lab</a>) and Raja Sengupta (<a href="http://unmanned.berkeley.edu/" target="_blank" rel="noopener">Cal Unmanned Lab</a>). Alexandre Bayen (<a href="https://bair.berkeley.edu/" target="_blank" rel="noopener">BAIR</a>) served on my committee.
     - when: 2016 to 2020
       org: Tongji University
       text: B.S.

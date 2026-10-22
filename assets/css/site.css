@@ -119,6 +119,8 @@ html:not(.js) .navbar-burger { display: none; }
   background: #fff;
 }
 .pub-title { font-size: 18px; font-weight: bold; color: #000; }
+.credit { margin-top: .25rem; color: #6c757d; font-size: 12px; line-height: 1.4; }
+.credit a { color: #6c757d; text-decoration: underline; }
 .pub-authors .me { font-weight: bold; color: #000; }
 .pub-venue { color: #000; }
 .award { color: #e60000; }

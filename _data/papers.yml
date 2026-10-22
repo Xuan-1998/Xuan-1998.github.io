@@ -69,6 +69,8 @@
     arxiv: https://arxiv.org/abs/2512.13727
 - title: Preserving Long-Tailed Expert Information in Mixture-of-Experts Tuning
   key: condenser
+  lead:
+  - Xuan Jiang
   authors:
   - Haoze He
   - Xingyuan Ding
@@ -90,6 +92,8 @@
     code: https://github.com/HectorHHZ/ExpertCondenser
 - title: 'Less is MoE: Trimming Experts in Domain-Specialist Language Models'
   key: lessmoe
+  lead:
+  - Xuan Jiang
   video: lessmoe.mp4
   authors:
   - Haoze He
@@ -338,6 +342,10 @@
   links:
     arxiv: https://arxiv.org/abs/2407.00947
 - title: Robust Reinforcement Learning Strategies with Evolving Curriculum for Efficient Bus Operations in Smart Cities
+  lead:
+  - Xuan Jiang
+  - Baichuan Mo
+  - Ao Qu
   authors:
   - Yuhan Tang
   - Ao Qu

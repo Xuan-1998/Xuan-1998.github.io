@@ -2,26 +2,28 @@
 # logo: a file in assets/img/logo/ (48 px square PNG), optional.
 # No slides or recordings here: internal talks stay internal.
 - title: 'GPUs: From CUDA to the Gigawatt Rack'
-  date: 2026-10
+  date: '2026-10'
   venue: UC Berkeley, guest lecture in Control and Information Management
   logo: berkeley
 - title: 'DeepEPv2 Deep Dive: Unbalanced Scenario and Performance Simulator'
-  date: 2026-07
+  date: '2026-07'
   venue: AWS Annapurna Labs
   logo: aws
 - title: 'Real-World Examples of LTTng, EFA Traces, Flame Graphs, and Histograms'
-  date: 2026-04
+  date: '2026-04'
   venue: AWS Annapurna Labs
   logo: aws
 - title: AI-Assisted Large-Scale Code Changes
-  venue: Google
-  logo: google
-- title: The Intuition Behind Attention
+  date: '2025-06'
   venue: Google
   logo: google
 - title: 'Sparse Matrix Tuning: Efficient Fine-Tuning of Large Language Models'
-  date: 2025-04
+  date: '2025-04'
   venue: MIT JTL Seminar
   logo: mit
+- title: The Intuition Behind Attention
+  date: '2024-07'
+  venue: Google
+  logo: google
 - title: Large Scale Multi-GPU Based Parallel Traffic Simulation for Accelerated Traffic Assignment and Propagation
   venue: Lawrence Berkeley National Laboratory, HPC Technology Department

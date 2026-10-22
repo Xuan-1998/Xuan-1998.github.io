@@ -13,6 +13,9 @@
     {%- elsif th %}
     <img class="thumb" src="{{ '/assets/img/thumb/' | append: p.key | append: '.webp' | relative_url }}" width="{{ th.w }}" height="{{ th.h }}" alt="{{ th.alt | escape }}" loading="lazy">
     {%- endif %}
+    {%- if th.credit %}
+    <div class="credit">{{ th.credit }}</div>
+    {%- endif %}
   </div>
   {%- endunless %}
   <div class="{% if include.compact %}col-12{% else %}col-md-9{% endif %} pub-text">
