@@ -1,59 +1,36 @@
 # xuan-1998.github.io
 
-This repository contains the source for Xuan Jiang's personal website at `https://xuan-1998.github.io/`. English is served at `/` and Chinese at `/zh/`.
+This repository contains the source for Xuan Jiang's homepage at `https://xuan-1998.github.io/`. It is a plain one-page academic homepage built by GitHub Pages with Jekyll and the `github-pages` gem, with one stylesheet (`assets/css/site.css`), one small script (`assets/js/site.js`) and no framework. Without JavaScript everything still shows except the [abs] toggles and the mobile menu button.
 
-## Build
+## Pages
 
-GitHub Pages builds the site with Jekyll, with no plugins beyond the `github-pages` gem. There is no JavaScript framework; the site uses one stylesheet, `assets/css/site.css`, and one script, `assets/js/site.js`. The page works without JavaScript except for the paper filters and animations.
-
-The hero mark and headline lines wipe in on load, section headings wipe in when they scroll into view, and the figure strip drifts. Everything is static for readers who request reduced motion.
+| Path | Source | Content |
+| --- | --- | --- |
+| `/` | `index.html`, `_layouts/home.html` | About, research, selected work, open source, talks, mentoring |
+| `/misc/` | `misc.html` | Experience, education, honors, teaching, service, earlier work |
+| `/blog/` | `blog.html` | Substack posts |
+| `/publications`, `/zh/`, `/zh/blog/` | `_layouts/redirect.html` | Redirects that keep old links working |
 
 ## Edit content
 
-| File | What to edit |
+| File | What it holds |
 | --- | --- |
-| `_data/i18n.yml` | Every piece of page text, in `zh` and `en` blocks with the same keys. |
-| `_data/profile.yml` | Name, email, profile and project links, `stats`, publication venues, reviewing, and mentees and their links. It also holds `research_tags`, `comms`, `position_links`, `bilibili_followers`, and the links for Substack (`substack`, `substack_subscribe`) and Bilibili. |
-| `_data/papers.yml` | The paper list, newest year first. The order within each year is the display order. |
-| `_data/blog.yml` | Substack posts for the blog page (`/blog/`, `/zh/blog/`), newest first, with a `zh` and `en` block (url, title, summary, cover) per post. A page falls back to the other language, marked, when its own version is missing. |
-| `_data/authors.yml` | Coauthor names that should link to a home page. |
-| `_data/figures.yml` | Detail crops of figures for the moving strip and the paper each links to. Images in `assets/img/fig/` come from papers listed on the site. Captions and alt text are under `reel` in `_data/i18n.yml`. |
+| `_data/text.yml` | All page text: the bio, the research summary and overview, section titles, and the entries on the misc page. Values may contain HTML links. |
+| `_data/papers.yml` | Every paper, newest year first. `selected: true` puts a paper in Selected Work with a thumbnail, and the others appear under "Show all papers". `equal` marks co-first authors (*), `lead` marks the project lead (†) and `corresponding` marks corresponding authors (✉). `key` names the paper's thumbnail and abstract, and `video` names an optional teaser video. |
+| `_data/abstracts.yml` | The abstracts behind [abs], copied verbatim from arXiv or Crossref. |
+| `_data/thumbs.yml` | Size and alt text of each thumbnail in `assets/img/thumb/`. |
+| `_data/talks.yml` | Talks, newest first: title, date (`YYYY-MM`), venue and an optional logo from `assets/img/logo/`. A talk without a date shows no date. |
+| `_data/projects.yml` | Open-source entries and their buttons. |
+| `_data/profile.yml` | Name, email, profile links, mentees and reviewing lists. |
+| `_data/blog.yml` | Substack posts, newest first. |
 
-The `stats` field holds five numbers: years in AI since 2019, Google Scholar citations, h-index, papers, and merged reef and CORAL pull requests. Citations and h-index (and each paper's `cites`) are refreshed daily from Google Scholar by a launchd job on the Mac (~/.autobook/scholar_sync/sync.py); the rest are updated by hand.
+The Scholar sync on the Mac (`~/.autobook/scholar_sync/sync.py`) rewrites each paper's `cites` and items 2 and 3 of `stats` in `_data/profile.yml` every day. The page shows neither, but keep both keys in place so the sync keeps working.
 
-The `research_tags` field holds one list of linked tags per research row. Each `comms` item has a repository, link and status (`open`, `merged` or `released`). `position_links` adds an optional link after each research position.
+## Images and videos
 
-The `name_zh` field is the name shown in the Chinese header, intro and footer. Paper author lists keep "Xuan Jiang".
+Thumbnails are WebP files about 520 to 640 px wide. A selected paper with `video` loops a muted H.264 MP4 from `assets/video/` (640 px wide, under 300 KB), and its thumbnail is the video's poster frame. Readers who ask for reduced motion see the poster with player controls instead.
 
-Edit section text in `_data/i18n.yml` under `research.rows`, `comms`, `writing`, `earlier`, and `honors.teaching` / `honors.editorial`. Lists in `_data/i18n.yml` and `_data/profile.yml` match by position, so keep them in the same order.
-
-Paper fields are `title`, `authors`, `equal` (names marked with an asterisk), `corresponding` (names marked with †), `venue`, `year`, `topics` (`moe`, `agents`, `systems`; a paper with no topic appears under All only), `selected`, `award`, `first_author`, `sole_author`, `cites`, and `links` (`paper`, `arxiv`, `code`). The paper list has a filter chip for each topic.
-
-## Templates and languages
-
-- `_layouts/base.html` defines the head, header and footer.
-- `_layouts/home.html` sets the section order: hero, timeline, numbers, figure strip, research, selected work, GPU communication, self-evolving agents, papers, newsletter, background, earlier work (a Bilibili channel), contact.
-- `_includes/sections/*.html` contains one file per section.
-
-The blog pages are `blog.html` and `zh/blog.html`; both render `_includes/blog.html`, and their `paths` front matter points the language switch and `hreflang` links at each other.
-
-To change which language is at the root, edit `langs` in `_config.yml` and the `permalink` values in `index.html` and `zh/index.html`.
-
-Each page links to the other language. Browsers whose first language is the other one get a small, dismissible suggestion after scrolling.
-
-The old `/publications` address forwards to the paper list on the home page.
-
-## Fonts
-
-Subsets of Source Serif 4 and Noto Serif SC are self-hosted in `assets/fonts/` and declared in `_includes/fonts.html`. Both fonts use the SIL Open Font License.
-
-The Chinese serif has a small core file containing the characters currently used in headings, research row titles and the channel name, and a larger fallback file containing the 3,755 most common characters. The browser downloads the fallback only when the serif text needs it.
-
-After changing Chinese text set in the serif face (headings, research row titles or the channel name), rerun `python tools/build_fonts.py --src DIR`. `DIR` must contain `SourceSerif4-Var.ttf` and `NotoSerifSC-Bold.otf`; the script needs `fonttools`, `brotli` and `pyyaml`.
-
-## Social preview images
-
-Run `python tools/build_og.py --src DIR` to render `assets/img/og-en.jpg` and `assets/img/og-zh.jpg` from the hero text. `DIR` needs the same font files plus `portrait-bust.png`. The script needs `pillow` and `pyyaml`.
+The XJ icon in `assets/img/favicon.svg` is the source of `favicon.ico`, `favicon-32.png`, `apple-touch-icon.png` and `icon-512.png`. `assets/img/og.jpg` is the social preview image.
 
 ## Local preview
 
@@ -62,4 +39,4 @@ bundle install
 bundle exec jekyll serve
 ```
 
-Open `http://127.0.0.1:4000/` for English and `http://127.0.0.1:4000/zh/` for Chinese.
+Jekyll serves on `http://127.0.0.1:4000/` by default.

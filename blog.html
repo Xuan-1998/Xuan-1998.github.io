@@ -1,8 +1,26 @@
 ---
 layout: base
-lang: en
-title_key: blog
+title: Blog
+nav: blog
+description: Posts by Xuan Jiang on Substack.
 permalink: /blog/
-paths: {en: /blog/, zh: /zh/blog/}
 ---
-{% include blog.html %}
+{%- assign B = site.data.text.blog -%}
+<section class="container sec" aria-labelledby="blog-title">
+  <h2 id="blog-title">{{ B.title }}</h2>
+  <hr>
+  <p>{{ B.intro }} <a class="pill" href="{{ site.data.profile.links.substack_subscribe }}" target="_blank" rel="noopener">{{ B.subscribe }}</a></p>
+  {%- for post in site.data.blog %}
+  {%- assign tx = post.en | default: post.zh %}
+  <div class="row post">
+    {%- if tx.cover %}
+    <div class="col-md-3 pub-media"><a href="{{ tx.url }}" target="_blank" rel="noopener"><img class="thumb" src="{{ tx.cover }}" width="960" height="538" alt="" loading="lazy"></a></div>
+    {%- endif %}
+    <div class="col-md-9">
+      <div class="pub-title"><a href="{{ tx.url }}" target="_blank" rel="noopener">{{ tx.title }}</a></div>
+      <div class="post-date"><time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: '%B %-d, %Y' }}</time>{% unless post.en %} &middot; {{ B.written_in }}{% endunless %}</div>
+      <p>{{ tx.summary }}</p>
+    </div>
+  </div>
+  {%- endfor %}
+</section>

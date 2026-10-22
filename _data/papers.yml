@@ -1,7 +1,11 @@
 # Papers shown on the home page, newest year first. Order inside a year is the display order.
 # topics: moe (mixture-of-experts), agents (LLMs and agents), systems (HPC and simulation). Papers with no topic appear under All only.
-# cites: Google Scholar, October 2026.
+# cites: Google Scholar, refreshed daily by the Mac's Scholar sync.
+# key: thumbnail (assets/img/thumb/<key>.webp) and abstract (_data/abstracts.yml) of a selected paper.
+# equal: co-first authors (*). lead: project lead (†). corresponding: corresponding author (✉).
 - title: 'CORAL: Towards Autonomous Multi-Agent Evolution for Open-Ended Discovery'
+  key: coral
+  video: coral.mp4
   authors:
   - Ao Qu
   - Han Zheng
@@ -34,6 +38,9 @@
     arxiv: https://arxiv.org/abs/2604.01658
     code: https://github.com/Human-Agent-Society/CORAL
 - title: 'RAST-MoE-RL: A Regime-Aware Spatio-Temporal MoE Framework for Deep Reinforcement Learning in Ride-Hailing'
+  key: rast
+  lead:
+  - Xuan Jiang
   authors:
   - Yuhan Tang
   - Kangxin Cui
@@ -61,6 +68,7 @@
   links:
     arxiv: https://arxiv.org/abs/2512.13727
 - title: Preserving Long-Tailed Expert Information in Mixture-of-Experts Tuning
+  key: condenser
   authors:
   - Haoze He
   - Xingyuan Ding
@@ -81,6 +89,8 @@
     arxiv: https://arxiv.org/abs/2604.23036
     code: https://github.com/HectorHHZ/ExpertCondenser
 - title: 'Less is MoE: Trimming Experts in Domain-Specialist Language Models'
+  key: lessmoe
+  video: lessmoe.mp4
   authors:
   - Haoze He
   - Xinkai Zou
@@ -103,6 +113,10 @@
     arxiv: https://arxiv.org/abs/2606.05538
     code: https://github.com/HectorHHZ/Less-is-MoE
 - title: 'CloudAnoAgent: Anomaly Detection for Cloud Sites via LLM Agent with Neuro-Symbolic Mechanism'
+  key: cloudanoagent
+  video: cloudanoagent.mp4
+  lead:
+  - Xuan Jiang
   authors:
   - Xinkai Zou
   - Xuan Jiang
@@ -121,6 +135,7 @@
   links:
     arxiv: https://arxiv.org/abs/2508.01844v1
 - title: 'From Patchwork to Network: A Comprehensive Framework for Demand Analysis and Fleet Optimization of Urban Air Mobility'
+  key: patch
   authors:
   - Xuan Jiang
   - Xuanyu Zhou
@@ -134,7 +149,6 @@
   year: 2026
   topics:
   - systems
-  selected: true
   first_author: true
   cites: 1
   links:
@@ -153,6 +167,7 @@
   links:
     paper: https://doi.org/10.1109/TITS.2026.3704878
 - title: Sparse Matrix in Large Language Model Fine-Tuning
+  key: smt
   authors:
   - Haoze He
   - Juncheng Billy Li
@@ -170,6 +185,7 @@
   links:
     arxiv: https://arxiv.org/abs/2405.15525
 - title: 'Simulation-Based Optimization for Vertiport Location Selection: A Surrogate Model with Machine Learning Method'
+  key: vertiport
   authors:
   - Xuan Jiang
   - Shangqing Cao
@@ -184,7 +200,6 @@
   year: 2025
   topics:
   - systems
-  selected: true
   first_author: true
   cites: 15
   links:
@@ -219,6 +234,8 @@
   links:
     paper: https://doi.org/10.2139/ssrn.7157818
 - title: Large Scale Multi-GPU Based Parallel Traffic Simulation for Accelerated Traffic Assignment and Propagation
+  key: lpsim
+  video: lpsim.mp4
   authors:
   - Xuan Jiang
   - Raja Sengupta
@@ -236,6 +253,7 @@
     arxiv: https://arxiv.org/abs/2406.08496
     code: https://github.com/Xuan-1998/LPSim
 - title: A Simulation-Optimization Framework for Developing Wind-Resilient AAM Networks
+  key: icrat
   authors:
   - Emin Burak Onat
   - Shangqing Cao
@@ -248,12 +266,12 @@
   year: 2024
   topics:
   - systems
-  selected: true
   award: true
   cites: 5
   links:
     arxiv: https://arxiv.org/abs/2405.11118
 - title: 'Devastator: A Scalable Parallel Discrete Event Simulation Framework for Modern C++'
+  key: devastator
   authors:
   - John Bachan
   - Jianlan Ye
@@ -271,6 +289,7 @@
   links:
     paper: https://doi.org/10.1145/3615979.3656061
 - title: Designing a Time-Driven Simulation Framework for Large-Scale Traffic Networks
+  key: pads
   authors:
   - Xuan Jiang
   venue: ACM SIGSIM Conference on Principles of Advanced Discrete Simulation (PADS)
@@ -284,6 +303,7 @@
   links:
     paper: https://doi.org/10.1145/3615979.3665104
 - title: 'Simulating Integration of Urban Air Mobility into Existing Transportation Systems: Survey'
+  key: uamsurvey
   authors:
   - Xuan Jiang
   - Yuhan Tang
@@ -298,7 +318,6 @@
   year: 2024
   topics:
   - systems
-  selected: true
   first_author: true
   cites: 34
   links:
@@ -353,6 +372,7 @@
     paper: https://doi.org/10.1109/ITSC58415.2024.10919895
     arxiv: https://arxiv.org/abs/2411.17014
 - title: Integrating the Traffic Science with Representation Learning for City-Wide Network Congestion Prediction
+  key: tint
   authors:
   - Wenqing Zheng
   - Hao Frank Yang
@@ -365,7 +385,6 @@
   venue: Information Fusion
   year: 2023
   topics: []
-  selected: true
   cites: 39
   links:
     paper: https://doi.org/10.1016/j.inffus.2023.101837

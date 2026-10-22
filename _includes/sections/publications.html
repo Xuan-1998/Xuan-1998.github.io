@@ -1,0 +1,17 @@
+{%- assign P = site.data.text.pubs -%}
+<section class="container sec sec-pubs" id="publications" aria-labelledby="pubs-title">
+  <h2 id="pubs-title">{{ P.title }}</h2>
+  <p class="pubs-scholar">{{ P.scholar }}</p>
+  <hr class="hr-tight">
+  <p class="legend"><i>* indicates co-first author <sup>&dagger;</sup> indicates project lead <sup class="mail">&#9993;&#xFE0E;</sup> indicates corresponding author</i></p>
+  {%- for p in site.data.papers %}{% if p.selected %}
+  {% include pub.html p=p %}
+  {%- endif %}{% endfor %}
+  <details class="more-pubs">
+    <summary><span class="when-closed">[{{ P.more }}]</span><span class="when-open">[{{ P.less }}]</span></summary>
+    <h3 class="others-title">{{ P.others }}</h3>
+    {%- for p in site.data.papers %}{% unless p.selected %}
+    {% include pub.html p=p compact=true %}
+    {%- endunless %}{% endfor %}
+  </details>
+</section>

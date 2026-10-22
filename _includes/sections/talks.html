@@ -1,0 +1,18 @@
+<section class="container sec sec-talks" id="talks" aria-labelledby="talks-title">
+  <h2 id="talks-title">{{ site.data.text.talks.title }}</h2>
+  <hr>
+  {%- for t in site.data.talks %}
+  <div class="talk">
+    <div class="talk-title">{{ t.title }}</div>
+    <div class="talk-row">
+      {%- if t.date %}{% assign d = t.date | split: '-' %}
+      <span class="talk-date">[{{ d[1] }}/{{ d[0] }}]</span>
+      {%- endif %}
+      <div class="talk-venue">
+        {%- if t.logo %}<img src="{{ '/assets/img/logo/' | append: t.logo | append: '.png' | relative_url }}" class="talk-logo" width="24" height="24" alt="">{% endif %}
+        <span>{{ t.venue }}</span>
+      </div>
+    </div>
+  </div>
+  {%- endfor %}
+</section>

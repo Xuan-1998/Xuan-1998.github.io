@@ -1,0 +1,11 @@
+# Thumbnails of the selected papers: assets/img/thumb/<key>.webp. For papers with a video
+# (assets/video/<key>.mp4) the thumbnail is its poster frame and alt is its aria-label.
+coral: {w: 640, h: 362, alt: "CORAL dashboard: four agents evolving on Anthropic's kernel engineering take-home task reach a new best of 1103 clock cycles"}
+rast: {w: 520, h: 325, alt: "Transformer encoder, mixture-of-experts layer, and actor and critic heads in the RAST-MoE-RL model"}
+condenser: {w: 520, h: 254, alt: "Framework with trainable router biases and always-active condenser experts beside routed experts"}
+lessmoe: {w: 640, h: 400, alt: "Animation: Fisher-MoE scores the intermediate dimensions of one expert FFN by Fisher importance and keeps the top 50%"}
+cloudanoagent: {w: 640, h: 400, alt: "Animation: a metric agent and a log agent feed an integrated agent, a symbolic verifier checks it, and the decision flags a mining attack or avoids a false alarm"}
+smt: {w: 520, h: 133, alt: "Diagram comparing LoRA's low-rank update with SMT's update of selected weight blocks"}
+lpsim: {w: 640, h: 400, alt: "LPSim visualizer: simulated trips moving over the San Francisco Bay Area road network"}
+devastator: {w: 520, h: 325, alt: "Plot of committed-to-executed event ratio against core count, from 128 to 32,768"}
+pads: {w: 520, h: 651, alt: "Framework diagram with routing, graph partition, and traffic propagation across GPUs"}

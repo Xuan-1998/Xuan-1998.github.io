@@ -1,0 +1,36 @@
+{%- assign p = include.p -%}
+{%- assign P = site.data.text.pubs -%}
+{%- assign th = site.data.thumbs[p.key] -%}
+{%- assign ab = site.data.abstracts[p.key] -%}
+{%- assign me = site.data.profile.name -%}
+<div class="row pub{% if include.compact %} pub-compact{% endif %}">
+  {%- unless include.compact %}
+  <div class="col-md-3 pub-media">
+    {%- if p.video %}
+    <video class="thumb" width="{{ th.w }}" height="{{ th.h }}" muted autoplay loop playsinline preload="metadata" poster="{{ '/assets/img/thumb/' | append: p.key | append: '.webp' | relative_url }}" aria-label="{{ th.alt | escape }}">
+      <source src="{{ '/assets/video/' | append: p.video | relative_url }}" type="video/mp4">
+    </video>
+    {%- elsif th %}
+    <img class="thumb" src="{{ '/assets/img/thumb/' | append: p.key | append: '.webp' | relative_url }}" width="{{ th.w }}" height="{{ th.h }}" alt="{{ th.alt | escape }}" loading="lazy">
+    {%- endif %}
+  </div>
+  {%- endunless %}
+  <div class="{% if include.compact %}col-12{% else %}col-md-9{% endif %} pub-text">
+    <div class="pub-title">{{ p.title }}</div>
+    <div class="pub-authors">
+      {%- for name in p.authors -%}
+      <span{% if name == me %} class="me"{% endif %}>{{ name }}{% if p.equal contains name %}*{% endif %}{% if p.lead contains name %}<sup>&dagger;</sup>{% endif %}{% if p.corresponding contains name %}<sup class="mail">&#9993;&#xFE0E;</sup>{% endif %}</span>{% unless forloop.last %}, {% endunless %}
+      {%- endfor -%}
+    </div>
+    <div class="pub-venue">{{ p.venue }}, {{ p.year }}{% if p.award %}, <span class="award">{{ P.award }}</span>{% endif %}</div>
+    <div class="pub-links">
+      {%- if ab %}[<button class="lnk" type="button" aria-expanded="false" aria-controls="abs-{{ p.key }}" data-abs>{{ P.abs }}</button>]&nbsp; {% endif %}
+      {%- if p.links.paper %}[<a href="{{ p.links.paper }}" target="_blank" rel="noopener">{{ P.paper }}</a>]&nbsp; {% endif %}
+      {%- if p.links.arxiv %}[<a href="{{ p.links.arxiv }}" target="_blank" rel="noopener">{{ P.arxiv }}</a>]&nbsp; {% endif %}
+      {%- if p.links.code %}[<a href="{{ p.links.code }}" target="_blank" rel="noopener">{{ P.code }}</a>]{% endif -%}
+    </div>
+    {%- if ab %}
+    <div class="abs" id="abs-{{ p.key }}" hidden><p>{{ ab.text }}</p></div>
+    {%- endif %}
+  </div>
+</div>

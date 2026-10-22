@@ -1,0 +1,7 @@
+---
+layout: base
+---
+<div class="container sec">
+  <p>{{ site.data.text.redirect.body }} <a href="{{ page.redirect_to | relative_url }}">{{ site.data.text.redirect.link }}</a></p>
+</div>
+<script>location.replace({{ page.redirect_to | relative_url | jsonify }})</script>

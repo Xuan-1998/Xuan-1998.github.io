@@ -1,17 +1,5 @@
 ---
-layout: base
-lang: en
-title_key: redirect
+layout: redirect
 permalink: /publications
-noindex: true
+redirect_to: /#publications
 ---
-{%- assign target = site.langs.en.path | append: '#papers' | relative_url -%}
-<meta http-equiv="refresh" content="0; url={{ target }}">
-<script>location.replace({{ target | jsonify }})</script>
-<section class="page-msg">
-  <div class="wrap">
-    <h1>{{ site.data.i18n.en.redirect.title }}</h1>
-    <p>{{ site.data.i18n.en.redirect.body }}</p>
-    <a class="btn btn-sea" href="{{ target }}">{{ site.data.i18n.en.redirect.link }}</a>
-  </div>
-</section>

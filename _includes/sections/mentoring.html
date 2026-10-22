@@ -1,0 +1,11 @@
+{%- assign M = site.data.text.mentoring -%}
+<section class="container sec sec-mentoring" id="mentoring" aria-labelledby="mentoring-title">
+  <h2 id="mentoring-title">{{ M.title }}</h2>
+  <hr>
+  <p>{{ M.intro }}</p>
+  <ul class="mentees">
+    {%- for m in site.data.profile.mentees %}
+    <li>{% if m.url %}<a href="{{ m.url }}" target="_blank" rel="noopener">{{ m.name }}</a>{% else %}{{ m.name }}{% endif %} <span class="now">({{ m.now }})</span></li>
+    {%- endfor %}
+  </ul>
+</section>

@@ -1,0 +1,147 @@
+# Page text. Values may contain HTML links.
+nav:
+  about: About
+  blog: Blog
+  misc: Misc
+  menu: Toggle navigation
+  skip: Skip to content
+  label: Main navigation
+
+intro:
+  photo_alt: Photo of Xuan Jiang
+  bio:
+    - I work on high performance computing (HPC) and post-training for large models. I am a Sr. HPC/AI Engineer at AWS Annapurna Labs, where I work on GPU communication for mixture-of-experts (MoE) expert parallelism, and my changes have shipped in NVSHMEM 3.7.0 and vLLM. I am also a Research Affiliate at <a href="https://mobility.mit.edu/biblio-author/xuan-jiang/" target="_blank" rel="noopener">MIT</a>. Before that, I was a Software Engineer at Google.
+    - I did my Ph.D. at <a href="https://www.berkeley.edu/" target="_blank" rel="noopener">UC Berkeley</a>, advised by Prof. <a href="https://people.eecs.berkeley.edu/~demmel/" target="_blank" rel="noopener">James Demmel</a> and Prof. <a href="https://ce.berkeley.edu/people/faculty/sengupta" target="_blank" rel="noopener">Raja Sengupta</a>.
+    - I have <a href="#mentoring">mentored eight students</a>, now at MIT, UIUC, Yale, ETH Zurich, UCSD, CMU, Northeastern, and Duke.
+  email: "Email: xuanj [at] mit [dot] edu"
+
+research:
+  title: Research
+  lede: My HPC work covers GPU communication for mixture-of-experts (MoE) expert parallelism, from DeepEP and NVSHMEM kernels to NCCL EP on EFA, and simulation that scales across many GPUs. My post-training work covers efficient fine-tuning, MoE compression, reinforcement learning, and self-evolving agents.
+  overview_label: Research Overview
+  areas:
+    - name: "HPC: GPU Communication for Expert Parallelism"
+      text: I wrote dispatch and combine kernels for <a href="https://github.com/deepseek-ai/DeepEP/pull/732" target="_blank" rel="noopener">DeepEP</a> that need only weak signals, enabling hybrid mode on transports without ordered delivery. The EFA version is open source in <a href="https://github.com/amazon-contributing/DeepEP" target="_blank" rel="noopener">amazon-contributing/DeepEP</a>. With NVIDIA's NVSHMEM team, I improved the libfabric transport, and the changes shipped in <a href="https://github.com/NVIDIA/nvshmem/commits?author=Xuan-1998" target="_blank" rel="noopener">NVSHMEM 3.7.0</a>. With NVIDIA's NCCL team, I co-lead the work to run NCCL EP on EFA. I also fixed host heap corruption with NCCL 2.31 and later in <a href="https://github.com/vllm-project/vllm/pull/53008" target="_blank" rel="noopener">vLLM</a>.
+    - name: "HPC: Parallel Simulation"
+      text: <a href="https://doi.org/10.1016/j.trc.2024.104873" target="_blank" rel="noopener">LPSim (TR Part C'24)</a> simulates city-scale traffic across multiple GPUs with graph partitioning and ghost-zone vehicle migration. <a href="https://doi.org/10.1145/3615979.3656061" target="_blank" rel="noopener">Devastator (PADS'24)</a> is a scalable parallel discrete event simulation framework for modern C++. My sole-author <a href="https://doi.org/10.1145/3615979.3665104" target="_blank" rel="noopener">PADS'24 paper</a> designs a time-driven simulation framework for large-scale traffic networks.
+    - name: "Post-Training: Efficient Fine-Tuning and MoE"
+      text: <a href="https://arxiv.org/abs/2405.15525" target="_blank" rel="noopener">SMT (ICLR'25)</a> updates only the most significant sub-matrices and uses 67% less GPU memory than full fine-tuning. <a href="https://arxiv.org/abs/2604.23036" target="_blank" rel="noopener">ExpertCondenser (COLM'26)</a> keeps the knowledge of rarely used, long-tailed experts during MoE fine-tuning. <a href="https://arxiv.org/abs/2606.05538" target="_blank" rel="noopener">Less is MoE (EMNLP'26)</a> shows that capabilities in MoE models concentrate in a few FFN intermediate dimensions and compresses experts by Fisher importance.
+    - name: "Post-Training: Reinforcement Learning and Agents"
+      text: <a href="https://arxiv.org/abs/2512.13727" target="_blank" rel="noopener">RAST-MoE-RL (ICML'26)</a> uses a self-attention mixture-of-experts encoder in deep reinforcement learning for ride-hailing matching. <a href="https://arxiv.org/abs/2604.01658" target="_blank" rel="noopener">CORAL (COLM'26)</a> runs long-lived agents that explore and collaborate through shared persistent memory. I am also on the <a href="https://github.com/Human-Agent-Society/reef" target="_blank" rel="noopener">reef</a> team, which uses interaction records and feedback to update model weights or the agent's harness of prompts, rules, and skills. <a href="https://arxiv.org/abs/2508.01844v1" target="_blank" rel="noopener">CloudAnoAgent (COLM'26 Workshop)</a> detects anomalies in cloud systems with an LLM agent and a neuro-symbolic mechanism.
+
+pubs:
+  title: Selected Work
+  scholar: For the full list of publications, please see <a href="https://scholar.google.com/citations?user=YiUWYl0AAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>.
+  abs: abs
+  paper: paper
+  arxiv: arXiv
+  code: code
+  award: Best Paper Award
+  more: Show all papers
+  less: Show selected
+  others: Other Papers
+
+talks:
+  title: Talks
+
+projects:
+  title: Open Source
+
+mentoring:
+  title: Mentoring
+  intro: "Students I have mentored, and where they are now:"
+
+misc:
+  title: Misc
+  positions_label: Experience
+  positions:
+    - when: 2026 to present
+      org: Amazon Web Services (AWS), Annapurna Labs
+      text: Sr. HPC/AI Engineer. I work on GPU communication performance on large GPU clusters and optimize kernels for mixture-of-experts expert parallelism, and with NVIDIA's NCCL team, I co-lead the work to run NCCL EP on EFA. I co-led DeepEP v2 on EFA and led the NVSHMEM work for DeepEP v1 with NVIDIA's NVSHMEM team, where the changes shipped in NVSHMEM 3.7.0.
+    - when: 2024 to 2026
+      org: Google
+      text: Software Engineer. I led AI-assisted workflows for large-scale code changes and AI-powered integration test setups. I built multi-agent frameworks for agentic code generation and launched alert-based investigations in Google Cloud Assist.
+    - when: 2023 to present
+      org: <a href="https://mobility.mit.edu/biblio-author/xuan-jiang/" target="_blank" rel="noopener">MIT</a>
+      text: Research Affiliate. With Jinhua Zhao and Haris Koutsopoulos, I work on reinforcement learning to optimize complex systems using HPC-based simulators and on LLM agents for cloud anomaly detection. Since 2026, I have also built self-evolving agents with the reef team and co-authored CORAL (COLM 2026).
+    - when: 2022 to 2025
+      org: <a href="https://air.berkeley.edu/xuan-jiang/" target="_blank" rel="noopener">UC Berkeley</a>
+      text: Graduate Student Researcher at the Aviation Innovation Research (AIR) Lab and the Cal Unmanned Lab (2022 to 2024). Researched HPC with James Demmel and Raja Sengupta using GPU-based multimodal time-driven simulation (2022 to 2025).
+    - when: 2022 to 2023
+      org: University of Washington STAR Lab
+      text: Research Assistant. Worked on TinT for city-wide congestion prediction.
+    - when: 2021 to 2023
+      org: Lawrence Berkeley National Laboratory
+      text: Graduate Student Researcher.
+    - when: 2019 to 2020
+      org: Shanghai Huimice Information Technology Co., Ltd.
+      text: AI Scientist.
+  education_label: Education
+  education:
+    - when: 2020 to 2024
+      org: UC Berkeley
+      text: Ph.D. (2021 to 2024) and M.S. (2020 to 2021), advised by James Demmel and Raja Sengupta.
+    - when: 2016 to 2020
+      org: Tongji University
+      text: B.S.
+  awards_label: Honors
+  awards:
+    - when: '2024'
+      text: ICRAT Best Paper Award, Trajectories and Networks track.
+    - when: '2023'
+      text: ASCE ICTD AI in Transportation Committee Outstanding Session Organizer Award.
+    - when: '2022'
+      text: NSF AI Workshop Phase II Travel Award.
+    - when: '2021'
+      text: Joseph M. Sussman Best Paper Prize.
+    - when: '2020'
+      text: Gold Award, 6th China International "Internet+" College Students' Innovation and Entrepreneurship Competition.
+    - when: '2019'
+      text: Outstanding Student of Shanghai.
+    - when: '2018'
+      text: Shanghai Municipal Innovation and Entrepreneurship Project Award.
+    - when: '2017'
+      text: Outstanding Student Leader, Tongji University.
+  teaching_label: Teaching
+  teaching:
+    - when: Fall 2022
+      org: UC Berkeley
+      text: Graduate Student Instructor for Control and Information Management.
+    - when: 2023 to 2024
+      org: UC Berkeley
+      text: Teaching Assistant for Emerging Technologies for Public Health.
+  service_label: Service
+  service:
+    - when: '2024'
+      org: Frontiers in Built Environment
+      text: Topic Editor for the research topic "Advanced Technologies for Aviation Operations and Passenger Experience".
+    - when: 2023 to 2024
+      org: ASCE
+      text: Member of the Artificial Intelligence in Transportation Committee and vice chair of its Student Subcommittee.
+    - when: 2023 to 2024
+      org: ASCE
+      text: Member of the Active Transportation Committee.
+  journals_label: "Journal reviewing:"
+  conferences_label: "Conference reviewing:"
+  earlier_label: Earlier Work
+  earlier: Before moving to the US, I helped Zihao (同济子豪兄) build his AI popular-science channel on Bilibili. The channel now has more than 350,000 followers (October 2026).
+  earlier_link: Bilibili channel
+
+blog:
+  title: Blog
+  intro: I publish on Substack, and subscribers get each post by email. Every post is listed here, newest first.
+  subscribe: Subscribe on Substack
+  read: Read on Substack
+  written_in: In Chinese
+
+footer:
+  updated: Last updated
+
+notfound:
+  title: Page not found
+  body: There is no page at this address.
+  home: Back to the homepage
+
+redirect:
+  body: This page has moved, and your browser is taking you there.
+  link: Go there now

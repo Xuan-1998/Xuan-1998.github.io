@@ -1,0 +1,48 @@
+# Open-source work on the home page, in display order. Each link becomes a small button after the name.
+- name: DeepEP
+  links:
+    - label: 'PR #732'
+      url: https://github.com/deepseek-ai/DeepEP/pull/732
+    - label: EFA version
+      url: https://github.com/amazon-contributing/DeepEP
+    - label: Build recipe
+      url: https://github.com/awslabs/awsome-distributed-ai/commit/9baf5aa749b54d36c3c159345cd5094b6282d5a3
+  desc: My pull request adds opt-in dispatch and combine kernels that need only weak signals, enabling hybrid mode on transports without ordered delivery. The EFA version is open source in amazon-contributing/DeepEP, and my awsome-distributed-ai recipe builds it on EFA clusters.
+- name: NVSHMEM
+  links:
+    - label: My commits
+      url: https://github.com/NVIDIA/nvshmem/commits?author=Xuan-1998
+  desc: 'I worked with the NVSHMEM team on the libfabric transport: RMA batching, signal-path deadlock and hang fixes, completion-queue draining, and pre-release testing. The changes shipped in NVSHMEM 3.7.0.'
+- name: vLLM
+  links:
+    - label: 'PR #53008 (merged)'
+      url: https://github.com/vllm-project/vllm/pull/53008
+  desc: Fixes host heap corruption with NCCL 2.31 and later.
+- name: rdmatop
+  links:
+    - label: 'PR #48 (merged)'
+      url: https://github.com/uccl-project/rdmatop/pull/48
+  desc: Adds headless CSV recording of RDMA counters at sub-millisecond sampling intervals.
+- name: reef
+  links:
+    - label: Repository
+      url: https://github.com/Human-Agent-Society/reef
+    - label: My PRs
+      url: https://github.com/Human-Agent-Society/reef/pulls?q=is%3Apr+author%3AXuan-1998
+  desc: reef connects agent inference, feedback, learning, and versioned delivery so agents can continually improve. I'm on the team, with 25 PRs authored and 18 merged, including reef's Claude Code harness adapter and its CORAL test-time-training example.
+- name: CORAL
+  links:
+    - label: Repository
+      url: https://github.com/Human-Agent-Society/CORAL
+    - label: Paper
+      url: https://arxiv.org/abs/2604.01658
+    - label: My PRs
+      url: https://github.com/Human-Agent-Society/CORAL/pulls?q=is%3Apr+author%3AXuan-1998
+  desc: CORAL is an open-source research system where autonomous coding agents explore and collaborate through shared persistent memory. I co-authored the COLM 2026 paper and authored 14 PRs, with 12 merged.
+- name: LPSim
+  links:
+    - label: Repository
+      url: https://github.com/Xuan-1998/LPSim
+    - label: Paper
+      url: https://doi.org/10.1016/j.trc.2024.104873
+  desc: My simulator for city-scale traffic across multiple GPUs, using graph partitioning and ghost-zone vehicle migration. It handles networks with over 223,000 nodes in seconds on one GPU.

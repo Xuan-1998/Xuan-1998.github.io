@@ -1,82 +1,27 @@
 name: Xuan Jiang
-# Name shown on the Chinese page (header, intro, footer). Paper author lists and the copyright keep "Xuan Jiang".
-name_zh: "xuanxuan"
 email: xuanj@mit.edu
 
 links:
   scholar: https://scholar.google.com/citations?user=YiUWYl0AAAAJ&hl=en
   github: https://github.com/Xuan-1998
+  x: https://x.com/Xuan04263449
   linkedin: https://www.linkedin.com/in/xuan-jiang-0494a7192/
+  instagram: https://www.instagram.com/jax199835/
   reef: https://github.com/Human-Agent-Society/reef
-  reef_site: https://reefinfra.ai
   reef_prs: https://github.com/Human-Agent-Society/reef/pulls?q=is%3Apr+author%3AXuan-1998
   coral: https://github.com/Human-Agent-Society/CORAL
   coral_paper: https://arxiv.org/abs/2604.01658
   coral_prs: https://github.com/Human-Agent-Society/CORAL/pulls?q=is%3Apr+author%3AXuan-1998
   lpsim: https://github.com/Xuan-1998/LPSim
-  lpsim_paper: https://doi.org/10.1016/j.trc.2024.104873
-  smt_paper: https://arxiv.org/abs/2405.15525
-  rast_paper: https://arxiv.org/abs/2512.13727
-  icrat_paper: https://arxiv.org/abs/2405.11118
-  lessmoe_paper: https://arxiv.org/abs/2606.05538
-  lessmoe_code: https://github.com/HectorHHZ/Less-is-MoE
-  condenser_paper: https://arxiv.org/abs/2604.23036
-  condenser_code: https://github.com/HectorHHZ/ExpertCondenser
-  mit_jtl: https://mobility.mit.edu/biblio-author/xuan-jiang/
-  berkeley_air: https://air.berkeley.edu/xuan-jiang/
   bilibili: https://space.bilibili.com/1900783
   substack: https://xuanxuan98.substack.com/
   substack_subscribe: https://xuanxuan98.substack.com/subscribe
 
-# Tags under each research row, same order as research.rows in i18n.yml.
-research_tags:
-  - - {label: "Less is MoE · EMNLP 2026", url: "https://arxiv.org/abs/2606.05538"}
-    - {label: "ExpertCondenser · COLM 2026", url: "https://arxiv.org/abs/2604.23036"}
-    - {label: "SMT · ICLR 2025", url: "https://arxiv.org/abs/2405.15525"}
-    - {label: "RAST-MoE-RL · ICML 2026", url: "https://arxiv.org/abs/2512.13727"}
-  - - {label: "DeepEP #732", url: "https://github.com/deepseek-ai/DeepEP/pull/732"}
-    - {label: "NVSHMEM commits", url: "https://github.com/NVIDIA/nvshmem/commits?author=Xuan-1998"}
-    - {label: "vLLM #53008", url: "https://github.com/vllm-project/vllm/pull/53008"}
-    - {label: "rdmatop #48", url: "https://github.com/uccl-project/rdmatop/pull/48"}
-  - - {label: "reef", url: "https://github.com/Human-Agent-Society/reef"}
-    - {label: "CORAL · COLM 2026", url: "https://arxiv.org/abs/2604.01658"}
-  - - {label: "LPSim", url: "https://github.com/Xuan-1998/LPSim"}
-    - {label: "Transportation Research Part C 2024", url: "https://doi.org/10.1016/j.trc.2024.104873"}
-    - {label: "Devastator · PADS 2024", url: "https://doi.org/10.1145/3615979.3656061"}
-    - {label: "ICRAT 2024 Best Paper", url: "https://arxiv.org/abs/2405.11118"}
-
-# Open-source GPU communication work, same order as comms.items in i18n.yml.
-comms:
-  - repo: deepseek-ai/DeepEP
-    url: https://github.com/deepseek-ai/DeepEP/pull/732
-    status: open
-    extra:
-      - https://github.com/amazon-contributing/DeepEP
-      - https://github.com/awslabs/awsome-distributed-ai/commit/9baf5aa749b54d36c3c159345cd5094b6282d5a3
-  - repo: NVIDIA/nvshmem
-    url: https://github.com/NVIDIA/nvshmem/commits?author=Xuan-1998
-    status: released
-  - repo: vllm-project/vllm
-    url: https://github.com/vllm-project/vllm/pull/53008
-    status: merged
-  - repo: uccl-project/rdmatop
-    url: https://github.com/uccl-project/rdmatop/pull/48
-    status: merged
-
-# Links shown after the matching entries in honors.positions (same order; empty means no link).
-position_links:
-  - ""
-  - ""
-  - https://mobility.mit.edu/biblio-author/xuan-jiang/
-  - https://air.berkeley.edu/xuan-jiang/
-  - ""
-  - ""
-  - ""
-
-# Followers of the Bilibili channel in the "Earlier" section, October 2026.
+# Followers of the Bilibili channel in "Earlier Work" on the misc page, October 2026.
 bilibili_followers: 354755
 
-# Numbers in the band under the hero: years in AI since 2019, then Google Scholar and GitHub, October 2026.
+# Not shown on the page. The Mac's daily Scholar sync rewrites items 2 and 3 (citations, h-index),
+# so keep this list in place: years in AI since 2019, citations, h-index, papers, merged reef/CORAL PRs.
 stats:
   - 7
   - 409
@@ -84,67 +29,46 @@ stats:
   - 26
   - 30
 
-# Where his papers appeared, shown under the numbers.
-published_in:
-  - ICLR
-  - ICML
-  - COLM
-  - EMNLP
-  - Transportation Research Part C
-  - IEEE T-ITS
-  - ACM SIGSIM PADS
-  - Transportation Research Record
-  - Information Fusion
-  - Journal of Air Transportation
-  - ICRAT
-
 reviewing:
-  - ICLR
-  - ICML
-  - NeurIPS
-  - COLM
-  - CVPR
-  - ECCV
-  - AAAI
-  - ITSC
-  - TRB Annual Meeting
-  - IEEE T-ITS
-  - IEEE TII
-  - Scientific Reports
-  - Frontiers in Psychology
+  journals:
+    - IEEE Transactions on Intelligent Transportation Systems
+    - IEEE Transactions on Industrial Informatics
+    - Scientific Reports
+    - Frontiers in Psychology
+  conferences:
+    - ICLR 2026
+    - ICML 2026
+    - CVPR 2026
+    - ECCV 2026
+    - COLM 2026
+    - NeurIPS 2025
+    - AAAI 2025
+    - ITSC 2025
+    - TRB Annual Meeting 2025
 
-journals:
-  - IEEE Transactions on Intelligent Transportation Systems
-  - IEEE Transactions on Industrial Informatics
-  - Scientific Reports
-  - Frontiers in Psychology
-
-conferences:
-  - ICLR 2026
-  - ICML 2026
-  - CVPR 2026
-  - ECCV 2026
-  - COLM 2026
-  - NeurIPS 2025
-  - AAAI 2025
-  - ITSC 2025
-  - TRB Annual Meeting 2025
-
-# Same order as honors.mentees in i18n.yml, which holds where each student is now.
+# Students I have mentored. "now" is where each student is now.
 mentees:
   - name: Yuhan Tang
     url: https://scholar.google.com/citations?user=SrVt6pgAAAAJ&hl=en
+    now: MIT, Ph.D. student
   - name: Yibo Zhao
     url: https://yibozh.github.io/
+    now: UIUC, Ph.D. student working on coding agents
   - name: Lucas Huang
     url: https://www.linkedin.com/in/lucas-wang-85aa6b329/
+    now: Yale University
   - name: Junzhe Cao
     url: https://www.linkedin.com/in/junzhecao/
+    now: ETH Zurich, ESOP Scholar 2024
   - name: Xinkai Zou
     url: https://scholar.google.com/citations?user=cHQSO10AAAAJ&hl=en
+    now: UCSD, CS master's
   - name: Jiaying Li
     url: https://www.linkedin.com/in/jiaying-li-537950233/
+    now: CMU, CS master's
   - name: Luze Sun
     url: https://www.linkedin.com/in/luze-sun-45624a1b7/
+    now: Northeastern University, CS Ph.D. student
   - name: Jieying Zhang
     url: https://www.linkedin.com/in/jz560/
+    now: Duke, ECE master's

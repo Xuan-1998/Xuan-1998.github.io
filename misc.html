@@ -1,0 +1,57 @@
+---
+layout: base
+title: Misc
+nav: misc
+permalink: /misc/
+---
+{%- assign M = site.data.text.misc -%}
+{%- assign pf = site.data.profile -%}
+<section class="container sec" aria-labelledby="exp-title">
+  <h2 id="exp-title">{{ M.positions_label }}</h2>
+  <hr>
+  {%- for e in M.positions %}
+  <div class="entry"><span class="org">{{ e.org }}</span> <span class="when">({{ e.when }})</span><br>{{ e.text }}</div>
+  {%- endfor %}
+</section>
+
+<section class="container sec" aria-labelledby="edu-title">
+  <h2 id="edu-title">{{ M.education_label }}</h2>
+  <hr>
+  {%- for e in M.education %}
+  <div class="entry"><span class="org">{{ e.org }}</span> <span class="when">({{ e.when }})</span><br>{{ e.text }}</div>
+  {%- endfor %}
+</section>
+
+<section class="container sec" aria-labelledby="honors-title">
+  <h2 id="honors-title">{{ M.awards_label }}</h2>
+  <hr>
+  <ul class="plain">
+    {%- for a in M.awards %}
+    <li><span class="when">[{{ a.when }}]</span> {{ a.text }}</li>
+    {%- endfor %}
+  </ul>
+</section>
+
+<section class="container sec" aria-labelledby="teaching-title">
+  <h2 id="teaching-title">{{ M.teaching_label }}</h2>
+  <hr>
+  {%- for e in M.teaching %}
+  <div class="entry"><span class="org">{{ e.org }}</span> <span class="when">({{ e.when }})</span><br>{{ e.text }}</div>
+  {%- endfor %}
+</section>
+
+<section class="container sec" aria-labelledby="service-title">
+  <h2 id="service-title">{{ M.service_label }}</h2>
+  <hr>
+  {%- for e in M.service %}
+  <div class="entry"><span class="org">{{ e.org }}</span> <span class="when">({{ e.when }})</span><br>{{ e.text }}</div>
+  {%- endfor %}
+  <p><b>{{ M.journals_label }}</b> {{ pf.reviewing.journals | join: ', ' }}.</p>
+  <p><b>{{ M.conferences_label }}</b> {{ pf.reviewing.conferences | join: ', ' }}.</p>
+</section>
+
+<section class="container sec" aria-labelledby="earlier-title">
+  <h2 id="earlier-title">{{ M.earlier_label }}</h2>
+  <hr>
+  <p>{{ M.earlier }} <a href="{{ pf.links.bilibili }}" target="_blank" rel="noopener">{{ M.earlier_link }}</a></p>
+</section>

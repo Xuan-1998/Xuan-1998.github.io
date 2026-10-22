@@ -1,24 +1,9 @@
-title: Xuan Jiang
+title: Xuan Jiang's Homepage
+description: Xuan Jiang is a UC Berkeley Ph.D. and MIT Research Affiliate working on mixture-of-experts fine-tuning, compression, GPU communication for expert parallelism, and self-evolving agents as a reef team member and CORAL co-author.
 url: "https://xuan-1998.github.io"
 baseurl: ""
 timezone: America/Los_Angeles
-
-# The two language versions. Swap the paths here and in the permalinks of
-# index.html and zh/index.html to make Chinese the root page.
-langs:
-  en:
-    path: /
-    html: en
-    hreflang: en
-    og_locale: en_US
-    switch_label: 中文
-  zh:
-    path: /zh/
-    html: zh-CN
-    hreflang: zh-CN
-    og_locale: zh_CN
-    switch_label: EN
-default_lang: en
+lang: en
 
 markdown: kramdown
 exclude:
@@ -26,6 +11,5 @@ exclude:
   - LICENSE
   - Gemfile
   - Gemfile.lock
-  - tools/
   - vendor/
   - node_modules/

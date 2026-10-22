@@ -1,0 +1,12 @@
+{%- assign tx = site.data.text -%}
+<nav class="navbar" aria-label="{{ tx.nav.label }}">
+  <div class="navbar-menu" id="nav-menu" data-collapse>
+    <a class="navbar-item" href="{{ '/' | relative_url }}"{% if page.nav == 'about' %} aria-current="page"{% endif %}>{{ tx.nav.about }}</a>
+    <a class="navbar-item" href="{{ '/blog/' | relative_url }}"{% if page.nav == 'blog' %} aria-current="page"{% endif %}>{{ tx.nav.blog }}</a>
+    <a class="navbar-item" href="{{ '/misc/' | relative_url }}"{% if page.nav == 'misc' %} aria-current="page"{% endif %}>{{ tx.nav.misc }}</a>
+  </div>
+  <div class="navbar-social" id="nav-social" data-collapse>
+    {% include social.html cls='social-icon' %}
+  </div>
+  <button class="navbar-burger" type="button" aria-label="{{ tx.nav.menu }}" aria-expanded="false" aria-controls="nav-menu nav-social" data-burger><span></span><span></span><span></span></button>
+</nav>
