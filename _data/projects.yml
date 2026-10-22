@@ -7,7 +7,7 @@
       url: https://github.com/amazon-contributing/DeepEP
     - label: Build recipe
       url: https://github.com/awslabs/awsome-distributed-ai/commit/9baf5aa749b54d36c3c159345cd5094b6282d5a3
-  desc: My pull request adds opt-in dispatch and combine kernels that need only weak signals, enabling hybrid mode on transports without ordered delivery. The EFA version is open source in amazon-contributing/DeepEP, and my awsome-distributed-ai recipe builds it on EFA clusters.
+  desc: My pull request adds opt-in dispatch and combine kernels that need only weak signals, enabling hybrid mode on transports without ordered delivery. I wrote the dispatch kernel and reviewed the combine kernel. The EFA version is open source in amazon-contributing/DeepEP, and my awsome-distributed-ai recipe builds it on EFA clusters.
 - name: NVSHMEM
   links:
     - label: My commits
