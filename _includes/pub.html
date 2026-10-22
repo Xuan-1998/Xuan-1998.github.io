@@ -26,6 +26,9 @@
       {%- endfor -%}
     </div>
     <div class="pub-venue">{{ p.venue }}, {{ p.year }}{% if p.award %}, <span class="award">{{ P.award }}</span>{% endif %}</div>
+    {%- if p.note %}
+    <div class="note">{{ p.note }}</div>
+    {%- endif %}
     <div class="pub-links">
       {%- if ab %}[<button class="lnk" type="button" aria-expanded="false" aria-controls="abs-{{ p.key }}" data-abs>{{ P.abs }}</button>]&nbsp; {% endif %}
       {%- if p.links.paper %}[<a href="{{ p.links.paper }}" target="_blank" rel="noopener">{{ P.paper }}</a>]&nbsp; {% endif %}

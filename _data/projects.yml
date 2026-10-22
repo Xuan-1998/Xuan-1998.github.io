@@ -40,6 +40,7 @@
     - label: My PRs
       url: https://github.com/Human-Agent-Society/reef/pulls?q=is%3Apr+author%3AXuan-1998
   desc: reef connects agent inference, feedback, learning, and versioned delivery so agents can continually improve. I'm on the team, with 25 PRs authored and 18 merged, including reef's Claude Code harness adapter and its CORAL test-time-training example.
+  note: Personal research, unrelated to my work at Amazon.
 - name: CORAL
   links:
     - label: Repository
@@ -49,6 +50,7 @@
     - label: My PRs
       url: https://github.com/Human-Agent-Society/CORAL/pulls?q=is%3Apr+author%3AXuan-1998
   desc: CORAL is an open-source research system where autonomous coding agents explore and collaborate through shared persistent memory. I co-authored the COLM 2026 paper and authored 14 PRs, with 12 merged.
+  note: Personal research, unrelated to my work at Amazon.
 - name: LPSim
   links:
     - label: Repository

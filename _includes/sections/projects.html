@@ -9,7 +9,7 @@
         {%- for l in pr.links %}<a class="pill" href="{{ l.url }}" target="_blank" rel="noopener">{{ l.label }}</a>{% endfor -%}
       </span>
     </div>
-    <p>{{ pr.desc }}</p>
+    <p>{{ pr.desc }}{% if pr.note %} <span class="note">{{ pr.note }}</span>{% endif %}</p>
   </div>
   {%- endfor %}
 </section>

@@ -123,6 +123,7 @@ html:not(.js) .navbar-burger { display: none; }
 .credit a { color: #6c757d; text-decoration: underline; }
 .pub-authors .me { font-weight: bold; color: #000; }
 .pub-venue { color: #000; }
+.note { color: #555; font-style: italic; }
 .award { color: #e60000; }
 .lnk { padding: 0; border: 0; background: none; color: #4b61d1; font: inherit; cursor: pointer; }
 .lnk:hover, .lnk:focus { color: #f18800; }
