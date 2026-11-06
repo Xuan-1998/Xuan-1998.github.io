@@ -74,41 +74,6 @@
   cites: 40
   links:
     arxiv: https://arxiv.org/abs/2405.15525
-- title: 'CORAL: Towards Autonomous Multi-Agent Evolution for Open-Ended Discovery'
-  key: coral
-  video: coral.mp4
-  authors:
-  - Ao Qu
-  - Han Zheng
-  - Zijian Zhou
-  - Yihao Yan
-  - Yihong Tang
-  - Shao Yong Ong
-  - Fenglu Hong
-  - Kaichen Zhou
-  - Chonghe Jiang
-  - Minwei Kong
-  - Jiacheng Zhu
-  - Xuan Jiang
-  - Sirui Li
-  - Cathy Wu
-  - Bryan Kian Hsiang Low
-  - Jinhua Zhao
-  - Paul Pu Liang
-  equal:
-  - Ao Qu
-  - Han Zheng
-  - Zijian Zhou
-  venue: Conference on Language Modeling (COLM)
-  year: 2026
-  note: Personal research, unrelated to my work at Amazon.
-  topics:
-  - agents
-  selected: true
-  cites: 73
-  links:
-    arxiv: https://arxiv.org/abs/2604.01658
-    code: https://github.com/Human-Agent-Society/CORAL
 - title: 'RAST-MoE-RL: A Regime-Aware Spatio-Temporal MoE Framework for Deep Reinforcement Learning in Ride-Hailing'
   key: rast
   lead:
@@ -338,6 +303,41 @@
   cites: 10
   links:
     paper: https://doi.org/10.1145/3615979.3665104
+- title: 'CORAL: Towards Autonomous Multi-Agent Evolution for Open-Ended Discovery'
+  key: coral
+  video: coral.mp4
+  authors:
+  - Ao Qu
+  - Han Zheng
+  - Zijian Zhou
+  - Yihao Yan
+  - Yihong Tang
+  - Shao Yong Ong
+  - Fenglu Hong
+  - Kaichen Zhou
+  - Chonghe Jiang
+  - Minwei Kong
+  - Jiacheng Zhu
+  - Xuan Jiang
+  - Sirui Li
+  - Cathy Wu
+  - Bryan Kian Hsiang Low
+  - Jinhua Zhao
+  - Paul Pu Liang
+  equal:
+  - Ao Qu
+  - Han Zheng
+  - Zijian Zhou
+  venue: Conference on Language Modeling (COLM)
+  year: 2026
+  note: Personal research, unrelated to my work at Amazon.
+  topics:
+  - agents
+  selected: true
+  cites: 73
+  links:
+    arxiv: https://arxiv.org/abs/2604.01658
+    code: https://github.com/Human-Agent-Society/CORAL
 - title: 'Simulating Integration of Urban Air Mobility into Existing Transportation Systems: Survey'
   key: uamsurvey
   authors:
