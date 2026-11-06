@@ -1,7 +1,6 @@
 # Page text. Values may contain HTML links.
 nav:
   about: About
-  blog: Blog
   misc: Misc
   menu: Toggle navigation
   skip: Skip to content
@@ -125,13 +124,6 @@ misc:
   earlier_label: Earlier Work
   earlier: Before moving to the US, I helped Zihao (同济子豪兄) build his AI popular-science channel on Bilibili. The channel now has more than 350,000 followers (October 2026).
   earlier_link: Bilibili channel
-
-blog:
-  title: Blog
-  intro: I publish on Substack, and subscribers get each post by email. Every post is listed here, newest first.
-  subscribe: Subscribe on Substack
-  read: Read on Substack
-  written_in: In Chinese
 
 footer:
   updated: Last updated

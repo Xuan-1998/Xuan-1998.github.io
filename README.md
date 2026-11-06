@@ -8,21 +8,19 @@ This repository contains the source for Xuan Jiang's homepage at `https://xuan-1
 | --- | --- | --- |
 | `/` | `index.html`, `_layouts/home.html` | About, research, selected work, open source, talks, mentoring |
 | `/misc/` | `misc.html` | Experience, education, honors, teaching, service, earlier work |
-| `/blog/` | `blog.html` | Substack posts |
-| `/publications`, `/zh/`, `/zh/blog/` | `_layouts/redirect.html` | Redirects that keep old links working |
+| `/publications`, `/zh/`, `/blog/`, `/zh/blog/` | `_layouts/redirect.html` | Redirects that keep old links working |
 
 ## Edit content
 
 | File | What it holds |
 | --- | --- |
 | `_data/text.yml` | All page text: the bio, the research summary and overview, section titles, and the entries on the misc page. Values may contain HTML links. |
-| `_data/papers.yml` | Every paper, newest year first. `selected: true` puts a paper in Selected Work with a thumbnail, and the others appear under "Show all papers". `equal` marks co-first authors (*), `lead` marks the project lead (†) and `corresponding` marks corresponding authors (✉). `key` names the paper's thumbnail and abstract, and `video` names an optional teaser video. `links` takes `paper`, `arxiv`, `website`, `code` and `dataset`. |
+| `_data/papers.yml` | Every paper, newest year first. `selected: true` puts a paper in Selected Work with a thumbnail, and the others appear under "Show all papers". `equal` marks co-first authors (*), `lead` marks the project lead (†) `corresponding` marks corresponding authors (✉) and `committee` marks my name (‡) where I served on the first author's Ph.D. committee. Selected Work follows the file order. `key` names the paper's thumbnail and abstract, and `video` names an optional teaser video. `links` takes `paper`, `arxiv`, `website`, `code` and `dataset`. |
 | `_data/abstracts.yml` | The abstracts behind [abs], copied verbatim from arXiv or Crossref. |
 | `_data/thumbs.yml` | Size and alt text of each thumbnail in `assets/img/thumb/`, plus an optional `credit` line for third-party material. |
 | `_data/talks.yml` | Talks, newest first: title, date (`YYYY-MM`), venue, an optional logo from `assets/img/logo/` and an optional `slides` PDF in `assets/slides/`. Internal talks get no slides. |
 | `_data/projects.yml` | Open-source entries and their buttons. |
 | `_data/profile.yml` | Name, email, profile links, mentees and reviewing lists. |
-| `_data/blog.yml` | Substack posts, newest first. |
 
 The Scholar sync on the Mac (`~/.autobook/scholar_sync/sync.py`) rewrites each paper's `cites` and items 2 and 3 of `stats` in `_data/profile.yml` every day. The page shows neither, but keep both keys in place so the sync keeps working.
 
