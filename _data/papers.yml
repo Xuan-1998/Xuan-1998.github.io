@@ -4,7 +4,7 @@
 # cites: Google Scholar, refreshed daily by the Mac's Scholar sync.
 # key: thumbnail (assets/img/thumb/<key>.webp) and abstract (_data/abstracts.yml) of a selected paper.
 # equal: co-first authors (*). lead: project lead (†). corresponding: corresponding author (✉).
-# committee: I served on the first author's Ph.D. committee (‡).
+# committee: authors who served on the first author's Ph.D. committee (‡).
 - title: Preserving Long-Tailed Expert Information in Mixture-of-Experts Tuning
   key: condenser
   authors:
@@ -18,6 +18,8 @@
   - Heather Miller
   committee:
   - Xuan Jiang
+  - Juncheng Billy Li
+  - Heather Miller
   venue: Conference on Language Modeling (COLM)
   year: 2026
   topics:
@@ -44,6 +46,8 @@
   - Xinkai Zou
   committee:
   - Xuan Jiang
+  - Juncheng Billy Li
+  - Heather Miller
   venue: Conference on Empirical Methods in Natural Language Processing (EMNLP)
   year: 2026
   topics:
@@ -66,6 +70,8 @@
   - Juncheng Billy Li
   committee:
   - Xuan Jiang
+  - Juncheng Billy Li
+  - Heather Miller
   venue: International Conference on Learning Representations (ICLR)
   year: 2025
   topics:
