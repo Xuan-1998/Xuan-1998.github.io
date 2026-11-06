@@ -22,7 +22,7 @@
     <div class="pub-title">{{ p.title }}</div>
     <div class="pub-authors">
       {%- for name in p.authors -%}
-      <span{% if name == me %} class="me"{% endif %}>{{ name }}{% if p.equal contains name %}*{% endif %}{% if p.lead contains name %}<sup>&dagger;</sup>{% endif %}{% if p.corresponding contains name %}<sup class="mail">&#9993;&#xFE0E;</sup>{% endif %}</span>{% unless forloop.last %}, {% endunless %}
+      <span{% if name == me %} class="me"{% endif %}>{{ name }}{% if p.equal contains name %}*{% endif %}{% if p.lead contains name %}<sup>&dagger;</sup>{% endif %}{% if p.corresponding contains name %}<sup class="mail">&#9993;&#xFE0E;</sup>{% endif %}{% if p.committee contains name %}<sup>&Dagger;</sup>{% endif %}</span>{% unless forloop.last %}, {% endunless %}
       {%- endfor -%}
     </div>
     <div class="pub-venue">{{ p.venue }}, {{ p.year }}{% if p.award %}, <span class="award">{{ P.award }}</span>{% endif %}</div>

@@ -1,8 +1,79 @@
-# Papers shown on the home page, newest year first. Order inside a year is the display order.
+# Papers shown on the home page. File order is the display order: Selected Work lists the selected papers in this order
+# (the three MoE fine-tuning papers come first), Other Papers lists the rest newest year first.
 # topics: moe (mixture-of-experts), agents (LLMs and agents), systems (HPC and simulation). Papers with no topic appear under All only.
 # cites: Google Scholar, refreshed daily by the Mac's Scholar sync.
 # key: thumbnail (assets/img/thumb/<key>.webp) and abstract (_data/abstracts.yml) of a selected paper.
 # equal: co-first authors (*). lead: project lead (†). corresponding: corresponding author (✉).
+# committee: I served on the first author's Ph.D. committee (‡).
+- title: Preserving Long-Tailed Expert Information in Mixture-of-Experts Tuning
+  key: condenser
+  authors:
+  - Haoze He
+  - Xingyuan Ding
+  - Xuan Jiang
+  - Xinkai Zou
+  - Alex Cheng
+  - Yibo Zhao
+  - Juncheng Billy Li
+  - Heather Miller
+  committee:
+  - Xuan Jiang
+  venue: Conference on Language Modeling (COLM)
+  year: 2026
+  topics:
+  - moe
+  - agents
+  selected: true
+  cites: 1
+  links:
+    arxiv: https://arxiv.org/abs/2604.23036
+    code: https://github.com/HectorHHZ/ExpertCondenser
+- title: 'Less is MoE: Trimming Experts in Domain-Specialist Language Models'
+  key: lessmoe
+  video: lessmoe.mp4
+  authors:
+  - Haoze He
+  - Xinkai Zou
+  - Xuan Jiang
+  - Xingyuan Ding
+  - Ao Qu
+  - Juncheng Billy Li
+  - Heather Miller
+  equal:
+  - Haoze He
+  - Xinkai Zou
+  committee:
+  - Xuan Jiang
+  venue: Conference on Empirical Methods in Natural Language Processing (EMNLP)
+  year: 2026
+  topics:
+  - moe
+  - agents
+  selected: true
+  cites: 2
+  links:
+    arxiv: https://arxiv.org/abs/2606.05538
+    code: https://github.com/HectorHHZ/Less-is-MoE
+- title: Sparse Matrix in Large Language Model Fine-Tuning
+  key: smt
+  authors:
+  - Haoze He
+  - Juncheng Billy Li
+  - Xuan Jiang
+  - Heather Miller
+  equal:
+  - Haoze He
+  - Juncheng Billy Li
+  committee:
+  - Xuan Jiang
+  venue: International Conference on Learning Representations (ICLR)
+  year: 2025
+  topics:
+  - agents
+  selected: true
+  cites: 40
+  links:
+    arxiv: https://arxiv.org/abs/2405.15525
 - title: 'CORAL: Towards Autonomous Multi-Agent Evolution for Open-Ended Discovery'
   key: coral
   video: coral.mp4
@@ -68,51 +139,6 @@
   selected: true
   links:
     arxiv: https://arxiv.org/abs/2512.13727
-- title: Preserving Long-Tailed Expert Information in Mixture-of-Experts Tuning
-  key: condenser
-  authors:
-  - Haoze He
-  - Xingyuan Ding
-  - Xuan Jiang
-  - Xinkai Zou
-  - Alex Cheng
-  - Yibo Zhao
-  - Juncheng Billy Li
-  - Heather Miller
-  venue: Conference on Language Modeling (COLM)
-  year: 2026
-  topics:
-  - moe
-  - agents
-  selected: true
-  cites: 1
-  links:
-    arxiv: https://arxiv.org/abs/2604.23036
-    code: https://github.com/HectorHHZ/ExpertCondenser
-- title: 'Less is MoE: Trimming Experts in Domain-Specialist Language Models'
-  key: lessmoe
-  video: lessmoe.mp4
-  authors:
-  - Haoze He
-  - Xinkai Zou
-  - Xuan Jiang
-  - Xingyuan Ding
-  - Ao Qu
-  - Juncheng Billy Li
-  - Heather Miller
-  equal:
-  - Haoze He
-  - Xinkai Zou
-  venue: Conference on Empirical Methods in Natural Language Processing (EMNLP)
-  year: 2026
-  topics:
-  - moe
-  - agents
-  selected: true
-  cites: 2
-  links:
-    arxiv: https://arxiv.org/abs/2606.05538
-    code: https://github.com/HectorHHZ/Less-is-MoE
 - title: 'CloudAnoAgent: Anomaly Detection for Cloud Sites via LLM Agent with Neuro-Symbolic Mechanism'
   key: cloudanoagent
   video: cloudanoagent.mp4
@@ -194,24 +220,6 @@
   - systems
   links:
     paper: https://doi.org/10.1109/TITS.2026.3704878
-- title: Sparse Matrix in Large Language Model Fine-Tuning
-  key: smt
-  authors:
-  - Haoze He
-  - Juncheng Billy Li
-  - Xuan Jiang
-  - Heather Miller
-  equal:
-  - Haoze He
-  - Juncheng Billy Li
-  venue: International Conference on Learning Representations (ICLR)
-  year: 2025
-  topics:
-  - agents
-  selected: true
-  cites: 40
-  links:
-    arxiv: https://arxiv.org/abs/2405.15525
 - title: 'Simulation-Based Optimization for Vertiport Location Selection: A Surrogate Model with Machine Learning Method'
   key: vertiport
   authors:
